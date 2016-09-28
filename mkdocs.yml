@@ -6,6 +6,7 @@ pages:
 - "Data Structures":
   - "Arrays": 'd_array.md'
 - "Algorithms":
+  - "7 Steps to Solve Algorithm Problems": "7_steps.md"
   - "Graph Theory": 'a_graph_theory.md'
 
 markdown_extensions:
