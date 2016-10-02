@@ -1,0 +1,94 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Data Structures \n Algorithms\n\n\n\n\nAlgorithms + Data Structures = Programs\n\n\n\n\nIn computer science, a data structure is a particular way of organizing data in a computer so that it can be used efficiently. Data structures can implement one or more particular abstract data types (ADT), which specify the operations that can be performed on a data structure and the computional complexity of those operations. In comparison, a data structure is a concrete implementation of the specification provided by an ADT.\n\n\nIn mathematics and computer science, an algorithm is a self-contained step-by-step set of operations to be performed. Algorithms perform calculation, data processing, and/or automated reasoning tasks.\n\n\nNote:\n this notebook is inprogress. Feel free to \ncontribute", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#data-structures-algorithms", 
+            "text": "Algorithms + Data Structures = Programs   In computer science, a data structure is a particular way of organizing data in a computer so that it can be used efficiently. Data structures can implement one or more particular abstract data types (ADT), which specify the operations that can be performed on a data structure and the computional complexity of those operations. In comparison, a data structure is a concrete implementation of the specification provided by an ADT.  In mathematics and computer science, an algorithm is a self-contained step-by-step set of operations to be performed. Algorithms perform calculation, data processing, and/or automated reasoning tasks.  Note:  this notebook is inprogress. Feel free to  contribute", 
+            "title": "Data Structures &amp; Algorithms"
+        }, 
+        {
+            "location": "/d_array/", 
+            "text": "Arrays", 
+            "title": "Arrays"
+        }, 
+        {
+            "location": "/d_array/#arrays", 
+            "text": "", 
+            "title": "Arrays"
+        }, 
+        {
+            "location": "/7_steps/", 
+            "text": "7 Steps to Solve Algorithm Problems\n\n\nToday, I viewed the video \"7 Steps to Solve Algorithm Problems\" by Gayle Laakmann McDowell - the author of \nCracking the Coding Interview\n book. In this video, Gayle describe her method for solve algorithms problems which consists 7 steps: listen carefully, example, brute force, optimize, walk through your algorithms, code and test. In this article, I will summary these steps base on what I learned from this video.\n\n\nStep 1: Listen carefully\n\n\nThe first step you will take is listen (read) your problem carefully.\n\n\nStep 2: Example\n\n\nExample (make example big, no special cases)\n\n\nStep 3: Brute force\n\n\n(better to have a brute force than nothing at all.\n\n\nBecause\n\n\n\n\ncheck that you understand the problem, shows you're at least good enough to get that\n\n\nit's good place to optimize from\n\n\n\n\nStep 4: Optimize\n\n\nStep 5: Walk through your algorithms\n\n\nknow exactly what you're going to do before coding\n\n\n\n\nwhat variables \n data structures?\n\n\nhow, why, why do they change?\n\n\nwhat is the structure of your code\n\n\n\n\nStep 6: Code\n\n\nWhiteboard: write straight, use space wisely\n\n\nWhiteboard or computer\n\n\n\n\n\n\ncoding style matters (consistent braces, consistent variable naming, consistence spaces, descriptive variables)\n\n\n\n\n\n\nmodularize (before. not after)\n\n\n\n\n\n\nStep 7: Test\n\n\nAnalyse: think about each line, double check things that look weired/risky (for-loop that decrement, math) - Use test cases (smalle test-cases first (faster to run, you will problably be more thoroguht, edge cases, big tes cases)\n\n\nREMEMBER:\n\n think as you test (don't be a bot)\n\n test your code, not your algorithm\n* think before you fix bugs. Don't panic! (wrong fixes are worse than no fix)\n\n\nhttps://www.youtube.com/watch?v=GKgAVjJxh9w\nlist=PLM0_NsFSjrgC72cExkBI4Iz99SBTzYG-u\nindex=4", 
+            "title": "7 Steps to Solve Algorithm Problems"
+        }, 
+        {
+            "location": "/7_steps/#7-steps-to-solve-algorithm-problems", 
+            "text": "Today, I viewed the video \"7 Steps to Solve Algorithm Problems\" by Gayle Laakmann McDowell - the author of  Cracking the Coding Interview  book. In this video, Gayle describe her method for solve algorithms problems which consists 7 steps: listen carefully, example, brute force, optimize, walk through your algorithms, code and test. In this article, I will summary these steps base on what I learned from this video.", 
+            "title": "7 Steps to Solve Algorithm Problems"
+        }, 
+        {
+            "location": "/7_steps/#step-1-listen-carefully", 
+            "text": "The first step you will take is listen (read) your problem carefully.", 
+            "title": "Step 1: Listen carefully"
+        }, 
+        {
+            "location": "/7_steps/#step-2-example", 
+            "text": "Example (make example big, no special cases)", 
+            "title": "Step 2: Example"
+        }, 
+        {
+            "location": "/7_steps/#step-3-brute-force", 
+            "text": "(better to have a brute force than nothing at all.  Because   check that you understand the problem, shows you're at least good enough to get that  it's good place to optimize from", 
+            "title": "Step 3: Brute force"
+        }, 
+        {
+            "location": "/7_steps/#step-4-optimize", 
+            "text": "", 
+            "title": "Step 4: Optimize"
+        }, 
+        {
+            "location": "/7_steps/#step-5-walk-through-your-algorithms", 
+            "text": "know exactly what you're going to do before coding   what variables   data structures?  how, why, why do they change?  what is the structure of your code", 
+            "title": "Step 5: Walk through your algorithms"
+        }, 
+        {
+            "location": "/7_steps/#step-6-code", 
+            "text": "Whiteboard: write straight, use space wisely  Whiteboard or computer    coding style matters (consistent braces, consistent variable naming, consistence spaces, descriptive variables)    modularize (before. not after)", 
+            "title": "Step 6: Code"
+        }, 
+        {
+            "location": "/7_steps/#step-7-test", 
+            "text": "Analyse: think about each line, double check things that look weired/risky (for-loop that decrement, math) - Use test cases (smalle test-cases first (faster to run, you will problably be more thoroguht, edge cases, big tes cases)  REMEMBER:  think as you test (don't be a bot)  test your code, not your algorithm\n* think before you fix bugs. Don't panic! (wrong fixes are worse than no fix)  https://www.youtube.com/watch?v=GKgAVjJxh9w list=PLM0_NsFSjrgC72cExkBI4Iz99SBTzYG-u index=4", 
+            "title": "Step 7: Test"
+        }, 
+        {
+            "location": "/a_graph_theory/", 
+            "text": "Graph Theory\n\n\nShortest Path Problem\n\n\n\n\nShortest path (A, C, E, D, F) between vertices A and F in the weighted directed graph\n\n\nIn graph theory, the shortest path problem is the problem of finding a path between two vertices (or nodes) in a graph such that the sum of the weights of its constituent edges is minimized.\n\n\n\n\n\n\n\n\na\n\n\nb\n\n\n\n\n\n\nc\n\n\nd\n\n\n\n\n\n\n\n\n\nSingle-source shortest path problem\n\n\nDijkstra's algorithm\n\n\n\n\nDijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.", 
+            "title": "Graph Theory"
+        }, 
+        {
+            "location": "/a_graph_theory/#graph-theory", 
+            "text": "", 
+            "title": "Graph Theory"
+        }, 
+        {
+            "location": "/a_graph_theory/#shortest-path-problem", 
+            "text": "Shortest path (A, C, E, D, F) between vertices A and F in the weighted directed graph  In graph theory, the shortest path problem is the problem of finding a path between two vertices (or nodes) in a graph such that the sum of the weights of its constituent edges is minimized.     a  b    c  d", 
+            "title": "Shortest Path Problem"
+        }, 
+        {
+            "location": "/a_graph_theory/#single-source-shortest-path-problem", 
+            "text": "", 
+            "title": "Single-source shortest path problem"
+        }, 
+        {
+            "location": "/a_graph_theory/#dijkstras-algorithm", 
+            "text": "Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.", 
+            "title": "Dijkstra's algorithm"
+        }
+    ]
+}
