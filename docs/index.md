@@ -6,4 +6,9 @@ In computer science, a data structure is a particular way of organizing data in 
 
 In mathematics and computer science, an algorithm is a self-contained step-by-step set of operations to be performed. Algorithms perform calculation, data processing, and/or automated reasoning tasks.
 
+## Books
+
+<div class="books" gid="1cMZ8guTnaHqhVINUv3NuGZQiUNGsYCH5kfYLhbpLHTI"></div>
+<div class="clearfix"></div>
+
 **Note:** this notebook is inprogress. Feel free to [contribute](https://github.com/magizbox/danda)
