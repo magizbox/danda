@@ -72,6 +72,18 @@
 </li>
 
                         
+                            
+<li >
+    <a href="../d_string/">Strings</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../d_stack_queue/">Stacks & Queues</a>
+</li>
+
+                        
                         </ul>
                     </li>
                 
@@ -113,7 +125,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../7_steps/">
+                        <a rel="prev" href="../d_string/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -131,23 +143,37 @@
     
         <li class="main active"><a href="#arrays">Arrays</a></li>
         
-            <li><a href="#introduction">Introduction</a></li>
-        
             <li><a href="#the-arrays-class">The Arrays class</a></li>
         
-            <li><a href="#copying-arrays">Copying arrays</a></li>
+    
+        <li class="main "><a href="#copying-arrays">Copying arrays</a></li>
         
-            <li><a href="#challenges">Challenges</a></li>
+    
+        <li class="main "><a href="#insertion-and-deletion">Insertion and Deletion</a></li>
         
-            <li><a href="#references">References</a></li>
+    
+        <li class="main "><a href="#the-arraylist-class">The ArrayList class</a></li>
+        
+    
+        <li class="main "><a href="#copying-arrays-of-objects">Copying arrays of objects</a></li>
+        
+    
+        <li class="main "><a href="#multi-dimensional-arrays">Multi-dimensional arrays</a></li>
+        
+            <li><a href="#cloning-2d-arrays">Cloning 2D arrays</a></li>
+        
+    
+        <li class="main "><a href="#challenges">Challenges</a></li>
+        
+    
+        <li class="main "><a href="#references">References</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="arrays">Arrays</h1>
-<h2 id="introduction">Introduction</h2>
+<h2 id="arrays">Arrays</h2>
 <p>An array is an aggregate data structure that is designed to store a group of objects of the same or different types. Arrays can hold primitives as well as references. The array is the most efficient data structure for storing and accessing a sequence of objects.</p>
 <p>Here is the list of most important array features you must know (i.e. be able to program)</p>
 <ul>
@@ -168,7 +194,7 @@ int [] b = {1,2,3};
 </code></pre>
 
 <p>a and b refer to two different objects (though with identical contents). Comparing them with the double equal sign will return false. How would you compare two objects with identical contents? In short, using the equals method. For array comparison, the Java APIs provides the Arrays class.</p>
-<h2 id="the-arrays-class">The Arrays class</h2>
+<h3 id="the-arrays-class">The Arrays class</h3>
 <p>The java.util.Arrays class is a convenience class for various array manipulations, like comparison, searching, printing, sorting and others. Basically, this class is a set of static methods that are all useful for working with arrays. The code below demonstrates a proper invocation of equals:</p>
 <pre><code class="java">int[] a = {1,2,3};
 int[] b = {1,2,3};
@@ -227,14 +253,115 @@ int[] b = (int[]) a.clone();
 
 <p>Note, that casting (int[]) is the must.</p>
 <p>Examine the code in ArrayCopyPrimitives.java for further details.</p>
+<h2 id="insertion-and-deletion">Insertion and Deletion</h2>
+<p>Arrays in Java have no methods and only one <code>immutable</code> field <code>length</code>. Once an array is created, its length is fixed and cannot be changed. What do you do to resize the array? You allocate the array with a different size and copy the contents of the old array to the new array. This code example demonstrates deletion from an array of primitives</p>
+<pre><code class="java">public char[] delete(char[] data, int pos)
+{
+    if(pos &gt;= 0 &amp;&amp; pos &lt; data.length)
+    {
+        char[] tmp = new char[data.length-1];
+        System.arraycopy(data, 0, tmp, 0, pos);
+        System.arraycopy(data, pos+1, tmp, pos, data.length-pos-1);
+        return tmp;
+    }
+    else
+        return data;
+}
+</code></pre>
+
+<p>The first arraycopy copies the elements from index 0 to index pos-1, the second arraycopy copies the elements from index pos+1 to data.length.</p>
+<p>Examine the code in ArrayDemo.java for further details.</p>
+<h2 id="the-arraylist-class">The ArrayList class</h2>
+<p>The java.util.ArrayList class supports an idea of a dynamic array - an array that grows and shrinks on demand to accomodate the number of elements in the array. Below is a list of commonly used methods</p>
+<ul>
+<li><code>add(object)</code> - adds to the end</li>
+<li><code>add(index, object)</code> - inserts at the index</li>
+<li><code>set(index, object)</code> - replaces at the index</li>
+<li><code>get(index)</code> - returns the element at that index</li>
+<li><code>remove(index)</code> - deletes the element at that index</li>
+<li><code>size()</code> - returns the number of elements</li>
+</ul>
+<p>The following code example will give you a heads up into how some of them are used.</p>
+<pre><code>/* ADD */
+      ArrayList&lt;Integer&gt; num = new ArrayList&lt;Integer&gt;();
+      for(int i = 0; i &lt; 10; i++) num.add(i);
+      System.out.println(num);
+
+
+/* REMOVE even integers */
+      for(int i = 0; i &lt; num.size(); i++)
+        if(num.get(i)%2 == 0) num.remove(i);
+      System.out.println(num);
+</code></pre>
+
+<h2 id="copying-arrays-of-objects">Copying arrays of objects</h2>
+<p>This topic is more complex for understanding.. Let us start with a simple loop structure</p>
+<pre><code>Object[] obj1 = {new Integer(10),
+                new StringBuffer(&quot;foobar&quot;),
+                new Double(12.95)};
+Object[] obj2 = new Object[obj1.length];
+for(int i = 0; i ‹ obj1.length; i++)
+    obj2[i] = obj1[i];
+</code></pre>
+
+<p>At the first glance we might think that all data is copied. In reality, the internal data is shared between two arrays. The figure below illustrates the inner structure</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/copy1.bmp" /></p>
+<p>The assignment operator <code>obj2[i] = obj1[i]</code> is a crucial part of understanding the concept. You cannot copy references by assigning one to another. The assignment creates an alias rather than a copy. Let us trace down changes in the above picture after execution the following statements</p>
+<pre><code>obj1[0] = new Integer(5);
+</code></pre>
+
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/copy2.bmp" /></p>
+<p>and <code>((StringBuffer) obj1[1]).append('s');</code></p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/copy3.bmp" /></p>
+<p>As you see, <code>obj1[0]</code> and <code>obj2[0]</code> now refer to different objects. However, <code>obj1[1]</code> and <code>obj2[1]</code> refer to the same object (which is "foobars"). Since both arrays shares the data, you must be quite careful when you modify your data, because it might lead to unexpected effects.</p>
+<p>The same behavior will take place again, if we use Arrays.copuyOf(), System.arraycopy() and clone(). Examine the code example ArrayCopyReferences.java for further details.</p>
+<h2 id="multi-dimensional-arrays">Multi-dimensional arrays</h2>
+<p>In many practical application there is a need to use two- or multi-dimensional arrays. A two-dimensional array can be thought of as a table of rows and columns. This creates a table of 2 rows and 4 columns:</p>
+<pre><code>int[][] ar1 = new int[2][4];
+</code></pre>
+
+<p>You can create and initialize an array by using nested curcly braces. For example, this creates a table of 3 rows and 2 columns:</p>
+<pre><code>int[][] ar2 = {{1,2},{3,4},{5,6}};
+</code></pre>
+
+<p>Generally speaking, a two-dimensional array is not exactly a table - each row in such array can have a different length. Consider this code fragment</p>
+<pre><code>Object[][] obj = {{new Integer(1),new Integer(2)},
+                  {new Integer(10), &quot;bozo&quot;, new Double(1.95)}};
+</code></pre>
+
+<p>The accompanying picture sheds a bit of light on internal representation</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/2d.bmp" /></p>
+<p>From the picture you clearly see that a two-dimensional array in Java is an array of arrays. The array obj has two elements obj[0] and obj[1] that are arrays of length 2 and 3 respectively.</p>
+<h3 id="cloning-2d-arrays">Cloning 2D arrays</h3>
+<p>The procedure is even more confusing and less expected. Consider the following code segment</p>
+<pre><code>Object[][] obj = {{new Integer(1),new Integer(2)},
+                  {new Integer(10), &quot;bozo&quot;, new Double(1.95)}};
+
+Object[][] twin = (Object[][]) obj.clone();
+</code></pre>
+
+<p>The procedure of clonig 2d arrays is virtually the same as cloning an array of references. Unfortunately, built-in clone() method does not actualy clone each row, but rather creates references to them Here is a graphical interpretation of the above code</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/clone4.bmp" /></p>
+<p>Let us change the value of <code>obj[1][1]</code></p>
+<pre><code>obj[1][1] = &quot;xyz&quot;;
+</code></pre>
+
+<p>This assignment effects the value of <code>twin[1][1]</code> as well</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/clone4a.bmp" /></p>
+<p>Such a copy is called a "shallow" copy. The default behavior of clone() is to return a shallow copy of the object. If we want a "deep" copy instead, we must provide our own implementation by overriding Object's clone() method.</p>
+<p>The idea of a "deep" copy is simple - it makes a distinct copy of each of the object's fields, recursing through the entire object. A deep copy is thus a completely separate object from the original; changes to it don't affect the original, and vise versa. In relevance to the above code, here is a deep clone graphically</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/clone6.bmp" /></p>
+<p>Further, making a complete deep copy is not always needed. Consider an array of immutable objects. As we know, immutable objects cannot be modified, allowing clients to share the same instance without interfering with each other. In this case there is no need to clone them, which leads to the following picture</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/clone5.bmp" /></p>
+<p>Always in this course we will create data structures of immutable objets, therefore implementing the clone method will require copying a structure (a shape) and sharing its internal data. We will discuss these issues later on in the course.</p>
 <h2 id="challenges">Challenges</h2>
 <ul>
 <li><a href="https://www.hackerrank.com/challenges/ctci-array-left-rotation">Arrays: Left Rotation</a></li>
 </ul>
 <h2 id="references">References</h2>
-<ol>
-<li><a href="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/arrays.html">Array Data Structure</a></li>
-</ol></div>
+<ul>
+<li><a href="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/arrays.html">"Array Data Structure". <em>Victor S.Adamchik, CMU</em>. 2009</a></li>
+</ul></div>
             
         </div>
 

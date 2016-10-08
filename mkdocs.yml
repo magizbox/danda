@@ -5,6 +5,8 @@ pages:
 - "Home": 'index.md'
 - "Data Structures":
   - "Arrays": 'd_array.md'
+  - "Strings": 'd_string.md'
+  - "Stacks & Queues": 'd_stack_queue.md'
 - "Algorithms":
   - "7 Steps to Solve Algorithm Problems": "7_steps.md"
   - "Graph Theory": 'a_graph_theory.md'

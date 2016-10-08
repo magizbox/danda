@@ -11,4 +11,7 @@ In mathematics and computer science, an algorithm is a self-contained step-by-st
 <div class="books" gid="1cMZ8guTnaHqhVINUv3NuGZQiUNGsYCH5kfYLhbpLHTI"></div>
 <div class="clearfix"></div>
 
-**Note:** this notebook is inprogress. Feel free to [contribute](https://github.com/magizbox/danda)
+## Courses
+
+<div class="courses" gid="1sQ_yRc-raBC5bfh8z-6DC-oV0hQ2aev8ocKtvOt3BuU"></div>
+<div class="clearfix"></div>
