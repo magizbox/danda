@@ -14,8 +14,10 @@ pages:
 - "Algorithms":
   - "7 Steps to Solve Algorithm Problems": "7_steps.md"
   - "Graph Theory": 'a_graph_theory.md'
+
 markdown_extensions:
     - footnotes
+    - mdx_math
 
 extra_css:
   - css/book.css
@@ -29,5 +31,3 @@ extra_javascript:
   - js/video.js
   - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-markdown_extensions:
-    - mdx_math
