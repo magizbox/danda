@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>Graph Theory - D&A</title>
+	<title>Heaps - D&A</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -62,7 +62,7 @@
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Structures <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -91,8 +91,8 @@
 
                         
                             
-<li >
-    <a href="../d_heap/">Heaps</a>
+<li class="active">
+    <a href="./">Heaps</a>
 </li>
 
                         
@@ -107,7 +107,7 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Algorithms <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
@@ -118,8 +118,8 @@
 
                         
                             
-<li class="active">
-    <a href="./">Graph Theory</a>
+<li >
+    <a href="../a_graph_theory/">Graph Theory</a>
 </li>
 
                         
@@ -138,12 +138,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../7_steps/">
+                        <a rel="next" href="../d_tree/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="prev" >
+                    <li >
+                        <a rel="prev" href="../d_trie/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -159,37 +159,62 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#graph-theory">Graph Theory</a></li>
+        <li class="main active"><a href="#heaps">Heaps</a></li>
         
-            <li><a href="#shortest-path-problem">Shortest Path Problem</a></li>
+            <li><a href="#max-heap">Max Heap</a></li>
+        
+            <li><a href="#min-heap">Min Heap</a></li>
+        
+    
+        <li class="main "><a href="#applications">Applications</a></li>
+        
+    
+        <li class="main "><a href="#challenges">Challenges</a></li>
+        
+    
+        <li class="main "><a href="#references">References</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="graph-theory">Graph Theory</h1>
-<h2 id="shortest-path-problem">Shortest Path Problem</h2>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Shortest_path_with_direct_weights.svg" width="300px"></img></p>
-<p><code>Shortest path (A, C, E, D, F) between vertices A and F in the weighted directed graph</code></p>
-<p>In graph theory, the shortest path problem is the problem of finding a path between two vertices (or nodes) in a graph such that the sum of the weights of its constituent edges is minimized.</p>
-<table>
-<tbody>
-<tr>
-<td>a</td>
-<td>b</td>
-</tr>
-<tr>
-<td>c</td>
-<td>d</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="single-source-shortest-path-problem">Single-source shortest path problem</h3>
-<h4 id="dijkstras-algorithm">Dijkstra's algorithm</h4>
-<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif" /></p>
-<p>Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.</p></div>
+<h2 id="heaps">Heaps</h2>
+<p>A heap is just what it sounds like —  a pile of values organized into a binary tree-like structure adhering to some ordering property. When we add elements to a heap, we fill this tree-like structure from left to right, level by level. This makes heaps really easy to implement in an array, where the value for some index ii's left child is located at index <script type="math/tex"> 2i+1 </script> and the value for its right child is at index <script type="math/tex"> 2i+2 </script> (using zero-indexing). Here are the two most fundamental heap operations:</p>
+<ul>
+<li><em>add</em>: Insert an element into the heap. You may also see this referred to as push.</li>
+<li><em>poll</em>: Retrieve and remove the root element of the heap. You may also see this referred to as pop.</li>
+</ul>
+<h3 id="max-heap">Max Heap</h3>
+<p>This type heap orders the maximum value at the root.</p>
+<p>When we <em>add</em> the values <script type="math/tex"> 1→2→3→4 </script> to a Max heap, it looks like this:</p>
+<p><img alt="" src="https://s3.amazonaws.com/hr-challenge-images/24110/1474683435-0fd86b37ef-minheap-add.png" /></p>
+<p>When we <em>poll</em> the same Max heap until it's empty, it looks like this:</p>
+<p><img alt="" src="https://s3.amazonaws.com/hr-challenge-images/24110/1474682804-9cef903049-maxheap-poll.png" /></p>
+<h3 id="min-heap">Min Heap</h3>
+<p>This type of heap orders the minimum value at the root.</p>
+<p>When we <em>add</em> the values <script type="math/tex"> 1→2→3→4 </script> to a Min heap, it looks like this:</p>
+<p><img alt="" src="https://s3.amazonaws.com/hr-challenge-images/24110/1474683435-0fd86b37ef-minheap-add.png" /> </p>
+<p>When we <em>poll</em> the same Min heap until it's empty, it looks like this:</p>
+<p><img alt="" src="https://s3.amazonaws.com/hr-challenge-images/24110/1474683444-23a807baaa-minheap-poll.png" /> </p>
+<h2 id="applications">Applications</h2>
+<p>The heap data structure has many applications.</p>
+<ul>
+<li><em>Heapsort</em>: One of the best sorting methods being in-place and with no quadratic worst-case scenarios.</li>
+<li><em>Selection algorithms</em>: A heap allows access to the min or max element in constant time, and other selections (such as median or kth-element) can be done in sub-linear time on data that is in a heap.</li>
+<li><em>Graph algorithms</em>: By using heaps as internal traversal data structures, run time will be reduced by polynomial order. Examples of such problems are Prim's minimal-spanning-tree algorithm and Dijkstra's shortest-path algorithm.</li>
+<li><em>Priority Queue</em>: A priority queue is an abstract concept like "a list" or "a map"; just as a list can be implemented with a linked list or an array, a priority queue can be implemented with a heap or a variety of other methods.</li>
+<li><em>Order statistics</em>: The Heap data structure can be used to efficiently find the kth smallest (or largest) element in an array.</li>
+</ul>
+<h2 id="challenges">Challenges</h2>
+<ul>
+<li><a href="https://www.hackerrank.com/challenges/ctci-find-the-running-median">"Heaps: Find the Running Median". <em>hackerrank</em>. 2016</a></li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.hackerrank.com/topics/heaps">"Heaps". <em>AllisonP, hackerrank</em>. 2016</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Heap_(data_structure)#Applications">"Heap (data structure)". <em>wikipedia</em>. 2016</a></li>
+</ul></div>
             
         </div>
 

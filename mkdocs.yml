@@ -7,10 +7,12 @@ pages:
   - "Arrays": 'd_array.md'
   - "Strings": 'd_string.md'
   - "Stacks & Queues": 'd_stack_queue.md'
+  - "Trees": 'd_tree.md'
+  - "Heaps": 'd_heap.md'
+  - "Tries": 'd_trie.md'
 - "Algorithms":
   - "7 Steps to Solve Algorithm Problems": "7_steps.md"
   - "Graph Theory": 'a_graph_theory.md'
-
 markdown_extensions:
     - footnotes
 
@@ -24,3 +26,7 @@ extra_javascript:
   - js/book.js
   - js/course.js
   - js/video.js
+  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+markdown_extensions:
+    - mdx_math

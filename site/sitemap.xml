@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-10-08</lastmod>
+     <lastmod>2016-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,19 +13,37 @@
         
     <url>
      <loc>None/d_array/</loc>
-     <lastmod>2016-10-08</lastmod>
+     <lastmod>2016-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/d_string/</loc>
-     <lastmod>2016-10-08</lastmod>
+     <lastmod>2016-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/d_stack_queue/</loc>
-     <lastmod>2016-10-08</lastmod>
+     <lastmod>2016-10-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/d_tree/</loc>
+     <lastmod>2016-10-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/d_heap/</loc>
+     <lastmod>2016-10-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/d_trie/</loc>
+     <lastmod>2016-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,13 +53,13 @@
         
     <url>
      <loc>None/7_steps/</loc>
-     <lastmod>2016-10-08</lastmod>
+     <lastmod>2016-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/a_graph_theory/</loc>
-     <lastmod>2016-10-08</lastmod>
+     <lastmod>2016-10-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

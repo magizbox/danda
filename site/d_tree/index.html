@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Brother Rain">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+	<title>Trees - D&A</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../css/book.css" rel="stylesheet">
+        <link href="../css/course.css" rel="stylesheet">
+        <link href="../css/video.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">D&A</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Structures <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../d_array/">Arrays</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../d_string/">Strings</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../d_stack_queue/">Stacks & Queues</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Trees</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../d_heap/">Heaps</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../d_trie/">Tries</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Algorithms <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../7_steps/">7 Steps to Solve Algorithm Problems</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../a_graph_theory/">Graph Theory</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../d_stack_queue/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../d_heap/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#tree">Tree</a></li>
+        
+    
+        <li class="main "><a href="#binary-tree">Binary Tree</a></li>
+        
+    
+        <li class="main "><a href="#binary-search-tree">Binary Search Tree</a></li>
+        
+            <li><a href="#advantages-and-drawbacks">Advantages and Drawbacks</a></li>
+        
+    
+        <li class="main "><a href="#challenges">Challenges</a></li>
+        
+    
+        <li class="main "><a href="#references">References</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="tree">Tree</h2>
+<h2 id="binary-tree">Binary Tree</h2>
+<p>Fundamentally, a binary tree is composed of nodes connected by edges (with further restrictions discussed below). Some binary tree, <script type="math/tex">t</script>, is either empty or consists of a single root element with two distinct binary tree child elements known as the <em>left subtree</em> and the <em>right subtree</em> of <script type="math/tex">t</script>. As the name <em>binary</em> suggests, a node in a binary tree has a <em>maximum</em> of <script type="math/tex">2</script> children.</p>
+<p>The following diagrams depict two different binary trees: </p>
+<p><img alt="" src="https://s3.amazonaws.com/hr-challenge-images/17175/1459921033-f6c1c3af16-BinaryTrees.png" /> </p>
+<p>Here are the basic facts and terms to know about binary trees:</p>
+<ol>
+<li>The convention for binary tree diagrams is that the <em>root</em> is at the top, and the subtrees branch down from it.</li>
+<li>A node's <em>left</em> and <em>right</em> subtrees are referred to as <em>children</em>, and that node can be referred to as the <em>parent</em> of those subtrees.</li>
+<li>A non-root node with no children is called a <em>leaf</em>.</li>
+<li>Some node <script type="math/tex">a</script> is an ancestor of some node <script type="math/tex">b</script> if <script type="math/tex">b</script> is located in a left or right subtree whose root node is <script type="math/tex">a</script>. This means that the root node of binary tree <script type="math/tex">t</script> is the ancestor of all other nodes in the tree.</li>
+<li>If some node <script type="math/tex">a</script> is an ancestor of some node <script type="math/tex">b</script>, then the path from <script type="math/tex">a</script> to <script type="math/tex">b</script> is the sequence of nodes starting with <script type="math/tex">a</script>, moving down the ancestral chain of children, and ending with bb.</li>
+<li>The depth (or level) of some node <script type="math/tex">a</script> is its distance (i.e., number of edges) from the tree's root node.</li>
+<li>Simply put, the height of a tree is the number of edges between the root node and its furthest leaf.<ul>
+<li>More technically put, it's <script type="math/tex">1+max(height(leftSubtree), height(rightSubtree))</script> ) (i.e., one more than the maximum of the heights of its left and right subtrees).</li>
+<li>Any node has a height of <script type="math/tex">1</script>, and the height of an empty subtree is <script type="math/tex"> - 1 </script>.</li>
+<li>Because the height of each node is <script type="math/tex">1 + </script> the maximum height of its subtrees and an empty subtree's height is <script type="math/tex"> - 1 </script>, the height of a single-element tree or leaf node is <script type="math/tex">0</script>.</li>
+</ul>
+</li>
+</ol>
+<p>Let's apply some of the terms we learned above to the binary tree on the right:</p>
+<ol>
+<li>
+<p>The root node is <script type="math/tex">A</script>.</p>
+</li>
+<li>
+<p>The respective left and right children of <script type="math/tex">A</script> are <script type="math/tex">B</script> and <script type="math/tex">E</script>. The left child of <script type="math/tex">B</script> is <script type="math/tex">C</script>. The respective left and right children of <script type="math/tex">E</script> are <script type="math/tex">F</script> and <script type="math/tex">D</script>.</p>
+</li>
+<li>
+<p>Nodes <script type="math/tex">C</script>, <script type="math/tex">F</script>, and <script type="math/tex">D</script> are leaves (i.e., each node is a leaf).</p>
+</li>
+<li>
+<p>The root is the ancestor of all other nodes, <script type="math/tex">B</script> is an ancestor of <script type="math/tex">C</script>, and <script type="math/tex">E</script> is an ancestor of <script type="math/tex">F</script> and <script type="math/tex">D</script>.</p>
+</li>
+<li>
+<p>The path between <script type="math/tex">A</script> and <script type="math/tex">C</script> is <script type="math/tex"> A \rightarrow B \rightarrow C </script>. The path between <script type="math/tex">A</script> and <script type="math/tex">F</script> is <script type="math/tex"> A \rightarrow E \rightarrow F </script>. The path between <script type="math/tex">A</script> and <script type="math/tex">D</script> is A <script type="math/tex"> \rightarrow E \rightarrow D </script>.</p>
+</li>
+<li>
+<p>The depth of root node <script type="math/tex">A</script> is <script type="math/tex">0</script>. The depth of nodes <script type="math/tex">B</script> and <script type="math/tex">E</script> is <script type="math/tex">1</script>. The depth of nodes <script type="math/tex">C</script>, <script type="math/tex">F</script>, and <script type="math/tex">D</script>, is <script type="math/tex">2</script>.</p>
+</li>
+<li>
+<p>The height of the tree, <script type="math/tex"> height(t) </script>, is <script type="math/tex">2</script>. We calculate this recursively as <script type="math/tex"> height(t)=1+(max(height(root.leftChild),height(root.rightChild))) </script>.</p>
+</li>
+</ol>
+<p>Because this is long and complicated when expanded, we'll break it down using an image of a slightly simpler version of <script type="math/tex">t</script> whose height is still <script type="math/tex">2</script>: </p>
+<p><img alt="" src="https://s3.amazonaws.com/hr-challenge-images/17175/1459925609-5a2f70951f-BTHeight.png" /> </p>
+<h2 id="binary-search-tree">Binary Search Tree</h2>
+<p>A Binary Search Tree (BST), <script type="math/tex">t</script>, is a binary tree that is either empty or satisfies the following three conditions:</p>
+<ol>
+<li>
+<p>Each element in the left subtree of <script type="math/tex">t</script> is less than or equal to the root element of <script type="math/tex">t</script> (i.e., <script type="math/tex"> max(leftTree(t).value) \leq t.valuemax(leftTree(t).value) \leq t.value </script>).</p>
+</li>
+<li>
+<p>Each element in the right subtree of <script type="math/tex">t</script> is greater than the root element of <script type="math/tex">t</script> (i.e., <script type="math/tex"> max(rightTree(t).value) \ge t.valuemax(rightTree(t).value) \ge t.value</script>).</p>
+</li>
+<li>
+<p>Both <script type="math/tex"> leftTree(t) </script> and <script type="math/tex"> rightTree(t) </script> are BSTs.</p>
+</li>
+</ol>
+<p>You can essentially think of it as a regular binary tree where for each node parent having a <script type="math/tex"> leftChild </script> and <script type="math/tex"> rightChild </script>, <script type="math/tex"> leftChild.value \leq parent.value \le rightChild.value </script>. In the first diagram at the top of this article, the binary tree of integers on the left side is a binary search tree.</p>
+<h3 id="advantages-and-drawbacks">Advantages and Drawbacks</h3>
+<ul>
+<li><em>Searching for elements is very fast.</em></li>
+</ul>
+<p>We know that each node has a maximum of two children and we know that the <script type="math/tex"> \leq </script> items are always in the left subtree and the <script type="math/tex"> > </script> items are always in the right subtree. To search for an element, we simply need to compare the value we want against the value stored in the root node of the current subtree and work our way down the appropriate child subtrees until we either find the value we're looking for or we hit <em>null</em> (i.e., an empty subtree) which indicates the item is not in the BST. Inserting or searching for a node in a balanced tree is <script type="math/tex"> O(\log n) </script> because you're discarding half of the possible values each time you go left or right.</p>
+<ul>
+<li><em>It can easily become unbalanced.</em></li>
+</ul>
+<p>Depending on the insertion order, the tree can very easily become unbalanced (which makes for longer search times). For example, if we create a new tree where the sequence of inserted nodes is <script type="math/tex"> 2 \rightarrow 1 \rightarrow 3 \rightarrow 4 \rightarrow 5 \rightarrow 6 </script>, we end up with the following unbalanced tree: </p>
+<p><img alt="" src="https://s3.amazonaws.com/hr-challenge-images/24100/1473289501-fe15119ffb-UnbalancedBST.png" /></p>
+<p>Observe that the root's left subtree only has one node, whereas the root's right subtree has four nodes. For this reason, inserting or searching for a node in an unbalanced tree is <script type="math/tex"> O(n) </script>.</p>
+<h2 id="challenges">Challenges</h2>
+<ul>
+<li><a href="https://www.hackerrank.com/challenges/ctci-is-binary-search-tree">"Trees: Is This a Binary Search Tree?". <em>hackerrank</em>. 2016</a></li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.hackerrank.com/topics/binary-trees-and-binary-search-trees">"Binary Trees and Binary Search Trees". <em>AllisonP, hackerrank</em>. 2016</a></li>
+</ul></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../js/underscore.js"></script>
+        <script src="../js/gspreadsheet.js"></script>
+        <script src="../js/book.js"></script>
+        <script src="../js/course.js"></script>
+        <script src="../js/video.js"></script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
