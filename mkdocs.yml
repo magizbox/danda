@@ -1,5 +1,6 @@
 site_name: D&A
 site_author: "Brother Rain"
+google_analytics: ['UA-68978617-1', 'magizbox.com']
 
 pages:
 - "Home": 'index.md'
