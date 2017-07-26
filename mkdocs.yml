@@ -19,7 +19,9 @@ pages:
   - "Binary Search Trees": "ds_binary_search_tree.md"
   - "Heaps": 'ds_heap.md'
 - "Graphs":
-  - "Decomposition of Graphs": "index.md"
+  - "Graph Data Structure": "graph_data_structure.md"
+  - "DFS: Depth First Traversal": "graph_dfs.md"
+  - "BFS: Breadth First Traversal": "graph_bfs.md"
   - "Paths in Graphs": "index.md"
   - "Minimum Spanning Trees": "index.md"
   - "Advanced Shortest Paths Project": "index.md"

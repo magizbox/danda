@@ -8,7 +8,7 @@
         <meta name="author" content="Brother Rain">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Greedy Algorithms - D&A</title>
+        <title>Graph Data Structure - D&A</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -64,7 +64,7 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Started <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -72,8 +72,8 @@
     <a href="../gs_introduction/">Introduction</a>
 </li>
                             
-<li class="active">
-    <a href="./">Greedy Algorithms</a>
+<li >
+    <a href="../gs_greedy_algorithms/">Greedy Algorithms</a>
 </li>
                             
 <li >
@@ -122,12 +122,12 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Graphs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li >
-    <a href="../graph_data_structure/">Graph Data Structure</a>
+<li class="active">
+    <a href="./">Graph Data Structure</a>
 </li>
                             
 <li >
@@ -231,12 +231,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../gs_introduction/">
+                        <a rel="next" href="../ds_heap/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../gs_divide_and_conquer/">
+                        <a rel="prev" href="../graph_dfs/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -248,48 +248,46 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#greedy-algorithms">Greedy Algorithms</a></li>
-        <li class="main "><a href="#counting-coins">Counting Coins</a></li>
-        <li class="main "><a href="#examples">Examples</a></li>
+        <li class="main active"><a href="#graph-data-structure">Graph Data Structure</a></li>
+        <li class="main "><a href="#definitions">Definitions</a></li>
+        <li class="main "><a href="#basic-operations">Basic Operations</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="greedy-algorithms">Greedy Algorithms</h1>
-<p>An algorithm is designed to achieve optimum solution for a given problem. In greedy algorithm approach, decisions are made from the given solution domain. As being greedy, the closest solution that seems to provide an optimum solution is chosen.</p>
-<p>Greedy algorithms try to find a localized optimum solution, which may eventually lead to globally optimized solutions. However, generally greedy algorithms do not provide globally optimized solutions.</p>
-<h1 id="counting-coins">Counting Coins</h1>
-<p>This problem is to count to a desired value by choosing the least possible coins and the greedy approach forces the algorithm to pick the largest possible coin. If we are provided coins of 1, 2, 5 and 10 and we are asked to count 18 then the greedy procedure will be</p>
-<ol>
-<li>
-<p>Select one 10 coin, the remaining count is 8</p>
-</li>
-<li>
-<p>Then select one 5 coin, the remaining count is 3</p>
-</li>
-<li>
-<p>Then select one 2 coin, the remaining count is 1</p>
-</li>
-<li>
-<p>And finally, the selection of one 1 coins solves the problem</p>
-</li>
-</ol>
-<p>Though, it seems to be working fine, for this count we need to pick only 4 coins. But if we slightly change the problem then the same approach may not be able to produce the same optimum result.</p>
-<p>For the currency system, where we have coins of 1, 7, 10 value, counting coins for value 18 will be absolutely optimum but for count like 15, it may use more coins than necessary. For example, the greedy approach will use 10 + 1 + 1 + 1 + 1 + 1, total 6 coins. Whereas the same problem could be solved by using only 3 coins (7 + 7 + 1)</p>
-<p>Hence, we may conclude that the greedy approach picks an immediate optimized solution and may fail where global optimization is a major concern.</p>
-<h1 id="examples">Examples</h1>
-<p>Most networking algorithms use the greedy approach. Here is a list of few of them</p>
+<h1 id="graph-data-structure">Graph Data Structure</h1>
+<p>A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edges.</p>
+<p>Formally, a graph is a pair of sets <script type="math/tex">(V, E)</script>, where <script type="math/tex">V</script> is the set of vertices and <script type="math/tex">E</script> is the set of edges, connecting the pairs of vertices. Take a look at the following graph</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/graph_basics.jpg" /></p>
+<p>In the above graph,</p>
 <ul>
-<li>Travelling Salesman Problem</li>
-<li>Prim's Minimal Spanning Tree Algorithm</li>
-<li>Kruskal's Minimal Spanning Tree Algorithm</li>
-<li>Dijkstra's Minimal Spanning Tree Algorithm</li>
-<li>Graph - Map Coloring</li>
-<li>Graph - Vertex Cover</li>
-<li>Knapsack Problem</li>
-<li>Job Scheduling Problem</li>
+<li>
+<p>
+<script type="math/tex">V = {a, b, c, d, e}</script>
+</p>
+</li>
+<li>
+<p>
+<script type="math/tex">E = {ab, ac, bd, cd, de}</script>
+</p>
+</li>
 </ul>
-<p>There are lots of similar problems that uses the greedy approach to find an optimum solution.</p></div>
+<h1 id="definitions">Definitions</h1>
+<p>Mathematical graphs can be represented in data structure. We can represent a graph using an array of vertices and a two-dimensional array of edges. Before we proceed further, let's familiarize ourselves with some important terms</p>
+<ul>
+<li><strong>Vertex</strong> − Each node of the graph is represented as a vertex. In the following example, the labeled circle represents vertices. Thus, A to G are vertices. We can represent them using an array as shown in the following image. Here A can be identified by index 0. B can be identified using index 1 and so on.</li>
+<li><strong>Edge</strong> − Edge represents a path between two vertices or a line between two vertices. In the following example, the lines from A to B, B to C, and so on represents edges. We can use a two-dimensional array to represent an array as shown in the following image. Here AB can be represented as 1 at row 0, column 1, BC as 1 at row 1, column 2 and so on, keeping other combinations as 0.</li>
+<li><strong>Adjacency</strong> − Two node or vertices are adjacent if they are connected to each other through an edge. In the following example, B is adjacent to A, C is adjacent to B, and so on.</li>
+<li><strong>Path</strong> − Path represents a sequence of edges between the two vertices. In the following example, ABCD represents a path from A to D.</li>
+</ul>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/graph.jpg" /></p>
+<h1 id="basic-operations">Basic Operations</h1>
+<p>Following are basic primary operations of a Graph −</p>
+<ul>
+<li><strong>Add Vertex</strong> − Adds a vertex to the graph.</li>
+<li><strong>Add Edge</strong> − Adds an edge between the two vertices of the graph.</li>
+<li><strong>Display Vertex</strong> − Displays a vertex of the graph.</li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">

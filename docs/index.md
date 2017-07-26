@@ -30,10 +30,9 @@ This site is intended to host a variety of resources and pointers to information
 
 ## Algorithms on Graphs
 
-* [Decomposition of Graphs](#)
-* [Paths in Graphs](#)
-* [Minimum Spanning Trees](#)
-* [Advanced Shortest Paths Project](#)
+* [Graph Data Structure](graph_data_structure.md)
+* [DFS: Depth First Traversal](graph_dfs.md)
+* [BFS: Breadth First Traversal](graph_dfs.md)
 
 ## Algorithms on Strings
 

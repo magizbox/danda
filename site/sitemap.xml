@@ -92,7 +92,19 @@
     
         
     <url>
-     <loc>/</loc>
+     <loc>/graph_data_structure/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/graph_dfs/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/graph_bfs/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
