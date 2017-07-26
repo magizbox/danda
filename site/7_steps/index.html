@@ -69,19 +69,19 @@
                         <ul class="dropdown-menu">
                             
 <li >
-    <a href="..">Introduction</a>
+    <a href="../gs_introduction/">Introduction</a>
 </li>
                             
 <li >
-    <a href="..">Greedy Algorithms</a>
+    <a href="../gs_greedy_algorithms/">Greedy Algorithms</a>
 </li>
                             
 <li >
-    <a href="..">Divide-and-Conquer</a>
+    <a href="../gs_divide_and_conquer/">Divide-and-Conquer</a>
 </li>
                             
 <li >
-    <a href="..">Dynamic Programming</a>
+    <a href="../gs_dynamic_programming/">Dynamic Programming</a>
 </li>
                             
 <li class="active">
@@ -94,57 +94,31 @@
                         <ul class="dropdown-menu">
                             
 <li >
-    <a href="..">Basic Data Structures</a>
+    <a href="../ds_array/">Arrays</a>
 </li>
                             
 <li >
-    <a href="..">Dynamic Arrays and Amortized Analysis</a>
+    <a href="../ds_linked_list/">Linked List</a>
 </li>
                             
 <li >
-    <a href="..">Priority Queues and Disjoint Sets</a>
+    <a href="../ds_stack_queue/">Stacks & Queues</a>
 </li>
                             
 <li >
-    <a href="..">Hash Tables</a>
+    <a href="../ds_hash_table/">Hash Tables</a>
 </li>
                             
 <li >
-    <a href="..">Binary Search Trees</a>
+    <a href="../ds_tree/">Trees</a>
 </li>
                             
 <li >
-    <a href="../d_array/">Arrays</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Strings</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../d_string/">Overview</a>
-</li>
-            
-<li >
-    <a href="../d_string_substring_search/">Substring Search</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="../d_stack_queue/">Stacks & Queues</a>
+    <a href="../ds_binary_search_tree/">Binary Search Trees</a>
 </li>
                             
 <li >
-    <a href="../d_tree/">Trees</a>
-</li>
-                            
-<li >
-    <a href="../d_heap/">Heaps</a>
-</li>
-                            
-<li >
-    <a href="../d_trie/">Tries</a>
+    <a href="../ds_heap/">Heaps</a>
 </li>
                         </ul>
                     </li>
@@ -183,6 +157,10 @@
                             
 <li >
     <a href="..">Burrows-Wheeler Transform and Suffix Arrays</a>
+</li>
+                            
+<li >
+    <a href="../d_trie/">Tries</a>
 </li>
                             
 <li >
@@ -245,12 +223,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="..">
+                        <a rel="next" href="../gs_dynamic_programming/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="..">
+                        <a rel="prev" href="../ds_array/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -270,52 +248,97 @@
             <li><a href="#step-5-walk-through-your-algorithms">Step 5: Walk through your algorithms</a></li>
             <li><a href="#step-6-code">Step 6: Code</a></li>
             <li><a href="#step-7-test">Step 7: Test</a></li>
-        <li class="main "><a href="#suggested-reading">Suggested Reading</a></li>
+            <li><a href="#suggested-reading">Suggested Reading</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="7-steps-to-solve-algorithm-problems">7 Steps to Solve Algorithm Problems</h2>
+<h1 id="7-steps-to-solve-algorithm-problems">7 Steps to Solve Algorithm Problems</h1>
 <p>Today, I viewed the video "7 Steps to Solve Algorithm Problems" by Gayle Laakmann McDowell - the author of <a href="https://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&amp;tag=hrctci-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0984782850&amp;linkId=4b0bb75d87b94d4378dd3bd245a7284b">Cracking the Coding Interview</a> book. In this video, Gayle describe her method for solve algorithms problems which consists 7 steps: listen carefully, example, brute force, optimize, walk through your algorithms, code and test. In this article, I will summary these steps base on what I learned from this video.</p>
-<h3 id="step-1-listen-carefully">Step 1: Listen carefully</h3>
-<p>The first step you will take is listen (read) your problem carefully.</p>
-<h3 id="step-2-example">Step 2: Example</h3>
-<p>Example (make example big, no special cases)</p>
-<h3 id="step-3-brute-force">Step 3: Brute force</h3>
-<p>(better to have a brute force than nothing at all.</p>
-<p>Because</p>
-<ul>
-<li>check that you understand the problem, shows you're at least good enough to get that</li>
-<li>it's good place to optimize from</li>
-</ul>
-<h3 id="step-4-optimize">Step 4: Optimize</h3>
-<h3 id="step-5-walk-through-your-algorithms">Step 5: Walk through your algorithms</h3>
-<p>know exactly what you're going to do before coding</p>
+<h2 id="step-1-listen-carefully">Step 1: Listen carefully</h2>
+<blockquote>
+<p>Every single detail in a question is necessary to solve it.</p>
+</blockquote>
+<p>The first step is to listen carefully to the problem. So, generally speaking every single detail in a question is necessary to solve that problem - either to solve it all or to solve it optimally. So if there's some detail you haven't used in the question in your algorithm so far think about how you can put that to use because it might be necessary to solve the problem optimally.</p>
+<p>Let me give you an example.</p>
+<pre><code class="text">You have two arrays, sorted and distinct
+How did you find the number of elements in common between the two arrays?
+</code></pre>
+
+<p>A lot of people solve this problem and they'll get kind of stuck for awhile and what they'll do is they'll be solving the problem and they'll know the arrays are sorted but they haven't actually used the fact that it's sorted.</p>
+<p>This <em>sorting</em> detail - it's not necessary just to find an algorithm but it is necessary to solve the problem optimally.</p>
+<p>So remember every single detail in the problem and make sure you use it.</p>
+<h2 id="step-2-example">Step 2: Example</h2>
+<blockquote>
+<p>Make example big, no special cases</p>
+</blockquote>
+<p>The second piece is to come up with a good example, so the last problem that I gave two arrays <em>sorted</em> and <em>distinct</em> compute the number of elements in common, most people's examples look like this.</p>
+<pre><code># too small and special case
+A: 1, 5, 15, 20
+B: 2, 5, 13, 30
+</code></pre>
+
+<p>Yes technically if it's a problem but it's not very useful.</p>
+<p>As soon as you glance at this example you notice that there's only one element common and you know exactly what it is and it's obvious because this example is so small and it's actually kind of a special case.</p>
+<p>A better example is something like this</p>
+<pre><code># larger and avoid special cases
+A: 1, 5, 15, 20, 30, 37
+B: 2, 5, 13, 30, 32, 35, 37, 42
+</code></pre>
+
+<p>It's much larger and you've avoided some special cases. One of the easiest ways of improving your performance on algorithm questions is just make your examples <em>larger</em> and really <em>avoid special cases</em>.</p>
+<h2 id="step-3-brute-force">Step 3: Brute force</h2>
+<blockquote>
+<p>Better to have a brute force than nothing at all</p>
+</blockquote>
+<p>The third step is to come up with a brute force algorithm. Now I'm not saying you need to go out of your way to come up with something slow, I'm really just saying, hey if the first thing you have is only something really really slow and terrible that's okay. It is so much better to start off with something slow then to start off with nothing at all. So it's fine if your first algorithm is slow and terrible whatever. However, and this is very very very important, I'm not saying to code the brute force. I'm saying just state your brute force algorithm, state its runtime, and then immediately go to optimizing.</p>
+<p>A good chunk of the time on algorithm interview question will often be spent on optimizations. So that's step 4 and spend some good time on it.</p>
+<h2 id="step-4-optimize">Step 4: Optimize</h2>
+<p>The fourth step is optimize and spend some good time on it.</p>
+<h2 id="step-5-walk-through-your-algorithms">Step 5: Walk through your algorithms</h2>
+<blockquote>
+<p>Know exactly what you're going to do before coding</p>
+</blockquote>
 <ul>
 <li>what variables &amp; data structures?</li>
 <li>how, why, why do they change?</li>
 <li>what is the structure of your code</li>
 </ul>
-<h3 id="step-6-code">Step 6: Code</h3>
-<p>Whiteboard: write straight, use space wisely</p>
-<p>Whiteboard or computer</p>
+<p>Then once you have an optimal algorithm or you're ready to start coding take a step back and just make sure you <em>know exactly</em> what you're going to do in your code.</p>
+<p>So many people code prematurely when they aren't really really comfortable with what they're about to do and it ends in disaster. An eighty percent understanding of what you're about to write is really not enough for a whiteboard especially. So take a moment and walk through your algorithm and make sure you know exactly what you're about to do.</p>
+<h2 id="step-6-code">Step 6: Code</h2>
+<blockquote>
+<p>Use space wisely, coding style matters, modularize</p>
+</blockquote>
+<p>Step 6 is to start coding and I'm gonna go into this in a bit of detail. So a couple things to keep in mind particularly when you're coding on a whiteboard. The first couple tips are kind of whiteboard specific but try to write your lines straight. I'm not gonna be judging you on your handwriting and things like that but when people start writing their lines and sharp angles they start to lose track over whether this if statement under this for loop or not. The second thing is use your board space wisely. If you don't need stuff up on the board anymore just erase it. Try to write in this top left corner etc.</p>
+<p>Basically give yourself as much space as you possibly can to write your code. If you do run out of space though, it's ok to use arrows, that's fine, I'm really not gonna be judging you on this kind of stuff. So more important things.</p>
+<p><strong>Coding style matters</strong> (<em>consistent braces</em>, <em>consistent variable naming</em>, <em>consistence spaces</em>, <em>descriptive variables</em>)</p>
+<p>Coding style matters even on a whiteboard but on a computer as well, so that means things like braces, naming conventions, or using camel case or underscores, things like that. Those kind of style things absolutely matter. I'm not that concerned over which style you pick, I don't care if you write braces on the same line or the next line but I do care a lot that you have a style and you stick to it. So be consistent in your style. When it comes to variable names, yeah I know it's an annoying to write long variable names on a whiteboard but descriptive variable names are important to good style. So one compromise here is write the good descriptive variable name first and then just ask your interviewer, hey is it okay if I abbreviate this the next time. So that'll be a nice little compromise - you'd show that you care about good variable names but you also don't waste a lot of time.</p>
+<p><strong>Modularize</strong> (<em>before. not after</em>)</p>
+<p>Last thing I want to talk about is modularization. Modularize your code up front and just any little conceptual chunks of code, push that off to another function. So suppose you have three steps in your algorithm - process the first string, process the second string,  and then compare the results. Don't start writing these for loops that walk through each string in the very beginning. Instead write this overall function that wraps these three steps. So step one, step two, step three, and then start drilling in and going into all the details there. Remember any conceptual chunks of code push those off to other functions, don't write them in line. </p>
+<h2 id="step-7-test">Step 7: Test</h2>
+<blockquote>
+<p>Analyse: think about each line, double check things that look weired/risky (for-loop that decrement, math) </p>
+<p>Use test cases (smaller test-cases first (faster to run, you will problably be more through, edge cases, big test cases)</p>
+</blockquote>
+<p>Then once you're done with the coding you have to start testing your code. One of the mistakes a lot of people do here is they take their big example from step 2 and throw that in as a test case. The problem with that is it's very large so it will take you a long time to run through but also you just used that to develop your code, so if here's an oversight there, the problem will probably repeat itself here. </p>
+<p>What's a better step to do, what's a better process to do, is just walk through your code line by line and just think about each line up front not with the test case but just consider, is it really doing the right thing?</p>
+<p>Double check anything that looks weird, so for loops that decrement instead of increment and any math at all is a really common place for errors. Just think, look at your code analytically and think what are the most likely places for errors to be and double-check those.</p>
+<p><strong>Start with small rather than big</strong></p>
+<p>Then once you start with actual test cases start with small test cases rather than big ones. Small test cases work pretty much as effectively as big test cases but they are so much faster to run through, and in fact because they're faster people tend to be much more thorough so you're much more likely to actually find bugs with small test cases than big test cases. So start with small test cases then go in to edge cases after that and then if you have time maybe throw in some big test cases. A couple last techniques with testing. The first one is make sure that when you're testing you're really thinking about what you're doing. A lot of people when they're testing they're just walking through their code almost like they're a bot, and they only look to see if things made sense at the very end when they look at their output. It's much better to really think as you're testing, this way you find the bug as soon as it happens rather than six lines later at the very bottom.</p>
+<p><strong>Test your code not your algorithm</strong></p>
+<p>The second thing is when you're testing make sure that you're actually testing your code and not your algorithm. An amazing number of people will just take their example and like just walk through it again as though they're just walking through their algorithm but they're never even looking at their code, they're not looking at the exact calculations their code actually did. So make sure that you're really testing your code.</p>
+<p><strong>Find bugs</strong></p>
+<p>Then the last thing is when you find in a bug, don't panic. Just really think about what caused the bug. A lot of times people will panic and just try to make the first fix that fixes it for that output but they haven't really given it some thought and then they're in a much worse position because if you make the wrong fix to your code, the thing that just fixed the output but didn't fix a real bug you've not fixed the actual bug, you've made your code more complex, and you potentially introduced a brand new bug and you're in a much worse position. It's much better to just when you find the bug, it's ok, it's not that big of a deal to have a bug it's very normal just really think through what the actual bug, where the actual plug came from.</p>
+<p><strong>Remember</strong></p>
 <ul>
-<li>
-<p>coding style matters (consistent braces, consistent variable naming, consistence spaces, descriptive variables)</p>
-</li>
-<li>
-<p>modularize (before. not after)</p>
-</li>
+<li>think as you test (don't be a bot)</li>
+<li>test your code, not your algorithm</li>
+<li>think before you fix bugs. Don't panic! (wrong fixes are worse than no fix)</li>
 </ul>
-<h3 id="step-7-test">Step 7: Test</h3>
-<p>Analyse: think about each line, double check things that look weired/risky (for-loop that decrement, math) - Use test cases (smalle test-cases first (faster to run, you will problably be more thoroguht, edge cases, big tes cases)</p>
-<p>REMEMBER:
-<em> think as you test (don't be a bot)
-</em> test your code, not your algorithm
-* think before you fix bugs. Don't panic! (wrong fixes are worse than no fix)</p>
 <h2 id="suggested-reading">Suggested Reading</h2>
 <ul>
-<li>https://www.youtube.com/watch?v=GKgAVjJxh9w&amp;list=PLM0_NsFSjrgC72cExkBI4Iz99SBTzYG-u&amp;index=4</li>
+<li><a href="https://www.youtube.com/watch?v=GKgAVjJxh9w&amp;list=PLM0_NsFSjrgC72cExkBI4Iz99SBTzYG-u&amp;index=4">7 Steps to Solve Algorithm Problems. Gayle Laakmann McDowell</a></li>
 </ul></div>
         </div>
 

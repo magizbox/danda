@@ -5,25 +5,19 @@ google_analytics: ['UA-68978617-1', 'magizbox.com']
 pages:
 - "Home": 'index.md'
 - "Get Started":
-  - "Introduction": "index.md"
-  - "Greedy Algorithms": "index.md"
-  - "Divide-and-Conquer": "index.md"
-  - "Dynamic Programming": "index.md"
+  - "Introduction": "gs_introduction.md"
+  - "Greedy Algorithms": "gs_greedy_algorithms.md"
+  - "Divide-and-Conquer": "gs_divide_and_conquer.md"
+  - "Dynamic Programming": "gs_dynamic_programming.md"
   - "7 Steps to Solve Algorithm Problems": "7_steps.md"
 - "Data Structures":
-  - "Basic Data Structures": "index.md"
-  - "Dynamic Arrays and Amortized Analysis": "index.md"
-  - "Priority Queues and Disjoint Sets": "index.md"
-  - "Hash Tables": "index.md"
-  - "Binary Search Trees": "index.md"
-  - "Arrays": "d_array.md"
-  - "Strings":
-    - "Overview": 'd_string.md'
-    - "Substring Search": 'd_string_substring_search.md'
-  - "Stacks & Queues": 'd_stack_queue.md'
-  - "Trees": 'd_tree.md'
-  - "Heaps": 'd_heap.md'
-  - "Tries": 'd_trie.md'
+  - "Arrays": "ds_array.md"
+  - "Linked List": 'ds_linked_list.md'
+  - "Stacks & Queues": 'ds_stack_queue.md'
+  - "Hash Tables": "ds_hash_table.md"
+  - "Trees": 'ds_tree.md'
+  - "Binary Search Trees": "ds_binary_search_tree.md"
+  - "Heaps": 'ds_heap.md'
 - "Graphs":
   - "Decomposition of Graphs": "index.md"
   - "Paths in Graphs": "index.md"
@@ -33,6 +27,7 @@ pages:
 - "Strings":
   - "Suffix Trees" : "index.md"
   - "Burrows-Wheeler Transform and Suffix Arrays" : "index.md"
+  - "Tries": 'd_trie.md'
   - "Knuth–Morris–Pratt Algorithm" : "index.md"
   - "Constructing Suffix Arrays and Suffix Trees" : "index.md"
 - "NPs":

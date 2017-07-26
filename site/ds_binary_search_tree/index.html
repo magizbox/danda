@@ -8,7 +8,7 @@
         <meta name="author" content="Brother Rain">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Substring Search - D&A</title>
+        <title>Binary Search Trees - D&A</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -69,19 +69,19 @@
                         <ul class="dropdown-menu">
                             
 <li >
-    <a href="..">Introduction</a>
+    <a href="../gs_introduction/">Introduction</a>
 </li>
                             
 <li >
-    <a href="..">Greedy Algorithms</a>
+    <a href="../gs_greedy_algorithms/">Greedy Algorithms</a>
 </li>
                             
 <li >
-    <a href="..">Divide-and-Conquer</a>
+    <a href="../gs_divide_and_conquer/">Divide-and-Conquer</a>
 </li>
                             
 <li >
-    <a href="..">Dynamic Programming</a>
+    <a href="../gs_dynamic_programming/">Dynamic Programming</a>
 </li>
                             
 <li >
@@ -94,57 +94,31 @@
                         <ul class="dropdown-menu">
                             
 <li >
-    <a href="..">Basic Data Structures</a>
+    <a href="../ds_array/">Arrays</a>
 </li>
                             
 <li >
-    <a href="..">Dynamic Arrays and Amortized Analysis</a>
+    <a href="../ds_linked_list/">Linked List</a>
 </li>
                             
 <li >
-    <a href="..">Priority Queues and Disjoint Sets</a>
+    <a href="../ds_stack_queue/">Stacks & Queues</a>
 </li>
                             
 <li >
-    <a href="..">Hash Tables</a>
+    <a href="../ds_hash_table/">Hash Tables</a>
 </li>
                             
 <li >
-    <a href="..">Binary Search Trees</a>
+    <a href="../ds_tree/">Trees</a>
 </li>
                             
-<li >
-    <a href="../d_array/">Arrays</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Strings</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../d_string/">Overview</a>
-</li>
-            
 <li class="active">
-    <a href="./">Substring Search</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="../d_stack_queue/">Stacks & Queues</a>
+    <a href="./">Binary Search Trees</a>
 </li>
                             
 <li >
-    <a href="../d_tree/">Trees</a>
-</li>
-                            
-<li >
-    <a href="../d_heap/">Heaps</a>
-</li>
-                            
-<li >
-    <a href="../d_trie/">Tries</a>
+    <a href="../ds_heap/">Heaps</a>
 </li>
                         </ul>
                     </li>
@@ -183,6 +157,10 @@
                             
 <li >
     <a href="..">Burrows-Wheeler Transform and Suffix Arrays</a>
+</li>
+                            
+<li >
+    <a href="../d_trie/">Tries</a>
 </li>
                             
 <li >
@@ -245,12 +223,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../d_string/">
+                        <a rel="next" href="../ds_tree/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../d_stack_queue/">
+                        <a rel="prev" href="../ds_heap/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -262,14 +240,124 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#substring-search">Substring Search</a></li>
+        <li class="main active"><a href="#binary-search-tree">Binary Search Tree</a></li>
+        <li class="main "><a href="#representation">Representation</a></li>
+        <li class="main "><a href="#basic-operations">Basic Operations</a></li>
+            <li><a href="#node">Node</a></li>
+            <li><a href="#search-operation">Search Operation</a></li>
+            <li><a href="#insert-operation">Insert Operation</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="substring-search">Substring Search</h2>
-<p>A FUNDAMENTAL OPERATION on string is <em>substring search</em>: given a <em>text</em> string of length N and a <em>pattern</em> string of length M, find an occurrence of the pattern within the text. Most algorithms for this problem can easily be extended to find all occurrences of the pattern in the text, to count the number of occurrences of the pattern in the text, or to provide context (substrings of the text surrounding each occurrence of the pattern).</p>
-<p><img alt="" src="../resources/substring.png" /></p></div>
+<h1 id="binary-search-tree">Binary Search Tree</h1>
+<p>A Binary Search Tree (BST) is a tree in which all the nodes follow the below-mentioned properties</p>
+<ul>
+<li>The left sub-tree of a node has a key less than or equal to its parent node's key.</li>
+<li>The right sub-tree of a node has a key greater than to its parent node's key.</li>
+</ul>
+<p>Thus, BST divides all its sub-trees into two segments; the left sub-tree and the right sub-tree and can be defined as</p>
+<pre><code>left_subtree (keys)  ≤  node (key)  ≤  right_subtree (keys)
+</code></pre>
+
+<h1 id="representation">Representation</h1>
+<p>BST is a collection of nodes arranged in a way where they maintain BST properties. Each node has a key and an associated value. While searching, the desired key is compared to the keys in BST and if found, the associated value is retrieved.</p>
+<p>Following is a pictorial representation of BST </p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_tree.jpg" /></p>
+<p>We observe that the root node key (27) has all less-valued keys on the left sub-tree and the higher valued keys on the right sub-tree.</p>
+<h1 id="basic-operations">Basic Operations</h1>
+<p>Following are the basic operations of a tree</p>
+<ul>
+<li><strong>Search</strong> − Searches an element in a tree.</li>
+<li><strong>Insert</strong> − Inserts an element in a tree.</li>
+<li><strong>Pre-order Traversal</strong> − Traverses a tree in a pre-order manner.</li>
+<li><strong>In-order Traversal</strong> − Traverses a tree in an in-order manner.</li>
+<li><strong>Post-order Traversal</strong> − Traverses a tree in a post-order manner.</li>
+</ul>
+<h2 id="node">Node</h2>
+<p>Define a node having some data, references to its left and right child nodes.</p>
+<pre><code>struct node {
+   int data;   
+   struct node *leftChild;
+   struct node *rightChild;
+};
+</code></pre>
+
+<h2 id="search-operation">Search Operation</h2>
+<p>Whenever an element is to be searched, start searching from the root node. Then if the data is less than the key value, search for the element in the left subtree. Otherwise, search for the element in the right subtree. Follow the same algorithm for each node.</p>
+<p><strong>Algorithm</strong></p>
+<pre><code>struct node* search(int data){
+   struct node *current = root;
+   printf(&quot;Visiting elements: &quot;);
+
+   while(current-&gt;data != data){
+
+      if(current != NULL) {
+         printf(&quot;%d &quot;,current-&gt;data);
+
+         //go to left tree
+         if(current-&gt;data &gt; data){
+            current = current-&gt;leftChild;
+         }//else go to right tree
+         else {                
+            current = current-&gt;rightChild;
+         }
+
+         //not found
+         if(current == NULL){
+            return NULL;
+         }
+      }         
+   }
+   return current;
+}
+</code></pre>
+
+<h2 id="insert-operation">Insert Operation</h2>
+<p>Whenever an element is to be inserted, first locate its proper location. Start searching from the root node, then if the data is less than the key value, search for the empty location in the left subtree and insert the data. Otherwise, search for the empty location in the right subtree and insert the data.</p>
+<p><strong>Algorithm</strong></p>
+<pre><code>void insert(int data) {
+   struct node *tempNode = (struct node*) malloc(sizeof(struct node));
+   struct node *current;
+   struct node *parent;
+
+   tempNode-&gt;data = data;
+   tempNode-&gt;leftChild = NULL;
+   tempNode-&gt;rightChild = NULL;
+
+   //if tree is empty
+   if(root == NULL) {
+      root = tempNode;
+   } else {
+      current = root;
+      parent = NULL;
+
+      while(1) {                
+         parent = current;
+
+         //go to left of the tree
+         if(data &lt; parent-&gt;data) {
+            current = current-&gt;leftChild;                
+            //insert to the left
+
+            if(current == NULL) {
+               parent-&gt;leftChild = tempNode;
+               return;
+            }
+         }//go to right of the tree
+         else {
+            current = current-&gt;rightChild;
+
+            //insert to the right
+            if(current == NULL) {
+               parent-&gt;rightChild = tempNode;
+               return;
+            }
+         }
+      }            
+   }
+}        
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">

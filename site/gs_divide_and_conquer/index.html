@@ -8,7 +8,7 @@
         <meta name="author" content="Brother Rain">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Graph Theory - D&A</title>
+        <title>Divide-and-Conquer - D&A</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -64,7 +64,7 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Started <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -76,8 +76,8 @@
     <a href="../gs_greedy_algorithms/">Greedy Algorithms</a>
 </li>
                             
-<li >
-    <a href="../gs_divide_and_conquer/">Divide-and-Conquer</a>
+<li class="active">
+    <a href="./">Divide-and-Conquer</a>
 </li>
                             
 <li >
@@ -122,7 +122,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Graphs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -142,8 +142,8 @@
     <a href="..">Advanced Shortest Paths Project</a>
 </li>
                             
-<li class="active">
-    <a href="./">Graph Theory</a>
+<li >
+    <a href="../a_graph_theory/">Graph Theory</a>
 </li>
                         </ul>
                     </li>
@@ -223,12 +223,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="..">
+                        <a rel="next" href="../gs_greedy_algorithms/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="..">
+                        <a rel="prev" href="../gs_dynamic_programming/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -240,34 +240,35 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#graph-theory">Graph Theory</a></li>
-            <li><a href="#shortest-path-problem">Shortest Path Problem</a></li>
+        <li class="main active"><a href="#divide-and-conquer">Divide and Conquer</a></li>
+        <li class="main "><a href="#dividebreak">Divide/Break</a></li>
+        <li class="main "><a href="#conquersolve">Conquer/Solve</a></li>
+        <li class="main "><a href="#mergecombine">Merge/Combine</a></li>
+        <li class="main "><a href="#examples">Examples</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="graph-theory">Graph Theory</h1>
-<h2 id="shortest-path-problem">Shortest Path Problem</h2>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Shortest_path_with_direct_weights.svg" width="300px"></img></p>
-<p><code>Shortest path (A, C, E, D, F) between vertices A and F in the weighted directed graph</code></p>
-<p>In graph theory, the shortest path problem is the problem of finding a path between two vertices (or nodes) in a graph such that the sum of the weights of its constituent edges is minimized.</p>
-<table>
-<tbody>
-<tr>
-<td>a</td>
-<td>b</td>
-</tr>
-<tr>
-<td>c</td>
-<td>d</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="single-source-shortest-path-problem">Single-source shortest path problem</h3>
-<h4 id="dijkstras-algorithm">Dijkstra's algorithm</h4>
-<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif" /></p>
-<p>Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.</p></div>
+<h1 id="divide-and-conquer">Divide and Conquer</h1>
+<p>In divide and conquer approach, the problem in hand, is divided into smaller sub-problems and then each problem is solved independently. When we keep on dividing the subproblems into even smaller sub-problems, we may eventually reach a stage where no more division is possible. Those "atomic" smallest possible sub-problem (fractions) are solved. The solution of all sub-problems is finally merged in order to obtain the solution of an original problem.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/divide_and_conquer.jpg" /></p>
+<p>Broadly, we can understand <strong>divide-and-conquer</strong> approach in a three-step process.</p>
+<h1 id="dividebreak">Divide/Break</h1>
+<p>This step involves breaking the problem into smaller sub-problems. Sub-problems should represent a part of the original problem. This step generally takes a recursive approach to divide the problem until no sub-problem is further divisible. At this stage, sub-problems become atomic in nature but still represent some part of the actual problem.</p>
+<h1 id="conquersolve">Conquer/Solve</h1>
+<p>This step receives a lot of smaller sub-problems to be solved. Generally, at this level, the problems are considered 'solved' on their own.</p>
+<h1 id="mergecombine">Merge/Combine</h1>
+<p>When the smaller sub-problems are solved, this stage recursively combines them until they formulate a solution of the original problem. This algorithmic approach works recursively and conquer &amp; merge steps works so close that they appear as one.</p>
+<h1 id="examples">Examples</h1>
+<p>The following computer algorithms are based on divide-and-conquer programming approach</p>
+<ul>
+<li>Merge Sort</li>
+<li>Quick Sort</li>
+<li>Binary Search</li>
+<li>Strassen's Matrix Multiplication</li>
+<li>Closest pair (points)</li>
+</ul>
+<p>There are various ways available to solve any computer problem, but the mentioned are a good example of divide and conquer approach.</p></div>
         </div>
 
         <footer class="col-md-12">

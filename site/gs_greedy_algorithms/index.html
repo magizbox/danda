@@ -8,7 +8,7 @@
         <meta name="author" content="Brother Rain">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Graph Theory - D&A</title>
+        <title>Greedy Algorithms - D&A</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -64,7 +64,7 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Started <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -72,8 +72,8 @@
     <a href="../gs_introduction/">Introduction</a>
 </li>
                             
-<li >
-    <a href="../gs_greedy_algorithms/">Greedy Algorithms</a>
+<li class="active">
+    <a href="./">Greedy Algorithms</a>
 </li>
                             
 <li >
@@ -122,7 +122,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Graphs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -142,8 +142,8 @@
     <a href="..">Advanced Shortest Paths Project</a>
 </li>
                             
-<li class="active">
-    <a href="./">Graph Theory</a>
+<li >
+    <a href="../a_graph_theory/">Graph Theory</a>
 </li>
                         </ul>
                     </li>
@@ -223,12 +223,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="..">
+                        <a rel="next" href="../gs_introduction/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="..">
+                        <a rel="prev" href="../gs_divide_and_conquer/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -240,34 +240,48 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#graph-theory">Graph Theory</a></li>
-            <li><a href="#shortest-path-problem">Shortest Path Problem</a></li>
+        <li class="main active"><a href="#greedy-algorithms">Greedy Algorithms</a></li>
+        <li class="main "><a href="#counting-coins">Counting Coins</a></li>
+        <li class="main "><a href="#examples">Examples</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="graph-theory">Graph Theory</h1>
-<h2 id="shortest-path-problem">Shortest Path Problem</h2>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Shortest_path_with_direct_weights.svg" width="300px"></img></p>
-<p><code>Shortest path (A, C, E, D, F) between vertices A and F in the weighted directed graph</code></p>
-<p>In graph theory, the shortest path problem is the problem of finding a path between two vertices (or nodes) in a graph such that the sum of the weights of its constituent edges is minimized.</p>
-<table>
-<tbody>
-<tr>
-<td>a</td>
-<td>b</td>
-</tr>
-<tr>
-<td>c</td>
-<td>d</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="single-source-shortest-path-problem">Single-source shortest path problem</h3>
-<h4 id="dijkstras-algorithm">Dijkstra's algorithm</h4>
-<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif" /></p>
-<p>Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.</p></div>
+<h1 id="greedy-algorithms">Greedy Algorithms</h1>
+<p>An algorithm is designed to achieve optimum solution for a given problem. In greedy algorithm approach, decisions are made from the given solution domain. As being greedy, the closest solution that seems to provide an optimum solution is chosen.</p>
+<p>Greedy algorithms try to find a localized optimum solution, which may eventually lead to globally optimized solutions. However, generally greedy algorithms do not provide globally optimized solutions.</p>
+<h1 id="counting-coins">Counting Coins</h1>
+<p>This problem is to count to a desired value by choosing the least possible coins and the greedy approach forces the algorithm to pick the largest possible coin. If we are provided coins of 1, 2, 5 and 10 and we are asked to count 18 then the greedy procedure will be</p>
+<ol>
+<li>
+<p>Select one 10 coin, the remaining count is 8</p>
+</li>
+<li>
+<p>Then select one 5 coin, the remaining count is 3</p>
+</li>
+<li>
+<p>Then select one 2 coin, the remaining count is 1</p>
+</li>
+<li>
+<p>And finally, the selection of one 1 coins solves the problem</p>
+</li>
+</ol>
+<p>Though, it seems to be working fine, for this count we need to pick only 4 coins. But if we slightly change the problem then the same approach may not be able to produce the same optimum result.</p>
+<p>For the currency system, where we have coins of 1, 7, 10 value, counting coins for value 18 will be absolutely optimum but for count like 15, it may use more coins than necessary. For example, the greedy approach will use 10 + 1 + 1 + 1 + 1 + 1, total 6 coins. Whereas the same problem could be solved by using only 3 coins (7 + 7 + 1)</p>
+<p>Hence, we may conclude that the greedy approach picks an immediate optimized solution and may fail where global optimization is a major concern.</p>
+<h1 id="examples">Examples</h1>
+<p>Most networking algorithms use the greedy approach. Here is a list of few of them</p>
+<ul>
+<li>Travelling Salesman Problem</li>
+<li>Prim's Minimal Spanning Tree Algorithm</li>
+<li>Kruskal's Minimal Spanning Tree Algorithm</li>
+<li>Dijkstra's Minimal Spanning Tree Algorithm</li>
+<li>Graph - Map Coloring</li>
+<li>Graph - Vertex Cover</li>
+<li>Knapsack Problem</li>
+<li>Job Scheduling Problem</li>
+</ul>
+<p>There are lots of similar problems that uses the greedy approach to find an optimum solution.</p></div>
         </div>
 
         <footer class="col-md-12">

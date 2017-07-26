@@ -12,19 +12,21 @@ This site is intended to host a variety of resources and pointers to information
 
 ## Get Started 
 
-* [Introduction](#)
-* [Greedy Algorithms](#)
-* [Divide-and-Conquer](#)
-* [Dynamic Programming](#)
+* [Introduction](gs_introduction.md)
+* [Greedy Algorithms](gs_greedy_algorithms.md)
+* [Divide-and-Conquer](gs_divide_and_conquer.md)
+* [Dynamic Programming](gs_dynamic_programming.md)
 * [7 Steps to Solve Algorithm Problems](7_steps.md)
 
 ## Data Structures
 
-* [Basic Data Structures](#)
-* [Dynamic Arrays and Amortized Analysis](#)
-* [Priority Queues and Disjoint Sets](#)
-* [Hash Tables](#)
-* [Binary Search Trees](#)
+* [Arrays](ds_array.md)
+* [Linked List](ds_linked_list.md)
+* [Stacks & Queues](ds_stack_queue.md)
+* [Trees](ds_tree.md)
+* [Hash Tables](ds_hash_table.md)
+* [Binary Search Trees](ds_binary_search_tree.md)
+* [Heaps](ds_heap.md)
 
 ## Algorithms on Graphs
 

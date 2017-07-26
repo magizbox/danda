@@ -12,25 +12,25 @@
     
         
     <url>
-     <loc>/</loc>
+     <loc>/gs_introduction/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/</loc>
+     <loc>/gs_greedy_algorithms/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/</loc>
+     <loc>/gs_divide_and_conquer/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/</loc>
+     <loc>/gs_dynamic_programming/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -46,67 +46,43 @@
     
         
     <url>
-     <loc>/</loc>
+     <loc>/ds_array/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/</loc>
+     <loc>/ds_linked_list/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/</loc>
+     <loc>/ds_stack_queue/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/</loc>
+     <loc>/ds_hash_table/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/</loc>
+     <loc>/ds_tree/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/d_array/</loc>
+     <loc>/ds_binary_search_tree/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/d_stack_queue/</loc>
-     <lastmod>2017-07-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/d_tree/</loc>
-     <lastmod>2017-07-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/d_heap/</loc>
-     <lastmod>2017-07-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/d_trie/</loc>
+     <loc>/ds_heap/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -157,6 +133,12 @@
         
     <url>
      <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/d_trie/</loc>
      <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>

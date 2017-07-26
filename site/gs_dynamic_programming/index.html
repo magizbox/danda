@@ -8,7 +8,7 @@
         <meta name="author" content="Brother Rain">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Graph Theory - D&A</title>
+        <title>Dynamic Programming - D&A</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -64,7 +64,7 @@
                     <li >
                         <a href="..">Home</a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Started <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -80,8 +80,8 @@
     <a href="../gs_divide_and_conquer/">Divide-and-Conquer</a>
 </li>
                             
-<li >
-    <a href="../gs_dynamic_programming/">Dynamic Programming</a>
+<li class="active">
+    <a href="./">Dynamic Programming</a>
 </li>
                             
 <li >
@@ -122,7 +122,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Graphs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -142,8 +142,8 @@
     <a href="..">Advanced Shortest Paths Project</a>
 </li>
                             
-<li class="active">
-    <a href="./">Graph Theory</a>
+<li >
+    <a href="../a_graph_theory/">Graph Theory</a>
 </li>
                         </ul>
                     </li>
@@ -223,12 +223,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="..">
+                        <a rel="next" href="../gs_divide_and_conquer/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="..">
+                        <a rel="prev" href="../7_steps/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -240,34 +240,36 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#graph-theory">Graph Theory</a></li>
-            <li><a href="#shortest-path-problem">Shortest Path Problem</a></li>
+        <li class="main active"><a href="#dynamic-programming">Dynamic Programming</a></li>
+        <li class="main "><a href="#comparison">Comparison</a></li>
+        <li class="main "><a href="#example">Example</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="graph-theory">Graph Theory</h1>
-<h2 id="shortest-path-problem">Shortest Path Problem</h2>
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Shortest_path_with_direct_weights.svg" width="300px"></img></p>
-<p><code>Shortest path (A, C, E, D, F) between vertices A and F in the weighted directed graph</code></p>
-<p>In graph theory, the shortest path problem is the problem of finding a path between two vertices (or nodes) in a graph such that the sum of the weights of its constituent edges is minimized.</p>
-<table>
-<tbody>
-<tr>
-<td>a</td>
-<td>b</td>
-</tr>
-<tr>
-<td>c</td>
-<td>d</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="single-source-shortest-path-problem">Single-source shortest path problem</h3>
-<h4 id="dijkstras-algorithm">Dijkstra's algorithm</h4>
-<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif" /></p>
-<p>Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.</p></div>
+<h1 id="dynamic-programming">Dynamic Programming</h1>
+<p>Dynamic programming approach is similar to divide and conquer in breaking down the problem into smaller and yet smaller possible sub-problems. But unlike, divide and conquer, these sub-problems are not solved independently. Rather, results of these smaller sub-problems are remembered and used for similar or overlapping sub-problems.</p>
+<p>Dynamic programming is used where we have problems, which can be divided into similar sub-problems, so that their results can be re-used. Mostly, these algorithms are used for optimization. Before solving the in-hand sub-problem, dynamic algorithm will try to examine the results of the previously solved sub-problems. The solutions of sub-problems are combined in order to achieve the best solution.</p>
+<p>So we can say that</p>
+<ul>
+<li>The problem should be able to be divided into smaller overlapping sub-problem.</li>
+<li>An optimum solution can be achieved by using an optimum solution of smaller sub-problems.</li>
+<li>Dynamic algorithms use memorization.</li>
+</ul>
+<h1 id="comparison">Comparison</h1>
+<p>In contrast to greedy algorithms, where local optimization is addressed, dynamic algorithms are motivated for an overall optimization of the problem.</p>
+<p>In contrast to divide and conquer algorithms, where solutions are combined to achieve an overall solution, dynamic algorithms use the output of a smaller sub-problem and then try to optimize a bigger sub-problem. Dynamic algorithms use memorization to remember the output of already solved sub-problems.</p>
+<h1 id="example">Example</h1>
+<p>The following computer problems can be solved using dynamic programming approach</p>
+<ul>
+<li>Fibonacci number series</li>
+<li>Knapsack problem</li>
+<li>Tower of Hanoi</li>
+<li>All pair shortest path by Floyd-Warshall</li>
+<li>Shortest path by Dijkstra</li>
+<li>Project scheduling</li>
+</ul>
+<p>Dynamic programming can be used in both top-down and bottom-up manner. And of course, most of the times, referring to the previous solution output is cheaper than recomputing in terms of CPU cycles.</p></div>
         </div>
 
         <footer class="col-md-12">

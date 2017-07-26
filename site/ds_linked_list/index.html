@@ -8,7 +8,7 @@
         <meta name="author" content="Brother Rain">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Heaps - D&A</title>
+        <title>Linked List - D&A</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -69,19 +69,19 @@
                         <ul class="dropdown-menu">
                             
 <li >
-    <a href="..">Introduction</a>
+    <a href="../gs_introduction/">Introduction</a>
 </li>
                             
 <li >
-    <a href="..">Greedy Algorithms</a>
+    <a href="../gs_greedy_algorithms/">Greedy Algorithms</a>
 </li>
                             
 <li >
-    <a href="..">Divide-and-Conquer</a>
+    <a href="../gs_divide_and_conquer/">Divide-and-Conquer</a>
 </li>
                             
 <li >
-    <a href="..">Dynamic Programming</a>
+    <a href="../gs_dynamic_programming/">Dynamic Programming</a>
 </li>
                             
 <li >
@@ -94,57 +94,31 @@
                         <ul class="dropdown-menu">
                             
 <li >
-    <a href="..">Basic Data Structures</a>
-</li>
-                            
-<li >
-    <a href="..">Dynamic Arrays and Amortized Analysis</a>
-</li>
-                            
-<li >
-    <a href="..">Priority Queues and Disjoint Sets</a>
-</li>
-                            
-<li >
-    <a href="..">Hash Tables</a>
-</li>
-                            
-<li >
-    <a href="..">Binary Search Trees</a>
-</li>
-                            
-<li >
-    <a href="../d_array/">Arrays</a>
-</li>
-                            
-  <li class="dropdown-submenu">
-    <a href="#">Strings</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../d_string/">Overview</a>
-</li>
-            
-<li >
-    <a href="../d_string_substring_search/">Substring Search</a>
-</li>
-    </ul>
-  </li>
-                            
-<li >
-    <a href="../d_stack_queue/">Stacks & Queues</a>
-</li>
-                            
-<li >
-    <a href="../d_tree/">Trees</a>
+    <a href="../ds_array/">Arrays</a>
 </li>
                             
 <li class="active">
-    <a href="./">Heaps</a>
+    <a href="./">Linked List</a>
 </li>
                             
 <li >
-    <a href="../d_trie/">Tries</a>
+    <a href="../ds_stack_queue/">Stacks & Queues</a>
+</li>
+                            
+<li >
+    <a href="../ds_hash_table/">Hash Tables</a>
+</li>
+                            
+<li >
+    <a href="../ds_tree/">Trees</a>
+</li>
+                            
+<li >
+    <a href="../ds_binary_search_tree/">Binary Search Trees</a>
+</li>
+                            
+<li >
+    <a href="../ds_heap/">Heaps</a>
 </li>
                         </ul>
                     </li>
@@ -183,6 +157,10 @@
                             
 <li >
     <a href="..">Burrows-Wheeler Transform and Suffix Arrays</a>
+</li>
+                            
+<li >
+    <a href="../d_trie/">Tries</a>
 </li>
                             
 <li >
@@ -245,12 +223,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../d_tree/">
+                        <a rel="next" href="../ds_array/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../d_trie/">
+                        <a rel="prev" href="../ds_stack_queue/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -262,52 +240,94 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#heaps">Heaps</a></li>
-            <li><a href="#max-heap">Max Heap</a></li>
-            <li><a href="#min-heap">Min Heap</a></li>
-        <li class="main "><a href="#applications">Applications</a></li>
-        <li class="main "><a href="#challenges">Challenges</a></li>
-        <li class="main "><a href="#references">References</a></li>
+        <li class="main active"><a href="#linked-list">Linked List</a></li>
+        <li class="main "><a href="#representation">Representation</a></li>
+        <li class="main "><a href="#types-of-linked-list">Types of Linked List</a></li>
+        <li class="main "><a href="#basic-operations">Basic Operations</a></li>
+            <li><a href="#insertion-operation">Insertion Operation</a></li>
+            <li><a href="#deletion-operation">Deletion Operation</a></li>
+            <li><a href="#reverse-operation">Reverse Operation</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="heaps">Heaps</h2>
-<p>A heap is just what it sounds like —  a pile of values organized into a binary tree-like structure adhering to some ordering property. When we add elements to a heap, we fill this tree-like structure from left to right, level by level. This makes heaps really easy to implement in an array, where the value for some index ii's left child is located at index <script type="math/tex"> 2i+1 </script> and the value for its right child is at index <script type="math/tex"> 2i+2 </script> (using zero-indexing). Here are the two most fundamental heap operations:</p>
+<h1 id="linked-list">Linked List</h1>
+<p>A linked list is a sequence of data structures, which are connected together via links.</p>
+<p>Linked List is a sequence of links which contains items. Each link contains a connection to another link. Linked list is the second most-used data structure after array. Following are the important terms to understand the concept of Linked List.</p>
 <ul>
-<li><em>add</em>: Insert an element into the heap. You may also see this referred to as push.</li>
-<li><em>poll</em>: Retrieve and remove the root element of the heap. You may also see this referred to as pop.</li>
+<li>Link − Each link of a linked list can store a data called an element.</li>
+<li>Next − Each link of a linked list contains a link to the next link called Next.</li>
+<li>LinkedList − A Linked List contains the connection link to the first link called First.</li>
 </ul>
-<h3 id="max-heap">Max Heap</h3>
-<p>This type heap orders the maximum value at the root.</p>
-<p>When we <em>add</em> the values <script type="math/tex"> 1→2→3→4 </script> to a Max heap, it looks like this:</p>
-<p><img alt="" src="https://s3.amazonaws.com/hr-challenge-images/24110/1474683435-0fd86b37ef-minheap-add.png" /></p>
-<p>When we <em>poll</em> the same Max heap until it's empty, it looks like this:</p>
-<p><img alt="" src="https://s3.amazonaws.com/hr-challenge-images/24110/1474682804-9cef903049-maxheap-poll.png" /></p>
-<h3 id="min-heap">Min Heap</h3>
-<p>This type of heap orders the minimum value at the root.</p>
-<p>When we <em>add</em> the values <script type="math/tex"> 1→2→3→4 </script> to a Min heap, it looks like this:</p>
-<p><img alt="" src="https://s3.amazonaws.com/hr-challenge-images/24110/1474683435-0fd86b37ef-minheap-add.png" /> </p>
-<p>When we <em>poll</em> the same Min heap until it's empty, it looks like this:</p>
-<p><img alt="" src="https://s3.amazonaws.com/hr-challenge-images/24110/1474683444-23a807baaa-minheap-poll.png" /> </p>
-<h2 id="applications">Applications</h2>
-<p>The heap data structure has many applications.</p>
+<h1 id="representation">Representation</h1>
+<p>Linked list can be visualized as a chain of nodes, where every node points to the next node.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list.jpg" /></p>
+<p>As per the above illustration, following are the important points to be considered.</p>
 <ul>
-<li><em>Heapsort</em>: One of the best sorting methods being in-place and with no quadratic worst-case scenarios.</li>
-<li><em>Selection algorithms</em>: A heap allows access to the min or max element in constant time, and other selections (such as median or kth-element) can be done in sub-linear time on data that is in a heap.</li>
-<li><em>Graph algorithms</em>: By using heaps as internal traversal data structures, run time will be reduced by polynomial order. Examples of such problems are Prim's minimal-spanning-tree algorithm and Dijkstra's shortest-path algorithm.</li>
-<li><em>Priority Queue</em>: A priority queue is an abstract concept like "a list" or "a map"; just as a list can be implemented with a linked list or an array, a priority queue can be implemented with a heap or a variety of other methods.</li>
-<li><em>Order statistics</em>: The Heap data structure can be used to efficiently find the kth smallest (or largest) element in an array.</li>
+<li>Linked List contains a link element called first.</li>
+<li>Each link carries a data field(s) and a link field called next.</li>
+<li>Each link is linked with its next link using its next link.</li>
+<li>Last link carries a link as null to mark the end of the list.</li>
 </ul>
-<h2 id="challenges">Challenges</h2>
+<h1 id="types-of-linked-list">Types of Linked List</h1>
+<p>Following are the various types of linked list.</p>
 <ul>
-<li><a href="https://www.hackerrank.com/challenges/ctci-find-the-running-median">"Heaps: Find the Running Median". <em>hackerrank</em>. 2016</a></li>
+<li>Simple Linked List − Item navigation is forward only.</li>
+<li>Doubly Linked List − Items can be navigated forward and backward.</li>
+<li>Circular Linked List − Last item contains link of the first element as next and the first element has a link to the last element as previous.</li>
 </ul>
-<h2 id="references">References</h2>
+<h1 id="basic-operations">Basic Operations</h1>
+<p>Following are the basic operations supported by a list.</p>
 <ul>
-<li><a href="https://www.hackerrank.com/topics/heaps">"Heaps". <em>AllisonP, hackerrank</em>. 2016</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Heap_(data_structure)#Applications">"Heap (data structure)". <em>wikipedia</em>. 2016</a></li>
-</ul></div>
+<li>Insertion − Adds an element at the beginning of the list.</li>
+<li>Deletion − Deletes an element at the beginning of the list.</li>
+<li>Display − Displays the complete list.</li>
+<li>Search − Searches an element using the given key.</li>
+<li>Delete − Deletes an element using the given key.</li>
+</ul>
+<h2 id="insertion-operation">Insertion Operation</h2>
+<p>Adding a new node in linked list is a more than one step activity. We shall learn this with diagrams here. First, create a node using the same structure and find the location where it has to be inserted.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_0.jpg" /></p>
+<p>Imagine that we are inserting a node B (NewNode), between A (LeftNode) and C (RightNode). Then point B.next to C</p>
+<pre><code>NewNode.next −&gt; RightNode;
+</code></pre>
+
+<p>It should look like this</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_1.jpg" /></p>
+<p>Now, the next node at the left should point to the new node.</p>
+<pre><code>LeftNode.next −&gt; NewNode;
+</code></pre>
+
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_2.jpg" /></p>
+<p>This will put the new node in the middle of the two. The new list should look like this</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_insertion_3.jpg" /></p>
+<p>Similar steps should be taken if the node is being inserted at the beginning of the list. While inserting it at the end, the second last node of the list should point to the new node and the new node will point to NULL.</p>
+<h2 id="deletion-operation">Deletion Operation</h2>
+<p>Deletion is also a more than one step process. We shall learn with pictorial representation. First, locate the target node to be removed, by using searching algorithms.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_deletion_0.jpg" /></p>
+<p>The left (previous) node of the target node now should point to the next node of the target node</p>
+<pre><code>LeftNode.next −&gt; TargetNode.next;
+</code></pre>
+
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_deletion_1.jpg" /></p>
+<p>This will remove the link that was pointing to the target node. Now, using the following code, we will remove what the target node is pointing at.</p>
+<pre><code>TargetNode.next −&gt; NULL;
+</code></pre>
+
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_deletion_2.jpg" /></p>
+<p>We need to use the deleted node. We can keep that in memory otherwise we can simply deallocate memory and wipe off the target node completely.</p>
+<h2 id="reverse-operation">Reverse Operation</h2>
+<p>This operation is a thorough one. We need to make the last node to be pointed by the head node and reverse the whole linked list.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_reverse_0.jpg" /></p>
+<p>First, we traverse to the end of the list. It should be pointing to NULL. Now, we shall make it point to its previous node</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_reverse_1.jpg" /></p>
+<p>We have to make sure that the last node is not the lost node. So we'll have some temp node, which looks like the head node pointing to the last node. Now, we shall make all left side nodes point to their previous nodes one by one.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_reverse_2.jpg" /></p>
+<p>Except the node (first node) pointed by the head node, all nodes should point to their predecessor, making them their new successor. The first node will point to NULL.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_reverse_3.jpg" /></p>
+<p>We'll make the head node point to the new first node by using the temp node.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/linked_list_reverse_4.jpg" /></p>
+<p>The linked list is now reversed.</p></div>
         </div>
 
         <footer class="col-md-12">
