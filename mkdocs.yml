@@ -1,5 +1,6 @@
 site_name: D&A
 site_author: "Brother Rain"
+google_analytics: ['UA-68978617-1', 'magizbox.com']
 
 pages:
 - "Home": 'index.md'
@@ -20,6 +21,9 @@ pages:
     - "Overview": 'd_string.md'
     - "Substring Search": 'd_string_substring_search.md'
   - "Stacks & Queues": 'd_stack_queue.md'
+  - "Trees": 'd_tree.md'
+  - "Heaps": 'd_heap.md'
+  - "Tries": 'd_trie.md'
 - "Graphs":
   - "Decomposition of Graphs": "index.md"
   - "Paths in Graphs": "index.md"
@@ -31,7 +35,6 @@ pages:
   - "Burrows-Wheeler Transform and Suffix Arrays" : "index.md"
   - "Knuth–Morris–Pratt Algorithm" : "index.md"
   - "Constructing Suffix Arrays and Suffix Trees" : "index.md"
-  - "Graph Theory": 'a_graph_theory.md'
 - "NPs":
   - "Complete coloring" : "index.md"
   - "Clique cover problem" : "index.md"
@@ -45,6 +48,7 @@ pages:
 
 markdown_extensions:
     - footnotes
+    - mdx_math
 
 extra_css:
   - components/magiz-c-book/src/book.css
@@ -67,3 +71,4 @@ extra_javascript:
   - components/jquery/dist/jquery.js
   - components/magiz-doc/doc.js
   - components/magiz-doc/footer.js
+  - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML

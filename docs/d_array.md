@@ -257,7 +257,7 @@ Always in this course we will create data structures of immutable objets, theref
 
 ## Challenges
 
-* [Arrays: Left Rotation](https://www.hackerrank.com/challenges/ctci-array-left-rotation)
+* ["Arrays: Left Rotation". *hackerrank*. 2016](https://www.hackerrank.com/challenges/ctci-array-left-rotation)
 
 ## References
 
