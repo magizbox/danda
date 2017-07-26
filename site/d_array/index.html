@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Brother Rain">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Arrays - D&A</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <link href="../components/magiz-c-book/src/book.css" rel="stylesheet">
+        <link href="../components/magiz-c-course/src/course.css" rel="stylesheet">
+        <link href="../components/magiz-c-video/src/video.css" rel="stylesheet">
+        <link href="../components/magiz-c-benchmark/src/benchmark.css" rel="stylesheet">
+        <link href="../components/magiz-c-paper/src/paper.css" rel="stylesheet">
+        <link href="../components/magiz-doc/style.css" rel="stylesheet">
+        <link href="../components/magiz-doc/highlight.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-68978617-1', 'magizbox.com');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">D&A</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Started <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="..">Introduction</a>
+</li>
+                            
+<li >
+    <a href="..">Greedy Algorithms</a>
+</li>
+                            
+<li >
+    <a href="..">Divide-and-Conquer</a>
+</li>
+                            
+<li >
+    <a href="..">Dynamic Programming</a>
+</li>
+                            
+<li >
+    <a href="../7_steps/">7 Steps to Solve Algorithm Problems</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Structures <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="..">Basic Data Structures</a>
+</li>
+                            
+<li >
+    <a href="..">Dynamic Arrays and Amortized Analysis</a>
+</li>
+                            
+<li >
+    <a href="..">Priority Queues and Disjoint Sets</a>
+</li>
+                            
+<li >
+    <a href="..">Hash Tables</a>
+</li>
+                            
+<li >
+    <a href="..">Binary Search Trees</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Arrays</a>
+</li>
+                            
+  <li class="dropdown-submenu">
+    <a href="#">Strings</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../d_string/">Overview</a>
+</li>
+            
+<li >
+    <a href="../d_string_substring_search/">Substring Search</a>
+</li>
+    </ul>
+  </li>
+                            
+<li >
+    <a href="../d_stack_queue/">Stacks & Queues</a>
+</li>
+                            
+<li >
+    <a href="../d_tree/">Trees</a>
+</li>
+                            
+<li >
+    <a href="../d_heap/">Heaps</a>
+</li>
+                            
+<li >
+    <a href="../d_trie/">Tries</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Graphs <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="..">Decomposition of Graphs</a>
+</li>
+                            
+<li >
+    <a href="..">Paths in Graphs</a>
+</li>
+                            
+<li >
+    <a href="..">Minimum Spanning Trees</a>
+</li>
+                            
+<li >
+    <a href="..">Advanced Shortest Paths Project</a>
+</li>
+                            
+<li >
+    <a href="../a_graph_theory/">Graph Theory</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Strings <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="..">Suffix Trees</a>
+</li>
+                            
+<li >
+    <a href="..">Burrows-Wheeler Transform and Suffix Arrays</a>
+</li>
+                            
+<li >
+    <a href="..">Knuth–Morris–Pratt Algorithm</a>
+</li>
+                            
+<li >
+    <a href="..">Constructing Suffix Arrays and Suffix Trees</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">NPs <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="..">Complete coloring</a>
+</li>
+                            
+<li >
+    <a href="..">Clique cover problem</a>
+</li>
+                            
+<li >
+    <a href="..">Knapsack problem</a>
+</li>
+                            
+<li >
+    <a href="..">Bin packing problem</a>
+</li>
+                            
+<li >
+    <a href="..">Closest string</a>
+</li>
+                            
+<li >
+    <a href="..">Longest common subsequence problem</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="..">Flows in Networks</a>
+</li>
+                            
+<li >
+    <a href="..">Linear Programming</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="..">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../d_string/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#arrays">Arrays</a></li>
+            <li><a href="#the-arrays-class">The Arrays class</a></li>
+        <li class="main "><a href="#copying-arrays">Copying arrays</a></li>
+        <li class="main "><a href="#insertion-and-deletion">Insertion and Deletion</a></li>
+        <li class="main "><a href="#the-arraylist-class">The ArrayList class</a></li>
+        <li class="main "><a href="#copying-arrays-of-objects">Copying arrays of objects</a></li>
+        <li class="main "><a href="#multi-dimensional-arrays">Multi-dimensional arrays</a></li>
+            <li><a href="#cloning-2d-arrays">Cloning 2D arrays</a></li>
+        <li class="main "><a href="#challenges">Challenges</a></li>
+        <li class="main "><a href="#references">References</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="arrays">Arrays</h2>
+<p>An array is an aggregate data structure that is designed to store a group of objects of the same or different types. Arrays can hold primitives as well as references. The array is the most efficient data structure for storing and accessing a sequence of objects.</p>
+<p>Here is the list of most important array features you must know (i.e. be able to program)</p>
+<ul>
+<li>copying and cloning</li>
+<li>insertion and deletion</li>
+<li>searching and sorting</li>
+</ul>
+<p>You already know that the Java language has only two data types, primitives and references. Which one is an array? Is it primitive? An array is not a primitive data type - it has a field (and only one), called length. Formally speaking, an array is a reference type, though you cannot find such a class in the Java APIs. Therefore, you deal with arrays as you deal with references. One of the major diffeences between refeences and primituives is that you cannot copy arrays by assigning one to another:</p>
+<pre><code class="java">int[] a = {9, 5, 4};
+int[] b = a;
+</code></pre>
+
+<p>The assignment operator creates an alias to the object, like in the picture below</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/alias.jpg" /></p>
+<p>Since these two references a and b refer to the same object, comparing them with the double equal sign "==" will always return true. In the next code example,</p>
+<pre><code class="java">int [] a = {1,2,3};
+int [] b = {1,2,3};
+</code></pre>
+
+<p>a and b refer to two different objects (though with identical contents). Comparing them with the double equal sign will return false. How would you compare two objects with identical contents? In short, using the equals method. For array comparison, the Java APIs provides the Arrays class.</p>
+<h3 id="the-arrays-class">The Arrays class</h3>
+<p>The java.util.Arrays class is a convenience class for various array manipulations, like comparison, searching, printing, sorting and others. Basically, this class is a set of static methods that are all useful for working with arrays. The code below demonstrates a proper invocation of equals:</p>
+<pre><code class="java">int[] a = {1,2,3};
+int[] b = {1,2,3};
+if( Arrays.equals(a, b) )
+   System.out.println(&quot;arrays with identical contents&quot;);
+</code></pre>
+
+<p>Another commonly used method is toString() which takes care of of printing</p>
+<pre><code class="java">int[] a = {1,2,3};
+System.out.println(Arrays.toString(a));
+</code></pre>
+
+<p>Here is the example of sorting</p>
+<pre><code class="java">int[] a = {3,2,1};
+Arrays.sort(a);
+System.out.println(Arrays.toString(a));
+</code></pre>
+
+<p>In addition to that, the class has other utility methods for supporting operations over multidimensional arrays.</p>
+<h2 id="copying-arrays">Copying arrays</h2>
+<p>There are four ways to copy arrays</p>
+<p>using a loop structure
+using Arrays.copyOf()
+using System.arraycopy()
+using clone()
+The first way is very well known to you</p>
+<pre><code class="java">int[] a = {1, 2, 3};
+int[] b = new int[a.length];
+for(int i= 0; i &lt; a.length; i++) b[i] = a[i];
+</code></pre>
+
+<p>The next choice is to use Arrays.copyOf()</p>
+<pre><code class="java">int[] a = {1, 2, 3};
+int[] b = Arrays.copyOf(a, a.length);
+</code></pre>
+
+<p>The second parameter specifies the length of the new array, which could either less or equal or bigger than the original length.</p>
+<p>The most efficient copying data between arrays is provided by System.arraycopy() method. The method requires five arguments. Here is its signature</p>
+<pre><code class="java">public static void arraycopy(Object source,
+                             int srcIndex,
+                             Object destination,
+                             int destIndex,
+                             int length)
+</code></pre>
+
+<p>The method copies length elements from a source array starting with the index srcIndex to a new array destination at the index destIndex.The above code example can be rewritten as it follows</p>
+<pre><code class="java">int[] a = {1, 2, 3};
+int[] b = new int[a.length];
+System.arraycopy(a, 0, b, 0, 3)
+</code></pre>
+
+<p>And the last copying choice is the use of cloning. Cloning involves creating a new array of the same size and type and copying all the old elements into the new array. The clone() method is defined in the Object class and its invocation is demonstrated by this code segment</p>
+<pre><code class="java">int[] a = {1, 2, 3};
+int[] b = (int[]) a.clone();
+</code></pre>
+
+<p>Note, that casting (int[]) is the must.</p>
+<p>Examine the code in ArrayCopyPrimitives.java for further details.</p>
+<h2 id="insertion-and-deletion">Insertion and Deletion</h2>
+<p>Arrays in Java have no methods and only one <code>immutable</code> field <code>length</code>. Once an array is created, its length is fixed and cannot be changed. What do you do to resize the array? You allocate the array with a different size and copy the contents of the old array to the new array. This code example demonstrates deletion from an array of primitives</p>
+<pre><code class="java">public char[] delete(char[] data, int pos)
+{
+    if(pos &gt;= 0 &amp;&amp; pos &lt; data.length)
+    {
+        char[] tmp = new char[data.length-1];
+        System.arraycopy(data, 0, tmp, 0, pos);
+        System.arraycopy(data, pos+1, tmp, pos, data.length-pos-1);
+        return tmp;
+    }
+    else
+        return data;
+}
+</code></pre>
+
+<p>The first arraycopy copies the elements from index 0 to index pos-1, the second arraycopy copies the elements from index pos+1 to data.length.</p>
+<p>Examine the code in ArrayDemo.java for further details.</p>
+<h2 id="the-arraylist-class">The ArrayList class</h2>
+<p>The java.util.ArrayList class supports an idea of a dynamic array - an array that grows and shrinks on demand to accomodate the number of elements in the array. Below is a list of commonly used methods</p>
+<ul>
+<li><code>add(object)</code> - adds to the end</li>
+<li><code>add(index, object)</code> - inserts at the index</li>
+<li><code>set(index, object)</code> - replaces at the index</li>
+<li><code>get(index)</code> - returns the element at that index</li>
+<li><code>remove(index)</code> - deletes the element at that index</li>
+<li><code>size()</code> - returns the number of elements</li>
+</ul>
+<p>The following code example will give you a heads up into how some of them are used.</p>
+<pre><code>/* ADD */
+      ArrayList&lt;Integer&gt; num = new ArrayList&lt;Integer&gt;();
+      for(int i = 0; i &lt; 10; i++) num.add(i);
+      System.out.println(num);
+
+
+/* REMOVE even integers */
+      for(int i = 0; i &lt; num.size(); i++)
+        if(num.get(i)%2 == 0) num.remove(i);
+      System.out.println(num);
+</code></pre>
+
+<h2 id="copying-arrays-of-objects">Copying arrays of objects</h2>
+<p>This topic is more complex for understanding.. Let us start with a simple loop structure</p>
+<pre><code>Object[] obj1 = {new Integer(10),
+                new StringBuffer(&quot;foobar&quot;),
+                new Double(12.95)};
+Object[] obj2 = new Object[obj1.length];
+for(int i = 0; i ‹ obj1.length; i++)
+    obj2[i] = obj1[i];
+</code></pre>
+
+<p>At the first glance we might think that all data is copied. In reality, the internal data is shared between two arrays. The figure below illustrates the inner structure</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/copy1.bmp" /></p>
+<p>The assignment operator <code>obj2[i] = obj1[i]</code> is a crucial part of understanding the concept. You cannot copy references by assigning one to another. The assignment creates an alias rather than a copy. Let us trace down changes in the above picture after execution the following statements</p>
+<pre><code>obj1[0] = new Integer(5);
+</code></pre>
+
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/copy2.bmp" /></p>
+<p>and <code>((StringBuffer) obj1[1]).append('s');</code></p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/copy3.bmp" /></p>
+<p>As you see, <code>obj1[0]</code> and <code>obj2[0]</code> now refer to different objects. However, <code>obj1[1]</code> and <code>obj2[1]</code> refer to the same object (which is "foobars"). Since both arrays shares the data, you must be quite careful when you modify your data, because it might lead to unexpected effects.</p>
+<p>The same behavior will take place again, if we use Arrays.copuyOf(), System.arraycopy() and clone(). Examine the code example ArrayCopyReferences.java for further details.</p>
+<h2 id="multi-dimensional-arrays">Multi-dimensional arrays</h2>
+<p>In many practical application there is a need to use two- or multi-dimensional arrays. A two-dimensional array can be thought of as a table of rows and columns. This creates a table of 2 rows and 4 columns:</p>
+<pre><code>int[][] ar1 = new int[2][4];
+</code></pre>
+
+<p>You can create and initialize an array by using nested curcly braces. For example, this creates a table of 3 rows and 2 columns:</p>
+<pre><code>int[][] ar2 = {{1,2},{3,4},{5,6}};
+</code></pre>
+
+<p>Generally speaking, a two-dimensional array is not exactly a table - each row in such array can have a different length. Consider this code fragment</p>
+<pre><code>Object[][] obj = {{new Integer(1),new Integer(2)},
+                  {new Integer(10), &quot;bozo&quot;, new Double(1.95)}};
+</code></pre>
+
+<p>The accompanying picture sheds a bit of light on internal representation</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/2d.bmp" /></p>
+<p>From the picture you clearly see that a two-dimensional array in Java is an array of arrays. The array obj has two elements obj[0] and obj[1] that are arrays of length 2 and 3 respectively.</p>
+<h3 id="cloning-2d-arrays">Cloning 2D arrays</h3>
+<p>The procedure is even more confusing and less expected. Consider the following code segment</p>
+<pre><code>Object[][] obj = {{new Integer(1),new Integer(2)},
+                  {new Integer(10), &quot;bozo&quot;, new Double(1.95)}};
+
+Object[][] twin = (Object[][]) obj.clone();
+</code></pre>
+
+<p>The procedure of clonig 2d arrays is virtually the same as cloning an array of references. Unfortunately, built-in clone() method does not actualy clone each row, but rather creates references to them Here is a graphical interpretation of the above code</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/clone4.bmp" /></p>
+<p>Let us change the value of <code>obj[1][1]</code></p>
+<pre><code>obj[1][1] = &quot;xyz&quot;;
+</code></pre>
+
+<p>This assignment effects the value of <code>twin[1][1]</code> as well</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/clone4a.bmp" /></p>
+<p>Such a copy is called a "shallow" copy. The default behavior of clone() is to return a shallow copy of the object. If we want a "deep" copy instead, we must provide our own implementation by overriding Object's clone() method.</p>
+<p>The idea of a "deep" copy is simple - it makes a distinct copy of each of the object's fields, recursing through the entire object. A deep copy is thus a completely separate object from the original; changes to it don't affect the original, and vise versa. In relevance to the above code, here is a deep clone graphically</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/clone6.bmp" /></p>
+<p>Further, making a complete deep copy is not always needed. Consider an array of immutable objects. As we know, immutable objects cannot be modified, allowing clients to share the same instance without interfering with each other. In this case there is no need to clone them, which leads to the following picture</p>
+<p><img alt="" src="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/pix/clone5.bmp" /></p>
+<p>Always in this course we will create data structures of immutable objets, therefore implementing the clone method will require copying a structure (a shape) and sharing its internal data. We will discuss these issues later on in the course.</p>
+<h2 id="challenges">Challenges</h2>
+<ul>
+<li><a href="https://www.hackerrank.com/challenges/ctci-array-left-rotation">"Arrays: Left Rotation". <em>hackerrank</em>. 2016</a></li>
+</ul>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Arrays/arrays.html">"Array Data Structure". <em>Victor S.Adamchik, CMU</em>. 2009</a></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../components/underscore/underscore.js"></script>
+        <script src="../components/magiz-c-book/src/gspreadsheet.js"></script>
+        <script src="../components/magiz-c-paper/src/paper.js"></script>
+        <script src="../components/magiz-c-course/src/course.js"></script>
+        <script src="../components/magiz-c-benchmark/src/benchmark.js"></script>
+        <script src="../components/magiz-c-benchmark/src/bootstrap-popup.js"></script>
+        <script src="../components/magiz-c-book/src/book.js"></script>
+        <script src="../components/magiz-c-video/src/video.js"></script>
+        <script src="../components/jquery/dist/jquery.js"></script>
+        <script src="../components/magiz-doc/doc.js"></script>
+        <script src="../components/magiz-doc/footer.js"></script>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
