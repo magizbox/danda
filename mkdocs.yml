@@ -3,24 +3,67 @@ site_author: "Brother Rain"
 
 pages:
 - "Home": 'index.md'
-- "Data Structures":
-  - "Arrays": 'd_array.md'
-  - "Strings": 'd_string.md'
-  - "Stacks & Queues": 'd_stack_queue.md'
-- "Algorithms":
+- "Get Started":
+  - "Introduction": "index.md"
+  - "Greedy Algorithms": "index.md"
+  - "Divide-and-Conquer": "index.md"
+  - "Dynamic Programming": "index.md"
   - "7 Steps to Solve Algorithm Problems": "7_steps.md"
+- "Data Structures":
+  - "Basic Data Structures": "index.md"
+  - "Dynamic Arrays and Amortized Analysis": "index.md"
+  - "Priority Queues and Disjoint Sets": "index.md"
+  - "Hash Tables": "index.md"
+  - "Binary Search Trees": "index.md"
+  - "Arrays": "d_array.md"
+  - "Strings":
+    - "Overview": 'd_string.md'
+    - "Substring Search": 'd_string_substring_search.md'
+  - "Stacks & Queues": 'd_stack_queue.md'
+- "Graphs":
+  - "Decomposition of Graphs": "index.md"
+  - "Paths in Graphs": "index.md"
+  - "Minimum Spanning Trees": "index.md"
+  - "Advanced Shortest Paths Project": "index.md"
+  - "Graph Theory": "a_graph_theory.md"
+- "Strings":
+  - "Suffix Trees" : "index.md"
+  - "Burrows-Wheeler Transform and Suffix Arrays" : "index.md"
+  - "Knuth–Morris–Pratt Algorithm" : "index.md"
+  - "Constructing Suffix Arrays and Suffix Trees" : "index.md"
   - "Graph Theory": 'a_graph_theory.md'
+- "NPs":
+  - "Complete coloring" : "index.md"
+  - "Clique cover problem" : "index.md"
+  - "Knapsack problem" : "index.md"
+  - "Bin packing problem" : "index.md"
+  - "Closest string" : "index.md"
+  - "Longest common subsequence problem" : "index.md"
+- "Advanced":
+  - "Flows in Networks" : "index.md"
+  - "Linear Programming" : "index.md"
 
 markdown_extensions:
     - footnotes
 
 extra_css:
-  - css/book.css
-  - css/course.css
-  - css/video.css
+  - components/magiz-c-book/src/book.css
+  - components/magiz-c-course/src/course.css
+  - components/magiz-c-video/src/video.css
+  - components/magiz-c-benchmark/src/benchmark.css
+  - components/magiz-c-paper/src/paper.css
+  - components/magiz-doc/style.css
+  - components/magiz-doc/highlight.css
+
 extra_javascript:
-  - js/underscore.js
-  - js/gspreadsheet.js
-  - js/book.js
-  - js/course.js
-  - js/video.js
+  - components/underscore/underscore.js
+  - components/magiz-c-book/src/gspreadsheet.js
+  - components/magiz-c-paper/src/paper.js
+  - components/magiz-c-course/src/course.js
+  - components/magiz-c-benchmark/src/benchmark.js
+  - components/magiz-c-benchmark/src/bootstrap-popup.js
+  - components/magiz-c-book/src/book.js
+  - components/magiz-c-video/src/video.js
+  - components/jquery/dist/jquery.js
+  - components/magiz-doc/doc.js
+  - components/magiz-doc/footer.js

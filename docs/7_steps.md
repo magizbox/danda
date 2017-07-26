@@ -48,4 +48,6 @@ REMEMBER:
 * test your code, not your algorithm
 * think before you fix bugs. Don't panic! (wrong fixes are worse than no fix)
 
-https://www.youtube.com/watch?v=GKgAVjJxh9w&list=PLM0_NsFSjrgC72cExkBI4Iz99SBTzYG-u&index=4
+## Suggested Reading
+
+* https://www.youtube.com/watch?v=GKgAVjJxh9w&list=PLM0_NsFSjrgC72cExkBI4Iz99SBTzYG-u&index=4

@@ -3,8 +3,8 @@
 
     
     <url>
-     <loc>None/</loc>
-     <lastmod>2016-10-08</lastmod>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,20 +12,32 @@
     
         
     <url>
-     <loc>None/d_array/</loc>
-     <lastmod>2016-10-08</lastmod>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/d_string/</loc>
-     <lastmod>2016-10-08</lastmod>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/d_stack_queue/</loc>
-     <lastmod>2016-10-08</lastmod>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/7_steps/</loc>
+     <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -34,14 +46,174 @@
     
         
     <url>
-     <loc>None/7_steps/</loc>
-     <lastmod>2016-10-08</lastmod>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>None/a_graph_theory/</loc>
-     <lastmod>2016-10-08</lastmod>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/d_array/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/d_stack_queue/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/a_graph_theory/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/a_graph_theory/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
