@@ -2,42 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
-    <url>
-     <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
         
     <url>
      <loc>/gs_introduction/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gs_greedy_algorithms/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gs_divide_and_conquer/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/gs_dynamic_programming/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/7_steps/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -47,65 +39,119 @@
         
     <url>
      <loc>/ds_array/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/ds_linked_list/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/ds_stack_queue/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/ds_hash_table/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/ds_tree/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/ds_binary_search_tree/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/ds_heap/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
+    
+
+    
+        
+    <url>
+     <loc>/sort_algorithms/</loc>
+     <lastmod>2017-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/sort_bubble/</loc>
+     <lastmod>2017-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/sort_insertion/</loc>
+     <lastmod>2017-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/sort_selection/</loc>
+     <lastmod>2017-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/sort_merge/</loc>
+     <lastmod>2017-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/sort_shell/</loc>
+     <lastmod>2017-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/sort_quick/</loc>
+     <lastmod>2017-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
     
 
     
         
     <url>
      <loc>/graph_data_structure/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/graph_dfs/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/graph_bfs/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -114,32 +160,26 @@
     
         
     <url>
-     <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <loc>/string_string/</loc>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <loc>/string_tries/</loc>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/d_trie/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <loc>/string_suffix_arrays_suffix_trees/</loc>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <loc>/string_kmp/</loc>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -148,54 +188,20 @@
     
         
     <url>
-     <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <loc></loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/</loc>
-     <lastmod>2017-07-26</lastmod>
+     <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

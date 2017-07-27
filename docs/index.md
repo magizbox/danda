@@ -28,6 +28,16 @@ This site is intended to host a variety of resources and pointers to information
 * [Binary Search Trees](ds_binary_search_tree.md)
 * [Heaps](ds_heap.md)
 
+## Sort
+
+* [Sorting Algorithms](sort_algorithms.md)
+* [Bubble Sort](sort_bubble.md)
+* [Insertion Sort](sort_insertion.md)
+* [Selection Sorts](sort_selection.md)
+* [Merge Sort](sort_merge.md)
+* [Shell Sort](sort_shell.md)
+* [Quick Sort](sort_quick.md)
+
 ## Algorithms on Graphs
 
 * [Graph Data Structure](graph_data_structure.md)
@@ -36,10 +46,10 @@ This site is intended to host a variety of resources and pointers to information
 
 ## Algorithms on Strings
 
-* [Suffix Trees](#)
-* [Burrows-Wheeler Transform and Suffix Arrays](#)
-* [Knuth–Morris–Pratt Algorithm](#)
-* [Constructing Suffix Arrays and Suffix Trees](#)
+* [Introduction to Strings](string_string.md)
+* [Tries](string_tries.md)
+* [Suffix Arrays and Suffix Trees](string_suffix_arrays_suffix_trees.md)
+* [Knuth–Morris–Pratt Algorithm](string_kmp.md)
 
 ## NP-complete Problems
 

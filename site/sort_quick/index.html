@@ -8,7 +8,7 @@
         <meta name="author" content="Brother Rain">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>BFS: Breadth First Traversal - D&A</title>
+        <title>Quick Sort - D&A</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -119,7 +119,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -147,15 +147,15 @@
     <a href="../sort_shell/">Shell Sort</a>
 </li>
                             
-<li >
-    <a href="../sort_quick/">Quick Sort</a>
+<li class="active">
+    <a href="./">Quick Sort</a>
 </li>
                         </ul>
                     </li>
                     <li >
                         <a href="..">Search</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Graphs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -167,8 +167,8 @@
     <a href="../graph_dfs/">DFS: Depth First Traversal</a>
 </li>
                             
-<li class="active">
-    <a href="./">BFS: Breadth First Traversal</a>
+<li >
+    <a href="../graph_bfs/">BFS: Breadth First Traversal</a>
 </li>
                         </ul>
                     </li>
@@ -245,12 +245,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../graph_dfs/">
+                        <a rel="next" href="../sort_shell/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../string_string/">
+                        <a rel="prev" href="..">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -262,69 +262,87 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#breadth-first-traversal">Breadth First Traversal</a></li>
-        <li class="main "><a href="#algorithms">Algorithms</a></li>
+        <li class="main active"><a href="#quick-sort">Quick Sort</a></li>
+        <li class="main "><a href="#partition-in-quick-sort">Partition in Quick Sort</a></li>
+        <li class="main "><a href="#quick-sort-pivot-algorithm">Quick Sort Pivot Algorithm</a></li>
+        <li class="main "><a href="#quick-sort-pivot-pseudocode">Quick Sort Pivot Pseudocode</a></li>
+        <li class="main "><a href="#quick-sort-algorithm">Quick Sort Algorithm</a></li>
+        <li class="main "><a href="#quick-sort-pseudocode">Quick Sort Pseudocode</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="breadth-first-traversal">Breadth First Traversal</h1>
-<p>Breadth First Search (BFS) algorithm traverses a graph in a breadthward motion and uses a queue to remember to get the next vertex to start a search, when a dead end occurs in any iteration.</p>
-<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/breadth_first_traversal.jpg" /></p>
-<p>As in the example given above, BFS algorithm traverses from A to B to E to F first then to C and G lastly to D. It employs the following rules.</p>
-<ul>
-<li><strong>Rule 1</strong> − Visit the adjacent unvisited vertex. Mark it as visited. Display it. Insert it * in a queue.</li>
-<li><strong>Rule 2</strong> − If no adjacent vertex is found, remove the first vertex from the queue.</li>
-<li><strong>Rule 3</strong> − Repeat Rule 1 and Rule 2 until the queue is empty.</li>
-</ul>
-<h1 id="algorithms">Algorithms</h1>
-<table>
-<thead>
-<tr>
-<th>Step</th>
-<th>Traversal</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_one.jpg" /></td>
-<td>Initialize the stack.</td>
-</tr>
-<tr>
-<td>2.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_two.jpg" /></td>
-<td>Mark S as visited and put it onto the stack. Explore any unvisited adjacent node from S. We have three nodes and we can pick any of them. For this example, we shall take the node in an alphabetical order.</td>
-</tr>
-<tr>
-<td>3.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_three.jpg" /></td>
-<td>Mark A as visited and put it onto the stack. Explore any unvisited adjacent node from A. Both Sand D are adjacent to A but we are concerned for unvisited nodes only.</td>
-</tr>
-<tr>
-<td>4.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_four.jpg" /></td>
-<td>Visit D and mark it as visited and put onto the stack. Here, we have B and C nodes, which are adjacent to D and both are unvisited. However, we shall again choose in an alphabetical order.</td>
-</tr>
-<tr>
-<td>5.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_five.jpg" /></td>
-<td>We choose B, mark it as visited and put onto the stack. Here Bdoes not have any unvisited adjacent node. So, we pop Bfrom the stack.</td>
-</tr>
-<tr>
-<td>6.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_six.jpg" /></td>
-<td>We check the stack top for return to the previous node and check if it has any unvisited nodes. Here, we find D to be on the top of the stack.</td>
-</tr>
-<tr>
-<td>7.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_seven.jpg" /></td>
-<td>Only unvisited adjacent node is from D is C now. So we visit C, mark it as visited and put it onto the stack.</td>
-</tr>
-</tbody>
-</table>
-<p>At this stage, we are left with no unmarked (unvisited) nodes. But as per the algorithm we keep on dequeuing in order to get all unvisited nodes. When the queue gets emptied, the program is over.</p></div>
+<h1 id="quick-sort">Quick Sort</h1>
+<p>Quick sort is a highly efficient sorting algorithm and is based on partitioning of array of data into smaller arrays. A large array is partitioned into two arrays one of which holds values smaller than the specified value, say pivot, based on which the partition is made and another array holds values greater than the pivot value.</p>
+<p>Quick sort partitions an array and then calls itself recursively twice to sort the two resulting subarrays. This algorithm is quite efficient for large-sized data sets as its average and worst case complexity are of Ο(n2), where n is the number of items.</p>
+<h1 id="partition-in-quick-sort">Partition in Quick Sort</h1>
+<p>Following animated representation explains how to find the pivot value in an array.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/quick_sort_partition_animation.gif" /></p>
+<p>The pivot value divides the list into two parts. And recursively, we find the pivot for each sub-lists until all lists contains only one element.</p>
+<h1 id="quick-sort-pivot-algorithm">Quick Sort Pivot Algorithm</h1>
+<p>Based on our understanding of partitioning in quick sort, we will now try to write an algorithm for it, which is as follows.</p>
+<pre><code>Step 1 − Choose the highest index value has pivot
+Step 2 − Take two variables to point left and right of the list excluding pivot
+Step 3 − left points to the low index
+Step 4 − right points to the high
+Step 5 − while value at left is less than pivot move right
+Step 6 − while value at right is greater than pivot move left
+Step 7 − if both step 5 and step 6 does not match swap left and right
+Step 8 − if left ≥ right, the point where they met is new pivot
+</code></pre>
+
+<h1 id="quick-sort-pivot-pseudocode">Quick Sort Pivot Pseudocode</h1>
+<p>The pseudocode for the above algorithm can be derived as −</p>
+<pre><code>function partitionFunc(left, right, pivot)
+   leftPointer = left
+   rightPointer = right - 1
+
+   while True do
+      while A[++leftPointer] &lt; pivot do
+         //do-nothing            
+      end while
+
+      while rightPointer &gt; 0 &amp;&amp; A[--rightPointer] &gt; pivot do
+         //do-nothing         
+      end while
+
+      if leftPointer &gt;= rightPointer
+         break
+      else                
+         swap leftPointer,rightPointer
+      end if
+
+   end while 
+
+   swap leftPointer,right
+   return leftPointer
+
+end function
+</code></pre>
+
+<h1 id="quick-sort-algorithm">Quick Sort Algorithm</h1>
+<p>Using pivot algorithm recursively, we end up with smaller possible partitions. Each partition is then processed for quick sort. We define recursive algorithm for quicksort as follows</p>
+<pre><code>Step 1 − Make the right-most index value pivot
+Step 2 − partition the array using pivot value
+Step 3 − quicksort left partition recursively
+Step 4 − quicksort right partition recursively
+</code></pre>
+
+<h1 id="quick-sort-pseudocode">Quick Sort Pseudocode</h1>
+<p>To get more into it, let see the pseudocode for quick sort algorithm</p>
+<pre><code>procedure quickSort(left, right)
+
+   if right-left &lt;= 0
+      return
+   else     
+      pivot = A[right]
+      partition = partitionFunc(left, right, pivot)
+      quickSort(left,partition-1)
+      quickSort(partition+1,right)    
+   end if       
+
+end procedure
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">

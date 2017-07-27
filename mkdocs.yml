@@ -3,42 +3,48 @@ site_author: "Brother Rain"
 google_analytics: ['UA-68978617-1', 'magizbox.com']
 
 pages:
-- "Home": 'index.md'
-- "Get Started":
-  - "Introduction": "gs_introduction.md"
-  - "Greedy Algorithms": "gs_greedy_algorithms.md"
-  - "Divide-and-Conquer": "gs_divide_and_conquer.md"
-  - "Dynamic Programming": "gs_dynamic_programming.md"
-  - "7 Steps to Solve Algorithm Problems": "7_steps.md"
-- "Data Structures":
-  - "Arrays": "ds_array.md"
-  - "Linked List": 'ds_linked_list.md'
-  - "Stacks & Queues": 'ds_stack_queue.md'
-  - "Hash Tables": "ds_hash_table.md"
-  - "Trees": 'ds_tree.md'
-  - "Binary Search Trees": "ds_binary_search_tree.md"
-  - "Heaps": 'ds_heap.md'
-- "Graphs":
-  - "Graph Data Structure": "graph_data_structure.md"
-  - "DFS: Depth First Traversal": "graph_dfs.md"
-  - "BFS: Breadth First Traversal": "graph_bfs.md"
-- "Strings":
-  - "Suffix Trees" : "index.md"
-  - "Burrows-Wheeler Transform and Suffix Arrays" : "index.md"
-  - "Tries": 'd_trie.md'
-  - "Knuth–Morris–Pratt Algorithm" : "index.md"
-  - "Constructing Suffix Arrays and Suffix Trees" : "index.md"
-- "NPs":
-  - "Complete coloring" : "index.md"
-  - "Clique cover problem" : "index.md"
-  - "Knapsack problem" : "index.md"
-  - "Bin packing problem" : "index.md"
-  - "Closest string" : "index.md"
-  - "Longest common subsequence problem" : "index.md"
-- "Advanced":
-  - "Flows in Networks" : "index.md"
-  - "Linear Programming" : "index.md"
-
+  - "Get Started":
+    - "Introduction": "gs_introduction.md"
+    - "Greedy Algorithms": "gs_greedy_algorithms.md"
+    - "Divide-and-Conquer": "gs_divide_and_conquer.md"
+    - "Dynamic Programming": "gs_dynamic_programming.md"
+    - "7 Steps to Solve Algorithm Problems": "7_steps.md"
+  - "Data Structures":
+    - "Arrays": "ds_array.md"
+    - "Linked List": 'ds_linked_list.md'
+    - "Stacks & Queues": 'ds_stack_queue.md'
+    - "Hash Tables": "ds_hash_table.md"
+    - "Trees": 'ds_tree.md'
+    - "Binary Search Trees": "ds_binary_search_tree.md"
+    - "Heaps": "ds_heap.md"
+  - "Sort":
+    - "Sorting Algorithms": "sort_algorithms.md"
+    - "Bubble Sort": "sort_bubble.md"
+    - "Insertion Sort": "sort_insertion.md"
+    - "Selection Sort": "sort_selection.md"
+    - "Merge Sort": "sort_merge.md"
+    - "Shell Sort": "sort_shell.md"
+    - "Quick Sort": "sort_quick.md"
+  - "Search": "index.md"
+  - "Graphs":
+    - "Graph Data Structure": "graph_data_structure.md"
+    - "DFS: Depth First Traversal": "graph_dfs.md"
+    - "BFS: Breadth First Traversal": "graph_bfs.md"
+  - "Strings":
+    - "Introduction to Strings" : "string_string.md"
+    - "Tries" : "string_tries.md"
+    - "Suffix Arrays and Suffix Trees" : "string_suffix_arrays_suffix_trees.md"
+    - "Knuth–Morris–Pratt Algorithm" : "string_kmp.md"
+  - "Advanced":
+    - "NPs":
+      - "Complete coloring" : "index.md"
+      - "Clique cover problem" : "index.md"
+      - "Knapsack problem" : "index.md"
+      - "Bin packing problem" : "index.md"
+      - "Closest string" : "index.md"
+      - "Longest common subsequence problem" : "index.md"
+    - "Flows in Networks" : "index.md"
+    - "Linear Programming" : "index.md"
 markdown_extensions:
     - footnotes
     - mdx_math

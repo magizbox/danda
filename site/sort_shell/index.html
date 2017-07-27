@@ -8,7 +8,7 @@
         <meta name="author" content="Brother Rain">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>BFS: Breadth First Traversal - D&A</title>
+        <title>Shell Sort - D&A</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -119,7 +119,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -143,8 +143,8 @@
     <a href="../sort_merge/">Merge Sort</a>
 </li>
                             
-<li >
-    <a href="../sort_shell/">Shell Sort</a>
+<li class="active">
+    <a href="./">Shell Sort</a>
 </li>
                             
 <li >
@@ -155,7 +155,7 @@
                     <li >
                         <a href="..">Search</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Graphs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -167,8 +167,8 @@
     <a href="../graph_dfs/">DFS: Depth First Traversal</a>
 </li>
                             
-<li class="active">
-    <a href="./">BFS: Breadth First Traversal</a>
+<li >
+    <a href="../graph_bfs/">BFS: Breadth First Traversal</a>
 </li>
                         </ul>
                     </li>
@@ -245,12 +245,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../graph_dfs/">
+                        <a rel="next" href="../sort_merge/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../string_string/">
+                        <a rel="prev" href="../sort_quick/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -262,69 +262,85 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#breadth-first-traversal">Breadth First Traversal</a></li>
-        <li class="main "><a href="#algorithms">Algorithms</a></li>
+        <li class="main active"><a href="#shell-sort">Shell Sort</a></li>
+        <li class="main "><a href="#knuths-formula">Knuth's Formula</a></li>
+        <li class="main "><a href="#how-shell-sort-works">How Shell Sort Works?</a></li>
+        <li class="main "><a href="#algorithm">Algorithm</a></li>
+        <li class="main "><a href="#pseudocode">Pseudocode</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="breadth-first-traversal">Breadth First Traversal</h1>
-<p>Breadth First Search (BFS) algorithm traverses a graph in a breadthward motion and uses a queue to remember to get the next vertex to start a search, when a dead end occurs in any iteration.</p>
-<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/breadth_first_traversal.jpg" /></p>
-<p>As in the example given above, BFS algorithm traverses from A to B to E to F first then to C and G lastly to D. It employs the following rules.</p>
+<h1 id="shell-sort">Shell Sort</h1>
+<p>Shell sort is a highly efficient sorting algorithm and is based on insertion sort algorithm. This algorithm avoids large shifts as in case of insertion sort, if the smaller value is to the far right and has to be moved to the far left.</p>
+<p>This algorithm uses insertion sort on a widely spread elements, first to sort them and then sorts the less widely spaced elements. This spacing is termed as <strong>interval</strong>. This interval is calculated based on Knuth's formula as −</p>
+<h1 id="knuths-formula">Knuth's Formula</h1>
+<p>
+<script type="math/tex">h = h * 3 + 1</script>
+</p>
+<p>where</p>
 <ul>
-<li><strong>Rule 1</strong> − Visit the adjacent unvisited vertex. Mark it as visited. Display it. Insert it * in a queue.</li>
-<li><strong>Rule 2</strong> − If no adjacent vertex is found, remove the first vertex from the queue.</li>
-<li><strong>Rule 3</strong> − Repeat Rule 1 and Rule 2 until the queue is empty.</li>
+<li>
+<script type="math/tex">h</script> is interval with initial value 1</li>
 </ul>
-<h1 id="algorithms">Algorithms</h1>
-<table>
-<thead>
-<tr>
-<th>Step</th>
-<th>Traversal</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_one.jpg" /></td>
-<td>Initialize the stack.</td>
-</tr>
-<tr>
-<td>2.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_two.jpg" /></td>
-<td>Mark S as visited and put it onto the stack. Explore any unvisited adjacent node from S. We have three nodes and we can pick any of them. For this example, we shall take the node in an alphabetical order.</td>
-</tr>
-<tr>
-<td>3.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_three.jpg" /></td>
-<td>Mark A as visited and put it onto the stack. Explore any unvisited adjacent node from A. Both Sand D are adjacent to A but we are concerned for unvisited nodes only.</td>
-</tr>
-<tr>
-<td>4.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_four.jpg" /></td>
-<td>Visit D and mark it as visited and put onto the stack. Here, we have B and C nodes, which are adjacent to D and both are unvisited. However, we shall again choose in an alphabetical order.</td>
-</tr>
-<tr>
-<td>5.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_five.jpg" /></td>
-<td>We choose B, mark it as visited and put onto the stack. Here Bdoes not have any unvisited adjacent node. So, we pop Bfrom the stack.</td>
-</tr>
-<tr>
-<td>6.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_six.jpg" /></td>
-<td>We check the stack top for return to the previous node and check if it has any unvisited nodes. Here, we find D to be on the top of the stack.</td>
-</tr>
-<tr>
-<td>7.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_seven.jpg" /></td>
-<td>Only unvisited adjacent node is from D is C now. So we visit C, mark it as visited and put it onto the stack.</td>
-</tr>
-</tbody>
-</table>
-<p>At this stage, we are left with no unmarked (unvisited) nodes. But as per the algorithm we keep on dequeuing in order to get all unvisited nodes. When the queue gets emptied, the program is over.</p></div>
+<p>This algorithm is quite efficient for medium-sized data sets as its average and worst case complexity are of <script type="math/tex">Ο(n)</script>, where <script type="math/tex">n</script> is the number of items.</p>
+<h1 id="how-shell-sort-works">How Shell Sort Works?</h1>
+<p>Let us consider the following example to have an idea of how shell sort works. We take the same array we have used in our previous examples. For our example and ease of understanding, we take the interval of 4. Make a virtual sub-list of all values located at the interval of 4 positions. Here these values are {35, 14}, {33, 19}, {42, 27} and {10, 44}</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/shell_sort_gap_4.jpg" /></p>
+<p>We compare values in each sub-list and swap them (if necessary) in the original array. After this step, the new array should look like this −</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/shell_sort_step_1.jpg" /></p>
+<p>Then, we take interval of 2 and this gap generates two sub-lists - {14, 27, 35, 42}, {19, 10, 33, 44}</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/shell_sort_gap_2.jpg" /></p>
+<p>We compare and swap the values, if required, in the original array. After this step, the array should look like this −</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/shell_sort_step_2.jpg" /></p>
+<p>Finally, we sort the rest of the array using interval of value 1. Shell sort uses insertion sort to sort the array.</p>
+<p>Following is the step-by-step depiction −</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/shell_sort.jpg" /></p>
+<p>We see that it required only four swaps to sort the rest of the array.</p>
+<h1 id="algorithm">Algorithm</h1>
+<p>Following is the algorithm for shell sort.</p>
+<pre><code>Step 1 − Initialize the value of h
+Step 2 − Divide the list into smaller sub-list of equal interval h
+Step 3 − Sort these sub-lists using insertion sort
+Step 3 − Repeat until complete list is sorted
+</code></pre>
+
+<h1 id="pseudocode">Pseudocode</h1>
+<p>Following is the pseudocode for shell sort.</p>
+<pre><code>procedure shellSort()
+   A : array of items 
+
+   /* calculate interval*/
+   while interval &lt; A.length /3 do:
+      interval = interval * 3 + 1       
+   end while
+
+   while interval &gt; 0 do:
+
+      for outer = interval; outer &lt; A.length; outer ++ do:
+
+      /* select value to be inserted */
+      valueToInsert = A[outer]
+      inner = outer;
+
+         /*shift element towards right*/
+         while inner &gt; interval -1 &amp;&amp; A[inner - interval] &gt;= valueToInsert do:
+            A[inner] = A[inner - interval]
+            inner = inner - interval
+         end while
+
+      /* insert the number at hole position */
+      A[inner] = valueToInsert
+
+      end for
+
+   /* calculate interval*/
+   interval = (interval -1) /3;   
+
+   end while
+
+end procedure
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
