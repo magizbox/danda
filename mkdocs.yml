@@ -27,7 +27,7 @@ pages:
     - "Quick Sort": "sort_quick.md"
   - "Search":
     - "Linear Search": "search_linear.md"
-    - "Binary Search": "search_linear.md"
+    - "Binary Search": "search_binary.md"
     - "Interpolation Search": "search_interpolation.md"
     - "Hash Tables": "search_hash_table.md"
   - "Graphs":

@@ -24,7 +24,6 @@ This site is intended to host a variety of resources and pointers to information
 * [Linked List](ds_linked_list.md)
 * [Stacks & Queues](ds_stack_queue.md)
 * [Trees](ds_tree.md)
-* [Hash Tables](ds_hash_table.md)
 * [Binary Search Trees](ds_binary_search_tree.md)
 * [Heaps](ds_heap.md)
 
@@ -37,6 +36,13 @@ This site is intended to host a variety of resources and pointers to information
 * [Merge Sort](sort_merge.md)
 * [Shell Sort](sort_shell.md)
 * [Quick Sort](sort_quick.md)
+
+## Search
+
+* [Linear Search](search_linear.md)
+* [Binary Search](search_binary.md)
+* [Interpolation Search](search_interpolation.md)
+* [Hash Tables](search_hash_table.md)
 
 ## Algorithms on Graphs
 

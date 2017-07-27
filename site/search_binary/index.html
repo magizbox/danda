@@ -8,7 +8,7 @@
         <meta name="author" content="Brother Rain">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Quick Sort - D&A</title>
+        <title>Binary Search - D&A</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -118,7 +118,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sort <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -146,12 +146,12 @@
     <a href="../sort_shell/">Shell Sort</a>
 </li>
                             
-<li class="active">
-    <a href="./">Quick Sort</a>
+<li >
+    <a href="../sort_quick/">Quick Sort</a>
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -159,8 +159,8 @@
     <a href="../search_linear/">Linear Search</a>
 </li>
                             
-<li >
-    <a href="../search_binary/">Binary Search</a>
+<li class="active">
+    <a href="./">Binary Search</a>
 </li>
                             
 <li >
@@ -262,12 +262,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../sort_shell/">
+                        <a rel="next" href="../search_linear/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../search_linear/">
+                        <a rel="prev" href="../search_interpolation/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -279,84 +279,68 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#quick-sort">Quick Sort</a></li>
-        <li class="main "><a href="#partition-in-quick-sort">Partition in Quick Sort</a></li>
-        <li class="main "><a href="#quick-sort-pivot-algorithm">Quick Sort Pivot Algorithm</a></li>
-        <li class="main "><a href="#quick-sort-pivot-pseudocode">Quick Sort Pivot Pseudocode</a></li>
-        <li class="main "><a href="#quick-sort-algorithm">Quick Sort Algorithm</a></li>
-        <li class="main "><a href="#quick-sort-pseudocode">Quick Sort Pseudocode</a></li>
+        <li class="main active"><a href="#binary-search">Binary Search</a></li>
+        <li class="main "><a href="#how-binary-search-works">How Binary Search Works?</a></li>
+        <li class="main "><a href="#pseudocode">Pseudocode</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="quick-sort">Quick Sort</h1>
-<p>Quick sort is a highly efficient sorting algorithm and is based on partitioning of array of data into smaller arrays. A large array is partitioned into two arrays one of which holds values smaller than the specified value, say pivot, based on which the partition is made and another array holds values greater than the pivot value.</p>
-<p>Quick sort partitions an array and then calls itself recursively twice to sort the two resulting subarrays. This algorithm is quite efficient for large-sized data sets as its average and worst case complexity are of Ο(n2), where n is the number of items.</p>
-<h1 id="partition-in-quick-sort">Partition in Quick Sort</h1>
-<p>Following animated representation explains how to find the pivot value in an array.</p>
-<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/quick_sort_partition_animation.gif" /></p>
-<p>The pivot value divides the list into two parts. And recursively, we find the pivot for each sub-lists until all lists contains only one element.</p>
-<h1 id="quick-sort-pivot-algorithm">Quick Sort Pivot Algorithm</h1>
-<p>Based on our understanding of partitioning in quick sort, we will now try to write an algorithm for it, which is as follows.</p>
-<pre><code>Step 1 − Choose the highest index value has pivot
-Step 2 − Take two variables to point left and right of the list excluding pivot
-Step 3 − left points to the low index
-Step 4 − right points to the high
-Step 5 − while value at left is less than pivot move right
-Step 6 − while value at right is greater than pivot move left
-Step 7 − if both step 5 and step 6 does not match swap left and right
-Step 8 − if left ≥ right, the point where they met is new pivot
+<h1 id="binary-search">Binary Search</h1>
+<p>Binary search is a fast search algorithm with run-time complexity of Ο(log n). This search algorithm works on the principle of divide and conquer. For this algorithm to work properly, the data collection should be in the sorted form.</p>
+<p>Binary search looks for a particular item by comparing the middle most item of the collection. If a match occurs, then the index of item is returned. If the middle item is greater than the item, then the item is searched in the sub-array to the left of the middle item. Otherwise, the item is searched for in the sub-array to the right of the middle item. This process continues on the sub-array as well until the size of the subarray reduces to zero.</p>
+<h1 id="how-binary-search-works">How Binary Search Works?</h1>
+<p>For a binary search to work, it is mandatory for the target array to be sorted. We shall learn the process of binary search with a pictorial example. The following is our sorted array and let us assume that we need to search the location of value 31 using binary search.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_0.jpg" /></p>
+<p>First, we shall determine half of the array by using this formula −</p>
+<pre><code>mid = low + (high - low) / 2
 </code></pre>
 
-<h1 id="quick-sort-pivot-pseudocode">Quick Sort Pivot Pseudocode</h1>
-<p>The pseudocode for the above algorithm can be derived as −</p>
-<pre><code>function partitionFunc(left, right, pivot)
-   leftPointer = left
-   rightPointer = right - 1
-
-   while True do
-      while A[++leftPointer] &lt; pivot do
-         //do-nothing            
-      end while
-
-      while rightPointer &gt; 0 &amp;&amp; A[--rightPointer] &gt; pivot do
-         //do-nothing         
-      end while
-
-      if leftPointer &gt;= rightPointer
-         break
-      else                
-         swap leftPointer,rightPointer
-      end if
-
-   end while 
-
-   swap leftPointer,right
-   return leftPointer
-
-end function
+<p>Here it is, 0 + (9 - 0 ) / 2 = 4 (integer value of 4.5). So, 4 is the mid of the array.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_1.jpg" /></p>
+<p>Now we compare the value stored at location 4, with the value being searched, i.e. 31. We find that the value at location 4 is 27, which is not a match. As the value is greater than 27 and we have a sorted array, so we also know that the target value must be in the upper portion of the array.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_2.jpg" /></p>
+<p>We change our low to mid + 1 and find the new mid value again.</p>
+<pre><code>low = mid + 1
+mid = low + (high - low) / 2
 </code></pre>
 
-<h1 id="quick-sort-algorithm">Quick Sort Algorithm</h1>
-<p>Using pivot algorithm recursively, we end up with smaller possible partitions. Each partition is then processed for quick sort. We define recursive algorithm for quicksort as follows</p>
-<pre><code>Step 1 − Make the right-most index value pivot
-Step 2 − partition the array using pivot value
-Step 3 − quicksort left partition recursively
-Step 4 − quicksort right partition recursively
-</code></pre>
+<p>Our new mid is 7 now. We compare the value stored at location 7 with our target value 31.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_3.jpg" /></p>
+<p>The value stored at location 7 is not a match, rather it is more than what we are looking for. So, the value must be in the lower part from this location.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_4.jpg" /></p>
+<p>Hence, we calculate the mid again. This time it is 5.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_5.jpg" /></p>
+<p>We compare the value stored at location 5 with our target value. We find that it is a match.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_6.jpg" /></p>
+<p>We conclude that the target value 31 is stored at location 5.</p>
+<p>Binary search halves the searchable items and thus reduces the count of comparisons to be made to very less numbers.</p>
+<h1 id="pseudocode">Pseudocode</h1>
+<p>The pseudocode of binary search algorithms should look like this −</p>
+<pre><code>Procedure binary_search
+   A ← sorted array
+   n ← size of array
+   x ← value to be searched
 
-<h1 id="quick-sort-pseudocode">Quick Sort Pseudocode</h1>
-<p>To get more into it, let see the pseudocode for quick sort algorithm</p>
-<pre><code>procedure quickSort(left, right)
+   Set lowerBound = 1
+   Set upperBound = n 
 
-   if right-left &lt;= 0
-      return
-   else     
-      pivot = A[right]
-      partition = partitionFunc(left, right, pivot)
-      quickSort(left,partition-1)
-      quickSort(partition+1,right)    
-   end if       
+   while x not found
+      if upperBound &lt; lowerBound 
+         EXIT: x does not exists.
+
+      set midPoint = lowerBound + ( upperBound - lowerBound ) / 2
+
+      if A[midPoint] &lt; x
+         set lowerBound = midPoint + 1
+
+      if A[midPoint] &gt; x
+         set upperBound = midPoint - 1 
+
+      if A[midPoint] = x 
+         EXIT: x found at location midPoint
+
+   end while
 
 end procedure
 </code></pre></div>
