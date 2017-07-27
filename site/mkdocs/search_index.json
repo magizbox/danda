@@ -1,6 +1,76 @@
 {
     "docs": [
         {
+            "location": "/", 
+            "text": "Data Structures \n Algorithms Tutorial \nby MG\n\n\n\n\nAlgorithms + Data Structures = Programs\n\n\nIn computer science, a \ndata structure\n is a particular way of organizing data in a computer so that it can be used efficiently. Data structures can implement one or more particular abstract data types (ADT), which specify the operations that can be performed on a data structure and the computional complexity of those operations. In comparison, a data structure is a concrete implementation of the specification provided by an ADT.\n\n\nIn mathematics and computer science, an \nalgorithm\n is a self-contained step-by-step set of operations to be performed. Algorithms perform calculation, data processing, and/or automated reasoning tasks.\n\n\n\n\nTable of Contents\n\n\nThis site is intended to host a variety of resources and pointers to information about Data Structures and Algorithms. \n\n\nGet Started\n\n\n\n\nIntroduction\n\n\nGreedy Algorithms\n\n\nDivide-and-Conquer\n\n\nDynamic Programming\n\n\n7 Steps to Solve Algorithm Problems\n\n\n\n\nData Structures\n\n\n\n\nArrays\n\n\nLinked List\n\n\nStacks \n Queues\n\n\nTrees\n\n\nHash Tables\n\n\nBinary Search Trees\n\n\nHeaps\n\n\n\n\nSort\n\n\n\n\nSorting Algorithms\n\n\nBubble Sort\n\n\nInsertion Sort\n\n\nSelection Sorts\n\n\nMerge Sort\n\n\nShell Sort\n\n\nQuick Sort\n\n\n\n\nAlgorithms on Graphs\n\n\n\n\nGraph Data Structure\n\n\nDFS: Depth First Traversal\n\n\nBFS: Breadth First Traversal\n\n\n\n\nAlgorithms on Strings\n\n\n\n\nIntroduction to Strings\n\n\nTries\n\n\nSuffix Arrays and Suffix Trees\n\n\nKnuth\u2013Morris\u2013Pratt Algorithm\n\n\n\n\nNP-complete Problems\n\n\n\n\nComplete coloring\n\n\nClique cover problem\n\n\nKnapsack problem\n\n\nBin packing problem\n\n\nClosest string\n\n\nLongest common subsequence problem\n\n\n\n\nAdvanced Algorithms and Complexity\n\n\n\n\nFlows in Networks\n\n\nLinear Programming\n\n\n\n\nMiscellaneous\n\n\n\n\nBest algorithms and data structures books\n\n\nBest algorithms and data structures courses\n\n\nData Structures and Algorithms Challenges\n\n\n\n\nBooks\n\n\n\n\n\n\n\n\nCourses\n\n\n\n\n\n\n\n\nChallenges\n\n\n\n\nhttps://www.topcoder.com/\n\n\nhttps://www.hackerrank.com/\n\n\nhttp://codeforces.com/\n\n\nhttps://www.codechef.com/\n\n\nhttp://www.spoj.com/\n\n\nhttps://projecteuler.net/", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#data-structures-algorithms-tutorial-by-mg", 
+            "text": "Algorithms + Data Structures = Programs  In computer science, a  data structure  is a particular way of organizing data in a computer so that it can be used efficiently. Data structures can implement one or more particular abstract data types (ADT), which specify the operations that can be performed on a data structure and the computional complexity of those operations. In comparison, a data structure is a concrete implementation of the specification provided by an ADT.  In mathematics and computer science, an  algorithm  is a self-contained step-by-step set of operations to be performed. Algorithms perform calculation, data processing, and/or automated reasoning tasks.", 
+            "title": "Data Structures &amp; Algorithms Tutorial by MG"
+        }, 
+        {
+            "location": "/#table-of-contents", 
+            "text": "This site is intended to host a variety of resources and pointers to information about Data Structures and Algorithms.", 
+            "title": "Table of Contents"
+        }, 
+        {
+            "location": "/#get-started", 
+            "text": "Introduction  Greedy Algorithms  Divide-and-Conquer  Dynamic Programming  7 Steps to Solve Algorithm Problems", 
+            "title": "Get Started"
+        }, 
+        {
+            "location": "/#data-structures", 
+            "text": "Arrays  Linked List  Stacks   Queues  Trees  Hash Tables  Binary Search Trees  Heaps", 
+            "title": "Data Structures"
+        }, 
+        {
+            "location": "/#sort", 
+            "text": "Sorting Algorithms  Bubble Sort  Insertion Sort  Selection Sorts  Merge Sort  Shell Sort  Quick Sort", 
+            "title": "Sort"
+        }, 
+        {
+            "location": "/#algorithms-on-graphs", 
+            "text": "Graph Data Structure  DFS: Depth First Traversal  BFS: Breadth First Traversal", 
+            "title": "Algorithms on Graphs"
+        }, 
+        {
+            "location": "/#algorithms-on-strings", 
+            "text": "Introduction to Strings  Tries  Suffix Arrays and Suffix Trees  Knuth\u2013Morris\u2013Pratt Algorithm", 
+            "title": "Algorithms on Strings"
+        }, 
+        {
+            "location": "/#np-complete-problems", 
+            "text": "Complete coloring  Clique cover problem  Knapsack problem  Bin packing problem  Closest string  Longest common subsequence problem", 
+            "title": "NP-complete Problems"
+        }, 
+        {
+            "location": "/#advanced-algorithms-and-complexity", 
+            "text": "Flows in Networks  Linear Programming", 
+            "title": "Advanced Algorithms and Complexity"
+        }, 
+        {
+            "location": "/#miscellaneous", 
+            "text": "Best algorithms and data structures books  Best algorithms and data structures courses  Data Structures and Algorithms Challenges", 
+            "title": "Miscellaneous"
+        }, 
+        {
+            "location": "/#books", 
+            "text": "", 
+            "title": "Books"
+        }, 
+        {
+            "location": "/#courses", 
+            "text": "", 
+            "title": "Courses"
+        }, 
+        {
+            "location": "/#challenges", 
+            "text": "https://www.topcoder.com/  https://www.hackerrank.com/  http://codeforces.com/  https://www.codechef.com/  http://www.spoj.com/  https://projecteuler.net/", 
+            "title": "Challenges"
+        }, 
+        {
             "location": "/gs_introduction/", 
             "text": "Introduction\n\n\nSoftware engineering is the study of ways in which to create large and complex computer applications and that generally involve many programmers and designers. At the heart of software engineering is with the overall design of the applications and on the creation of a design that is based on the needs and requirements of end users. While software engineering involves the full life cycle of a software project, is includes many different components - specification, requirements gathering, design, verification, coding, testing, quality assurance, user acceptance testing, production, and ongoing maintenance.\n\n\nHaving an in-depth understanding on every component of software engineering is not mandatory, however, it is important to understand that the subject of data structures and algorithms is concerned with the coding phase. The use of data structures and algorithms is the nuts-and-blots used by programmers to store and manipulate data.\n\n\nThis article, along with the other examples in this section focuses on the essentials of data structures and algorithms. Attempts will be made to understand how they work, which structure or algorithm is best in a particular situation in an easy to understand environment.\n\n\nData Structures and Algorithms - Defined\n\n\nA data structure is an arrangement of data in a computer's memory or even disk storage. An example of several common data structures are arrays, linked lists, queues, stacks, binary trees, and hash tables. Algorithms, on the other hand, are used to manipulate the data contained in these data structures as in searching and sorting.\n\n\nMany algorithms apply directly to a specific data structures. When working with certain data structures you need to know how to insert new data, search for a specified item, and deleting a specific item.\n\n\nCommonly used algorithms include are useful for:\n\n\n\n\nSearching for a particular data item (or record).\n\n\nSorting the data. There are many ways to sort data. Simple sorting, Advanced sorting\n\n\nIterating through all the items in a data structure. (Visiting each item in turn so as to display it or perform some other action on these items)", 
             "title": "Introduction"
@@ -311,56 +381,6 @@
             "title": "References"
         }, 
         {
-            "location": "/ds_hash_table/", 
-            "text": "Hash Table\n\n\nHash Table is a data structure which stores data in an associative manner. In a hash table, data is stored in an array format, where each data value has its own unique index value. Access of data becomes very fast if we know the index of the desired data.\n\n\nThus, it becomes a data structure in which insertion and search operations are very fast irrespective of the size of the data. Hash Table uses an array as a storage medium and uses hash technique to generate an index where an element is to be inserted or is to be located from.\n\n\nHashing\n\n\nHashing is a technique to convert a range of key values into a range of indexes of an array. We're going to use modulo operator to get a range of key values. Consider an example of hash table of size 20, and the following items are to be stored. Item are in the (key,value) format.\n\n\n\n\n\n\n(1,20)\n\n\n(2,70)\n\n\n(42,80)\n\n\n(4,25)\n\n\n(12,44)\n\n\n(14,32)\n\n\n(17,11)\n\n\n(13,78)\n\n\n(37,98)\n\n\n\n\n\n\n\n\n\n\nSr. No.\n\n\nKey\n\n\nHash\n\n\nArray Index\n\n\n\n\n\n\n\n\n\n\n1\n\n\n1\n\n\n1 % 20 = 1\n\n\n1\n\n\n\n\n\n\n2\n\n\n2\n\n\n2 % 20 = 2\n\n\n2\n\n\n\n\n\n\n3\n\n\n42\n\n\n42 % 20 = 2\n\n\n2\n\n\n\n\n\n\n4\n\n\n4\n\n\n4 % 20 = 4\n\n\n4\n\n\n\n\n\n\n5\n\n\n12\n\n\n12 % 20 = 12\n\n\n12\n\n\n\n\n\n\n6\n\n\n14\n\n\n4 % 20 = 14\n\n\n14\n\n\n\n\n\n\n7\n\n\n17\n\n\n7 % 20 = 17\n\n\n17\n\n\n\n\n\n\n8\n\n\n13\n\n\n3 % 20 = 13\n\n\n13\n\n\n\n\n\n\n9\n\n\n37\n\n\n7 % 20 = 17\n\n\n17\n\n\n\n\n\n\n\n\nLinear Probing\n\n\nAs we can see, it may happen that the hashing technique is used to create an already used index of the array. In such a case, we can search the next empty location in the array by looking into the next cell until we find an empty cell. This technique is called linear probing.\n\n\n\n\n\n\n\n\nSr. No.\n\n\nKey\n\n\nHash\n\n\nArray Index\n\n\nAfter Linear Probing, Array Index\n\n\n\n\n\n\n\n\n\n\n1\n\n\n1\n\n\n1 % 20 = 1\n\n\n1\n\n\n1\n\n\n\n\n\n\n2\n\n\n2\n\n\n2 % 20 = 2\n\n\n2\n\n\n2\n\n\n\n\n\n\n3\n\n\n42\n\n\n42 % 20 = 2\n\n\n2\n\n\n3\n\n\n\n\n\n\n4\n\n\n4\n\n\n4 % 20 = 4\n\n\n4\n\n\n4\n\n\n\n\n\n\n5\n\n\n12\n\n\n12 % 20 = 12\n\n\n12\n\n\n12\n\n\n\n\n\n\n6\n\n\n14\n\n\n14 % 20 = 14\n\n\n14\n\n\n14\n\n\n\n\n\n\n7\n\n\n17\n\n\n17 % 20 = 17\n\n\n17\n\n\n17\n\n\n\n\n\n\n8\n\n\n13\n\n\n13 % 20 = 13\n\n\n13\n\n\n13\n\n\n\n\n\n\n9\n\n\n37\n\n\n37 % 20 = 17\n\n\n17\n\n\n18\n\n\n\n\n\n\n\n\nBasic Operations\n\n\nFollowing are the basic primary operations of a hash table.\n\n\n\n\nSearch\n \u2212 Searches an element in a hash table.\n\n\nInsert\n \u2212 inserts an element in a hash table.\n\n\ndelete\n \u2212 Deletes an element from a hash table.\n\n\n\n\nDataItem\n\n\nDefine a data item having some data and key, based on which the search is to be conducted in a hash table.\n\n\nstruct DataItem {\n   int data;   \n   int key;\n};\n\n\n\n\nHash Method\n\n\nDefine a hashing method to compute the hash code of the key of the data item.\n\n\nint hashCode(int key){\n   return key % SIZE;\n}\n\n\n\n\nSearch Operation\n\n\nWhenever an element is to be searched, compute the hash code of the key passed and locate the element using that hash code as index in the array. Use linear probing to get the element ahead if the element is not found at the computed hash code.\n\n\nExample\n\n\nstruct DataItem *search(int key) {\n   //get the hash \n   int hashIndex = hashCode(key);\n\n   //move in array until an empty \n   while(hashArray[hashIndex] != NULL) {\n\n      if(hashArray[hashIndex]-\nkey == key)\n         return hashArray[hashIndex];\n\n      //go to next cell\n      ++hashIndex;\n\n      //wrap around the table\n      hashIndex %= SIZE;\n   }\n\n   return NULL;        \n}\n\n\n\n\nInsert Operation\n\n\nWhenever an element is to be inserted, compute the hash code of the key passed and locate the index using that hash code as an index in the array. Use linear probing for empty location, if an element is found at the computed hash code.\n\n\nExample\n\n\nvoid insert(int key,int data) {\n   struct DataItem *item = (struct DataItem*) malloc(sizeof(struct DataItem));\n   item-\ndata = data;  \n   item-\nkey = key;     \n\n   //get the hash \n   int hashIndex = hashCode(key);\n\n   //move in array until an empty or deleted cell\n   while(hashArray[hashIndex] != NULL \n hashArray[hashIndex]-\nkey != -1) {\n      //go to next cell\n      ++hashIndex;\n\n      //wrap around the table\n      hashIndex %= SIZE;\n   }\n\n   hashArray[hashIndex] = item;        \n}\n\n\n\n\nDelete Operation\n\n\nWhenever an element is to be deleted, compute the hash code of the key passed and locate the index using that hash code as an index in the array. Use linear probing to get the element ahead if an element is not found at the computed hash code. When found, store a dummy item there to keep the performance of the hash table intact.\n\n\nExample\n\n\nstruct DataItem* delete(struct DataItem* item) {\n   int key = item-\nkey;\n\n   //get the hash \n   int hashIndex = hashCode(key);\n\n   //move in array until an empty \n   while(hashArray[hashIndex] !=NULL) {\n\n      if(hashArray[hashIndex]-\nkey == key) {\n         struct DataItem* temp = hashArray[hashIndex]; \n\n         //assign a dummy item at deleted position\n         hashArray[hashIndex] = dummyItem; \n         return temp;\n      } \n\n      //go to next cell\n      ++hashIndex;\n\n      //wrap around the table\n      hashIndex %= SIZE;\n   }  \n\n   return NULL;        \n}", 
-            "title": "Hash Tables"
-        }, 
-        {
-            "location": "/ds_hash_table/#hash-table", 
-            "text": "Hash Table is a data structure which stores data in an associative manner. In a hash table, data is stored in an array format, where each data value has its own unique index value. Access of data becomes very fast if we know the index of the desired data.  Thus, it becomes a data structure in which insertion and search operations are very fast irrespective of the size of the data. Hash Table uses an array as a storage medium and uses hash technique to generate an index where an element is to be inserted or is to be located from.", 
-            "title": "Hash Table"
-        }, 
-        {
-            "location": "/ds_hash_table/#hashing", 
-            "text": "Hashing is a technique to convert a range of key values into a range of indexes of an array. We're going to use modulo operator to get a range of key values. Consider an example of hash table of size 20, and the following items are to be stored. Item are in the (key,value) format.    (1,20)  (2,70)  (42,80)  (4,25)  (12,44)  (14,32)  (17,11)  (13,78)  (37,98)      Sr. No.  Key  Hash  Array Index      1  1  1 % 20 = 1  1    2  2  2 % 20 = 2  2    3  42  42 % 20 = 2  2    4  4  4 % 20 = 4  4    5  12  12 % 20 = 12  12    6  14  4 % 20 = 14  14    7  17  7 % 20 = 17  17    8  13  3 % 20 = 13  13    9  37  7 % 20 = 17  17", 
-            "title": "Hashing"
-        }, 
-        {
-            "location": "/ds_hash_table/#linear-probing", 
-            "text": "As we can see, it may happen that the hashing technique is used to create an already used index of the array. In such a case, we can search the next empty location in the array by looking into the next cell until we find an empty cell. This technique is called linear probing.     Sr. No.  Key  Hash  Array Index  After Linear Probing, Array Index      1  1  1 % 20 = 1  1  1    2  2  2 % 20 = 2  2  2    3  42  42 % 20 = 2  2  3    4  4  4 % 20 = 4  4  4    5  12  12 % 20 = 12  12  12    6  14  14 % 20 = 14  14  14    7  17  17 % 20 = 17  17  17    8  13  13 % 20 = 13  13  13    9  37  37 % 20 = 17  17  18", 
-            "title": "Linear Probing"
-        }, 
-        {
-            "location": "/ds_hash_table/#basic-operations", 
-            "text": "Following are the basic primary operations of a hash table.   Search  \u2212 Searches an element in a hash table.  Insert  \u2212 inserts an element in a hash table.  delete  \u2212 Deletes an element from a hash table.", 
-            "title": "Basic Operations"
-        }, 
-        {
-            "location": "/ds_hash_table/#dataitem", 
-            "text": "Define a data item having some data and key, based on which the search is to be conducted in a hash table.  struct DataItem {\n   int data;   \n   int key;\n};", 
-            "title": "DataItem"
-        }, 
-        {
-            "location": "/ds_hash_table/#hash-method", 
-            "text": "Define a hashing method to compute the hash code of the key of the data item.  int hashCode(int key){\n   return key % SIZE;\n}", 
-            "title": "Hash Method"
-        }, 
-        {
-            "location": "/ds_hash_table/#search-operation", 
-            "text": "Whenever an element is to be searched, compute the hash code of the key passed and locate the element using that hash code as index in the array. Use linear probing to get the element ahead if the element is not found at the computed hash code.  Example  struct DataItem *search(int key) {\n   //get the hash \n   int hashIndex = hashCode(key);\n\n   //move in array until an empty \n   while(hashArray[hashIndex] != NULL) {\n\n      if(hashArray[hashIndex]- key == key)\n         return hashArray[hashIndex];\n\n      //go to next cell\n      ++hashIndex;\n\n      //wrap around the table\n      hashIndex %= SIZE;\n   }\n\n   return NULL;        \n}", 
-            "title": "Search Operation"
-        }, 
-        {
-            "location": "/ds_hash_table/#insert-operation", 
-            "text": "Whenever an element is to be inserted, compute the hash code of the key passed and locate the index using that hash code as an index in the array. Use linear probing for empty location, if an element is found at the computed hash code.  Example  void insert(int key,int data) {\n   struct DataItem *item = (struct DataItem*) malloc(sizeof(struct DataItem));\n   item- data = data;  \n   item- key = key;     \n\n   //get the hash \n   int hashIndex = hashCode(key);\n\n   //move in array until an empty or deleted cell\n   while(hashArray[hashIndex] != NULL   hashArray[hashIndex]- key != -1) {\n      //go to next cell\n      ++hashIndex;\n\n      //wrap around the table\n      hashIndex %= SIZE;\n   }\n\n   hashArray[hashIndex] = item;        \n}", 
-            "title": "Insert Operation"
-        }, 
-        {
-            "location": "/ds_hash_table/#delete-operation", 
-            "text": "Whenever an element is to be deleted, compute the hash code of the key passed and locate the index using that hash code as an index in the array. Use linear probing to get the element ahead if an element is not found at the computed hash code. When found, store a dummy item there to keep the performance of the hash table intact.  Example  struct DataItem* delete(struct DataItem* item) {\n   int key = item- key;\n\n   //get the hash \n   int hashIndex = hashCode(key);\n\n   //move in array until an empty \n   while(hashArray[hashIndex] !=NULL) {\n\n      if(hashArray[hashIndex]- key == key) {\n         struct DataItem* temp = hashArray[hashIndex]; \n\n         //assign a dummy item at deleted position\n         hashArray[hashIndex] = dummyItem; \n         return temp;\n      } \n\n      //go to next cell\n      ++hashIndex;\n\n      //wrap around the table\n      hashIndex %= SIZE;\n   }  \n\n   return NULL;        \n}", 
-            "title": "Delete Operation"
-        }, 
-        {
             "location": "/ds_tree/", 
             "text": "Tree\n\n\nBinary Tree\n\n\nFundamentally, a binary tree is composed of nodes connected by edges (with further restrictions discussed below). Some binary tree, \nt\n, is either empty or consists of a single root element with two distinct binary tree child elements known as the \nleft subtree\n and the \nright subtree\n of \nt\n. As the name \nbinary\n suggests, a node in a binary tree has a \nmaximum\n of \n2\n children.\n\n\nThe following diagrams depict two different binary trees: \n\n\n \n\n\nHere are the basic facts and terms to know about binary trees:\n\n\n\n\nThe convention for binary tree diagrams is that the \nroot\n is at the top, and the subtrees branch down from it.\n\n\nA node's \nleft\n and \nright\n subtrees are referred to as \nchildren\n, and that node can be referred to as the \nparent\n of those subtrees.\n\n\nA non-root node with no children is called a \nleaf\n.\n\n\nSome node \na\n is an ancestor of some node \nb\n if \nb\n is located in a left or right subtree whose root node is \na\n. This means that the root node of binary tree \nt\n is the ancestor of all other nodes in the tree.\n\n\nIf some node \na\n is an ancestor of some node \nb\n, then the path from \na\n to \nb\n is the sequence of nodes starting with \na\n, moving down the ancestral chain of children, and ending with bb.\n\n\nThe depth (or level) of some node \na\n is its distance (i.e., number of edges) from the tree's root node.\n\n\nSimply put, the height of a tree is the number of edges between the root node and its furthest leaf.\n\n\nMore technically put, it's \n1+max(height(leftSubtree), height(rightSubtree))\n ) (i.e., one more than the maximum of the heights of its left and right subtrees).\n\n\nAny node has a height of \n1\n, and the height of an empty subtree is \n - 1 \n.\n\n\nBecause the height of each node is \n1 + \n the maximum height of its subtrees and an empty subtree's height is \n - 1 \n, the height of a single-element tree or leaf node is \n0\n.\n\n\n\n\n\n\n\n\nLet's apply some of the terms we learned above to the binary tree on the right:\n\n\n\n\n\n\nThe root node is \nA\n.\n\n\n\n\n\n\nThe respective left and right children of \nA\n are \nB\n and \nE\n. The left child of \nB\n is \nC\n. The respective left and right children of \nE\n are \nF\n and \nD\n.\n\n\n\n\n\n\nNodes \nC\n, \nF\n, and \nD\n are leaves (i.e., each node is a leaf).\n\n\n\n\n\n\nThe root is the ancestor of all other nodes, \nB\n is an ancestor of \nC\n, and \nE\n is an ancestor of \nF\n and \nD\n.\n\n\n\n\n\n\nThe path between \nA\n and \nC\n is \n A \\rightarrow B \\rightarrow C \n. The path between \nA\n and \nF\n is \n A \\rightarrow E \\rightarrow F \n. The path between \nA\n and \nD\n is A \n \\rightarrow E \\rightarrow D \n.\n\n\n\n\n\n\nThe depth of root node \nA\n is \n0\n. The depth of nodes \nB\n and \nE\n is \n1\n. The depth of nodes \nC\n, \nF\n, and \nD\n, is \n2\n.\n\n\n\n\n\n\nThe height of the tree, \n height(t) \n, is \n2\n. We calculate this recursively as \n height(t)=1+(max(height(root.leftChild),height(root.rightChild))) \n.\n\n\n\n\n\n\nBecause this is long and complicated when expanded, we'll break it down using an image of a slightly simpler version of \nt\n whose height is still \n2\n: \n\n\n \n\n\nBinary Search Tree\n\n\nA Binary Search Tree (BST), \nt\n, is a binary tree that is either empty or satisfies the following three conditions:\n\n\n\n\n\n\nEach element in the left subtree of \nt\n is less than or equal to the root element of \nt\n (i.e., \n max(leftTree(t).value) \\leq t.valuemax(leftTree(t).value) \\leq t.value \n).\n\n\n\n\n\n\nEach element in the right subtree of \nt\n is greater than the root element of \nt\n (i.e., \n max(rightTree(t).value) \\ge t.valuemax(rightTree(t).value) \\ge t.value\n).\n\n\n\n\n\n\nBoth \n leftTree(t) \n and \n rightTree(t) \n are BSTs.\n\n\n\n\n\n\nYou can essentially think of it as a regular binary tree where for each node parent having a \n leftChild \n and \n rightChild \n, \n leftChild.value \\leq parent.value \\le rightChild.value \n. In the first diagram at the top of this article, the binary tree of integers on the left side is a binary search tree.\n\n\nAdvantages and Drawbacks\n\n\n\n\nSearching for elements is very fast.\n\n\n\n\nWe know that each node has a maximum of two children and we know that the \n \\leq \n items are always in the left subtree and the \n > \n items are always in the right subtree. To search for an element, we simply need to compare the value we want against the value stored in the root node of the current subtree and work our way down the appropriate child subtrees until we either find the value we're looking for or we hit \nnull\n (i.e., an empty subtree) which indicates the item is not in the BST. Inserting or searching for a node in a balanced tree is \n O(\\log n) \n because you're discarding half of the possible values each time you go left or right.\n\n\n\n\nIt can easily become unbalanced.\n\n\n\n\nDepending on the insertion order, the tree can very easily become unbalanced (which makes for longer search times). For example, if we create a new tree where the sequence of inserted nodes is \n 2 \\rightarrow 1 \\rightarrow 3 \\rightarrow 4 \\rightarrow 5 \\rightarrow 6 \n, we end up with the following unbalanced tree: \n\n\n\n\nObserve that the root's left subtree only has one node, whereas the root's right subtree has four nodes. For this reason, inserting or searching for a node in an unbalanced tree is \n O(n) \n.\n\n\nChallenges\n\n\n\n\n\"Trees: Is This a Binary Search Tree?\". \nhackerrank\n. 2016\n\n\n\n\nReferences\n\n\n\n\n\"Binary Trees and Binary Search Trees\". \nAllisonP, hackerrank\n. 2016", 
             "title": "Trees"
@@ -666,74 +686,124 @@
             "title": "Quick Sort Pseudocode"
         }, 
         {
-            "location": "/", 
-            "text": "Data Structures \n Algorithms Tutorial \nby MG\n\n\n\n\nAlgorithms + Data Structures = Programs\n\n\nIn computer science, a \ndata structure\n is a particular way of organizing data in a computer so that it can be used efficiently. Data structures can implement one or more particular abstract data types (ADT), which specify the operations that can be performed on a data structure and the computional complexity of those operations. In comparison, a data structure is a concrete implementation of the specification provided by an ADT.\n\n\nIn mathematics and computer science, an \nalgorithm\n is a self-contained step-by-step set of operations to be performed. Algorithms perform calculation, data processing, and/or automated reasoning tasks.\n\n\n\n\nTable of Contents\n\n\nThis site is intended to host a variety of resources and pointers to information about Data Structures and Algorithms. \n\n\nGet Started\n\n\n\n\nIntroduction\n\n\nGreedy Algorithms\n\n\nDivide-and-Conquer\n\n\nDynamic Programming\n\n\n7 Steps to Solve Algorithm Problems\n\n\n\n\nData Structures\n\n\n\n\nArrays\n\n\nLinked List\n\n\nStacks \n Queues\n\n\nTrees\n\n\nHash Tables\n\n\nBinary Search Trees\n\n\nHeaps\n\n\n\n\nSort\n\n\n\n\nSorting Algorithms\n\n\nBubble Sort\n\n\nInsertion Sort\n\n\nSelection Sorts\n\n\nMerge Sort\n\n\nShell Sort\n\n\nQuick Sort\n\n\n\n\nAlgorithms on Graphs\n\n\n\n\nGraph Data Structure\n\n\nDFS: Depth First Traversal\n\n\nBFS: Breadth First Traversal\n\n\n\n\nAlgorithms on Strings\n\n\n\n\nIntroduction to Strings\n\n\nTries\n\n\nSuffix Arrays and Suffix Trees\n\n\nKnuth\u2013Morris\u2013Pratt Algorithm\n\n\n\n\nNP-complete Problems\n\n\n\n\nComplete coloring\n\n\nClique cover problem\n\n\nKnapsack problem\n\n\nBin packing problem\n\n\nClosest string\n\n\nLongest common subsequence problem\n\n\n\n\nAdvanced Algorithms and Complexity\n\n\n\n\nFlows in Networks\n\n\nLinear Programming\n\n\n\n\nMiscellaneous\n\n\n\n\nBest algorithms and data structures books\n\n\nBest algorithms and data structures courses\n\n\nData Structures and Algorithms Challenges\n\n\n\n\nBooks\n\n\n\n\n\n\n\n\nCourses\n\n\n\n\n\n\n\n\nChallenges\n\n\n\n\nhttps://www.topcoder.com/\n\n\nhttps://www.hackerrank.com/\n\n\nhttp://codeforces.com/\n\n\nhttps://www.codechef.com/\n\n\nhttp://www.spoj.com/\n\n\nhttps://projecteuler.net/", 
-            "title": "Search"
+            "location": "/search_linear/", 
+            "text": "Linear Search\n\n\nLinear search is a very simple search algorithm. In this type of search, a sequential search is made over all items one by one. Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the end of the data collection.\n\n\n\n\nAlgorithm\n\n\nLinear Search ( Array A, Value x)\n\nStep 1: Set i to 1\nStep 2: if i \n n then go to step 7\nStep 3: if A[i] = x then go to step 6\nStep 4: Set i to i + 1\nStep 5: Go to Step 2\nStep 6: Print Element x Found at index i and go to step 8\nStep 7: Print element not found\nStep 8: Exit\n\n\n\n\nPseudocode\n\n\nprocedure linear_search (list, value)\n\n   for each item in the list\n\n      if match item == value\n\n         return the item's location\n\n      end if\n\n   end for\n\nend procedure", 
+            "title": "Linear Search"
         }, 
         {
-            "location": "/#data-structures-algorithms-tutorial-by-mg", 
-            "text": "Algorithms + Data Structures = Programs  In computer science, a  data structure  is a particular way of organizing data in a computer so that it can be used efficiently. Data structures can implement one or more particular abstract data types (ADT), which specify the operations that can be performed on a data structure and the computional complexity of those operations. In comparison, a data structure is a concrete implementation of the specification provided by an ADT.  In mathematics and computer science, an  algorithm  is a self-contained step-by-step set of operations to be performed. Algorithms perform calculation, data processing, and/or automated reasoning tasks.", 
-            "title": "Data Structures &amp; Algorithms Tutorial by MG"
+            "location": "/search_linear/#linear-search", 
+            "text": "Linear search is a very simple search algorithm. In this type of search, a sequential search is made over all items one by one. Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the end of the data collection.", 
+            "title": "Linear Search"
         }, 
         {
-            "location": "/#table-of-contents", 
-            "text": "This site is intended to host a variety of resources and pointers to information about Data Structures and Algorithms.", 
-            "title": "Table of Contents"
+            "location": "/search_linear/#algorithm", 
+            "text": "Linear Search ( Array A, Value x)\n\nStep 1: Set i to 1\nStep 2: if i   n then go to step 7\nStep 3: if A[i] = x then go to step 6\nStep 4: Set i to i + 1\nStep 5: Go to Step 2\nStep 6: Print Element x Found at index i and go to step 8\nStep 7: Print element not found\nStep 8: Exit", 
+            "title": "Algorithm"
         }, 
         {
-            "location": "/#get-started", 
-            "text": "Introduction  Greedy Algorithms  Divide-and-Conquer  Dynamic Programming  7 Steps to Solve Algorithm Problems", 
-            "title": "Get Started"
+            "location": "/search_linear/#pseudocode", 
+            "text": "procedure linear_search (list, value)\n\n   for each item in the list\n\n      if match item == value\n\n         return the item's location\n\n      end if\n\n   end for\n\nend procedure", 
+            "title": "Pseudocode"
         }, 
         {
-            "location": "/#data-structures", 
-            "text": "Arrays  Linked List  Stacks   Queues  Trees  Hash Tables  Binary Search Trees  Heaps", 
-            "title": "Data Structures"
+            "location": "/search_linear/", 
+            "text": "Linear Search\n\n\nLinear search is a very simple search algorithm. In this type of search, a sequential search is made over all items one by one. Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the end of the data collection.\n\n\n\n\nAlgorithm\n\n\nLinear Search ( Array A, Value x)\n\nStep 1: Set i to 1\nStep 2: if i \n n then go to step 7\nStep 3: if A[i] = x then go to step 6\nStep 4: Set i to i + 1\nStep 5: Go to Step 2\nStep 6: Print Element x Found at index i and go to step 8\nStep 7: Print element not found\nStep 8: Exit\n\n\n\n\nPseudocode\n\n\nprocedure linear_search (list, value)\n\n   for each item in the list\n\n      if match item == value\n\n         return the item's location\n\n      end if\n\n   end for\n\nend procedure", 
+            "title": "Binary Search"
         }, 
         {
-            "location": "/#sort", 
-            "text": "Sorting Algorithms  Bubble Sort  Insertion Sort  Selection Sorts  Merge Sort  Shell Sort  Quick Sort", 
-            "title": "Sort"
+            "location": "/search_linear/#linear-search", 
+            "text": "Linear search is a very simple search algorithm. In this type of search, a sequential search is made over all items one by one. Every item is checked and if a match is found then that particular item is returned, otherwise the search continues till the end of the data collection.", 
+            "title": "Linear Search"
         }, 
         {
-            "location": "/#algorithms-on-graphs", 
-            "text": "Graph Data Structure  DFS: Depth First Traversal  BFS: Breadth First Traversal", 
-            "title": "Algorithms on Graphs"
+            "location": "/search_linear/#algorithm", 
+            "text": "Linear Search ( Array A, Value x)\n\nStep 1: Set i to 1\nStep 2: if i   n then go to step 7\nStep 3: if A[i] = x then go to step 6\nStep 4: Set i to i + 1\nStep 5: Go to Step 2\nStep 6: Print Element x Found at index i and go to step 8\nStep 7: Print element not found\nStep 8: Exit", 
+            "title": "Algorithm"
         }, 
         {
-            "location": "/#algorithms-on-strings", 
-            "text": "Introduction to Strings  Tries  Suffix Arrays and Suffix Trees  Knuth\u2013Morris\u2013Pratt Algorithm", 
-            "title": "Algorithms on Strings"
+            "location": "/search_linear/#pseudocode", 
+            "text": "procedure linear_search (list, value)\n\n   for each item in the list\n\n      if match item == value\n\n         return the item's location\n\n      end if\n\n   end for\n\nend procedure", 
+            "title": "Pseudocode"
         }, 
         {
-            "location": "/#np-complete-problems", 
-            "text": "Complete coloring  Clique cover problem  Knapsack problem  Bin packing problem  Closest string  Longest common subsequence problem", 
-            "title": "NP-complete Problems"
+            "location": "/search_interpolation/", 
+            "text": "Interpolation Search\n\n\nInterpolation search is an improved variant of binary search. This search algorithm works on the probing position of the required value. For this algorithm to work properly, the data collection should be in a sorted form and equally distributed.\n\n\nBinary search has a huge advantage of time complexity over linear search. Linear search has worst-case complexity of \u039f(n) whereas binary search has \u039f(log n).\n\n\nThere are cases where the location of target data may be known in advance. For example, in case of a telephone directory, if we want to search the telephone number of Morphius. Here, linear search and even binary search will seem slow as we can directly jump to memory space where the names start from 'M' are stored.\n\n\nPositioning in Binary Search\n\n\nIn binary search, if the desired data is not found then the rest of the list is divided in two parts, lower and higher. The search is carried out in either of them.\n\n\n\n\n\n\n\n\n\n\nEven when the data is sorted, binary search does not take advantage to probe the position of the desired data.\n\n\nPosition Probing in Interpolation Search\n\n\nInterpolation search finds a particular item by computing the probe position. Initially, the probe position is the position of the middle most item of the collection.\n\n\n\n\n\n\nIf a match occurs, then the index of the item is returned. To split the list into two parts, we use the following method \u2212\n\n\nmid = Lo + ((Hi - Lo) / (A[Hi] - A[Lo])) * (X - A[Lo])\n\n\n\n\nwhere\n\n\n\n\nA    = list\n\n\nLo   = Lowest index of the list\n\n\nHi   = Highest index of the list\n\n\nA[n] = Value stored at index n in the list\n\n\n\n\nIf the middle item is greater than the item, then the probe position is again calculated in the sub-array to the right of the middle item. Otherwise, the item is searched in the subarray to the left of the middle item. This process continues on the sub-array as well until the size of subarray reduces to zero.\n\n\nRuntime complexity of interpolation search algorithm is \n\u039f(log (log n))\n as compared to \n\u039f(log n)\n of BST in favorable situations.\n\n\nAlgorithm\n\n\nAs it is an improvisation of the existing BST algorithm, we are mentioning the steps to search the 'target' data value index, using position probing \u2212\n\n\nStep 1 \u2212 Start searching data from middle of the list.\nStep 2 \u2212 If it is a match, return the index of the item, and exit.\nStep 3 \u2212 If it is not a match, probe position.\nStep 4 \u2212 Divide the list using probing formula and find the new midle.\nStep 5 \u2212 If data is greater than middle, search in higher sub-list.\nStep 6 \u2212 If data is smaller than middle, search in lower sub-list.\nStep 7 \u2212 Repeat until match.\n\n\n\n\nPseudocode\n\n\nA \u2192 Array list\nN \u2192 Size of A\nX \u2192 Target Value\n\nProcedure Interpolation_Search()\n\n   Set Lo  \u2192  0\n   Set Mid \u2192 -1\n   Set Hi  \u2192  N-1\n\n   While X does not match\n\n      if Lo equals to Hi OR A[Lo] equals to A[Hi]\n         EXIT: Failure, Target not found\n      end if\n\n      Set Mid = Lo + ((Hi - Lo) / (A[Hi] - A[Lo])) * (X - A[Lo]) \n\n      if A[Mid] = X\n         EXIT: Success, Target found at Mid\n      else \n         if A[Mid] \n X\n            Set Lo to Mid+1\n         else if A[Mid] \n X\n            Set Hi to Mid-1\n         end if\n      end if\n\n   End While\n\nEnd Procedure", 
+            "title": "Interpolation Search"
         }, 
         {
-            "location": "/#advanced-algorithms-and-complexity", 
-            "text": "Flows in Networks  Linear Programming", 
-            "title": "Advanced Algorithms and Complexity"
+            "location": "/search_interpolation/#interpolation-search", 
+            "text": "Interpolation search is an improved variant of binary search. This search algorithm works on the probing position of the required value. For this algorithm to work properly, the data collection should be in a sorted form and equally distributed.  Binary search has a huge advantage of time complexity over linear search. Linear search has worst-case complexity of \u039f(n) whereas binary search has \u039f(log n).  There are cases where the location of target data may be known in advance. For example, in case of a telephone directory, if we want to search the telephone number of Morphius. Here, linear search and even binary search will seem slow as we can directly jump to memory space where the names start from 'M' are stored.", 
+            "title": "Interpolation Search"
         }, 
         {
-            "location": "/#miscellaneous", 
-            "text": "Best algorithms and data structures books  Best algorithms and data structures courses  Data Structures and Algorithms Challenges", 
-            "title": "Miscellaneous"
+            "location": "/search_interpolation/#positioning-in-binary-search", 
+            "text": "In binary search, if the desired data is not found then the rest of the list is divided in two parts, lower and higher. The search is carried out in either of them.      Even when the data is sorted, binary search does not take advantage to probe the position of the desired data.", 
+            "title": "Positioning in Binary Search"
         }, 
         {
-            "location": "/#books", 
-            "text": "", 
-            "title": "Books"
+            "location": "/search_interpolation/#position-probing-in-interpolation-search", 
+            "text": "Interpolation search finds a particular item by computing the probe position. Initially, the probe position is the position of the middle most item of the collection.    If a match occurs, then the index of the item is returned. To split the list into two parts, we use the following method \u2212  mid = Lo + ((Hi - Lo) / (A[Hi] - A[Lo])) * (X - A[Lo])  where   A    = list  Lo   = Lowest index of the list  Hi   = Highest index of the list  A[n] = Value stored at index n in the list   If the middle item is greater than the item, then the probe position is again calculated in the sub-array to the right of the middle item. Otherwise, the item is searched in the subarray to the left of the middle item. This process continues on the sub-array as well until the size of subarray reduces to zero.  Runtime complexity of interpolation search algorithm is  \u039f(log (log n))  as compared to  \u039f(log n)  of BST in favorable situations.", 
+            "title": "Position Probing in Interpolation Search"
         }, 
         {
-            "location": "/#courses", 
-            "text": "", 
-            "title": "Courses"
+            "location": "/search_interpolation/#algorithm", 
+            "text": "As it is an improvisation of the existing BST algorithm, we are mentioning the steps to search the 'target' data value index, using position probing \u2212  Step 1 \u2212 Start searching data from middle of the list.\nStep 2 \u2212 If it is a match, return the index of the item, and exit.\nStep 3 \u2212 If it is not a match, probe position.\nStep 4 \u2212 Divide the list using probing formula and find the new midle.\nStep 5 \u2212 If data is greater than middle, search in higher sub-list.\nStep 6 \u2212 If data is smaller than middle, search in lower sub-list.\nStep 7 \u2212 Repeat until match.", 
+            "title": "Algorithm"
         }, 
         {
-            "location": "/#challenges", 
-            "text": "https://www.topcoder.com/  https://www.hackerrank.com/  http://codeforces.com/  https://www.codechef.com/  http://www.spoj.com/  https://projecteuler.net/", 
-            "title": "Challenges"
+            "location": "/search_interpolation/#pseudocode", 
+            "text": "A \u2192 Array list\nN \u2192 Size of A\nX \u2192 Target Value\n\nProcedure Interpolation_Search()\n\n   Set Lo  \u2192  0\n   Set Mid \u2192 -1\n   Set Hi  \u2192  N-1\n\n   While X does not match\n\n      if Lo equals to Hi OR A[Lo] equals to A[Hi]\n         EXIT: Failure, Target not found\n      end if\n\n      Set Mid = Lo + ((Hi - Lo) / (A[Hi] - A[Lo])) * (X - A[Lo]) \n\n      if A[Mid] = X\n         EXIT: Success, Target found at Mid\n      else \n         if A[Mid]   X\n            Set Lo to Mid+1\n         else if A[Mid]   X\n            Set Hi to Mid-1\n         end if\n      end if\n\n   End While\n\nEnd Procedure", 
+            "title": "Pseudocode"
+        }, 
+        {
+            "location": "/search_hash_table/", 
+            "text": "Hash Table\n\n\nHash Table is a data structure which stores data in an associative manner. In a hash table, data is stored in an array format, where each data value has its own unique index value. Access of data becomes very fast if we know the index of the desired data.\n\n\nThus, it becomes a data structure in which insertion and search operations are very fast irrespective of the size of the data. Hash Table uses an array as a storage medium and uses hash technique to generate an index where an element is to be inserted or is to be located from.\n\n\nHashing\n\n\nHashing is a technique to convert a range of key values into a range of indexes of an array. We're going to use modulo operator to get a range of key values. Consider an example of hash table of size 20, and the following items are to be stored. Item are in the (key,value) format.\n\n\n\n\n\n\n(1,20)\n\n\n(2,70)\n\n\n(42,80)\n\n\n(4,25)\n\n\n(12,44)\n\n\n(14,32)\n\n\n(17,11)\n\n\n(13,78)\n\n\n(37,98)\n\n\n\n\n\n\n\n\n\n\nSr. No.\n\n\nKey\n\n\nHash\n\n\nArray Index\n\n\n\n\n\n\n\n\n\n\n1\n\n\n1\n\n\n1 % 20 = 1\n\n\n1\n\n\n\n\n\n\n2\n\n\n2\n\n\n2 % 20 = 2\n\n\n2\n\n\n\n\n\n\n3\n\n\n42\n\n\n42 % 20 = 2\n\n\n2\n\n\n\n\n\n\n4\n\n\n4\n\n\n4 % 20 = 4\n\n\n4\n\n\n\n\n\n\n5\n\n\n12\n\n\n12 % 20 = 12\n\n\n12\n\n\n\n\n\n\n6\n\n\n14\n\n\n4 % 20 = 14\n\n\n14\n\n\n\n\n\n\n7\n\n\n17\n\n\n7 % 20 = 17\n\n\n17\n\n\n\n\n\n\n8\n\n\n13\n\n\n3 % 20 = 13\n\n\n13\n\n\n\n\n\n\n9\n\n\n37\n\n\n7 % 20 = 17\n\n\n17\n\n\n\n\n\n\n\n\nLinear Probing\n\n\nAs we can see, it may happen that the hashing technique is used to create an already used index of the array. In such a case, we can search the next empty location in the array by looking into the next cell until we find an empty cell. This technique is called linear probing.\n\n\n\n\n\n\n\n\nSr. No.\n\n\nKey\n\n\nHash\n\n\nArray Index\n\n\nAfter Linear Probing, Array Index\n\n\n\n\n\n\n\n\n\n\n1\n\n\n1\n\n\n1 % 20 = 1\n\n\n1\n\n\n1\n\n\n\n\n\n\n2\n\n\n2\n\n\n2 % 20 = 2\n\n\n2\n\n\n2\n\n\n\n\n\n\n3\n\n\n42\n\n\n42 % 20 = 2\n\n\n2\n\n\n3\n\n\n\n\n\n\n4\n\n\n4\n\n\n4 % 20 = 4\n\n\n4\n\n\n4\n\n\n\n\n\n\n5\n\n\n12\n\n\n12 % 20 = 12\n\n\n12\n\n\n12\n\n\n\n\n\n\n6\n\n\n14\n\n\n14 % 20 = 14\n\n\n14\n\n\n14\n\n\n\n\n\n\n7\n\n\n17\n\n\n17 % 20 = 17\n\n\n17\n\n\n17\n\n\n\n\n\n\n8\n\n\n13\n\n\n13 % 20 = 13\n\n\n13\n\n\n13\n\n\n\n\n\n\n9\n\n\n37\n\n\n37 % 20 = 17\n\n\n17\n\n\n18\n\n\n\n\n\n\n\n\nBasic Operations\n\n\nFollowing are the basic primary operations of a hash table.\n\n\n\n\nSearch\n \u2212 Searches an element in a hash table.\n\n\nInsert\n \u2212 inserts an element in a hash table.\n\n\ndelete\n \u2212 Deletes an element from a hash table.\n\n\n\n\nDataItem\n\n\nDefine a data item having some data and key, based on which the search is to be conducted in a hash table.\n\n\nstruct DataItem {\n   int data;   \n   int key;\n};\n\n\n\n\nHash Method\n\n\nDefine a hashing method to compute the hash code of the key of the data item.\n\n\nint hashCode(int key){\n   return key % SIZE;\n}\n\n\n\n\nSearch Operation\n\n\nWhenever an element is to be searched, compute the hash code of the key passed and locate the element using that hash code as index in the array. Use linear probing to get the element ahead if the element is not found at the computed hash code.\n\n\nExample\n\n\nstruct DataItem *search(int key) {\n   //get the hash \n   int hashIndex = hashCode(key);\n\n   //move in array until an empty \n   while(hashArray[hashIndex] != NULL) {\n\n      if(hashArray[hashIndex]-\nkey == key)\n         return hashArray[hashIndex];\n\n      //go to next cell\n      ++hashIndex;\n\n      //wrap around the table\n      hashIndex %= SIZE;\n   }\n\n   return NULL;        \n}\n\n\n\n\nInsert Operation\n\n\nWhenever an element is to be inserted, compute the hash code of the key passed and locate the index using that hash code as an index in the array. Use linear probing for empty location, if an element is found at the computed hash code.\n\n\nExample\n\n\nvoid insert(int key,int data) {\n   struct DataItem *item = (struct DataItem*) malloc(sizeof(struct DataItem));\n   item-\ndata = data;  \n   item-\nkey = key;     \n\n   //get the hash \n   int hashIndex = hashCode(key);\n\n   //move in array until an empty or deleted cell\n   while(hashArray[hashIndex] != NULL \n hashArray[hashIndex]-\nkey != -1) {\n      //go to next cell\n      ++hashIndex;\n\n      //wrap around the table\n      hashIndex %= SIZE;\n   }\n\n   hashArray[hashIndex] = item;        \n}\n\n\n\n\nDelete Operation\n\n\nWhenever an element is to be deleted, compute the hash code of the key passed and locate the index using that hash code as an index in the array. Use linear probing to get the element ahead if an element is not found at the computed hash code. When found, store a dummy item there to keep the performance of the hash table intact.\n\n\nExample\n\n\nstruct DataItem* delete(struct DataItem* item) {\n   int key = item-\nkey;\n\n   //get the hash \n   int hashIndex = hashCode(key);\n\n   //move in array until an empty \n   while(hashArray[hashIndex] !=NULL) {\n\n      if(hashArray[hashIndex]-\nkey == key) {\n         struct DataItem* temp = hashArray[hashIndex]; \n\n         //assign a dummy item at deleted position\n         hashArray[hashIndex] = dummyItem; \n         return temp;\n      } \n\n      //go to next cell\n      ++hashIndex;\n\n      //wrap around the table\n      hashIndex %= SIZE;\n   }  \n\n   return NULL;        \n}", 
+            "title": "Hash Tables"
+        }, 
+        {
+            "location": "/search_hash_table/#hash-table", 
+            "text": "Hash Table is a data structure which stores data in an associative manner. In a hash table, data is stored in an array format, where each data value has its own unique index value. Access of data becomes very fast if we know the index of the desired data.  Thus, it becomes a data structure in which insertion and search operations are very fast irrespective of the size of the data. Hash Table uses an array as a storage medium and uses hash technique to generate an index where an element is to be inserted or is to be located from.", 
+            "title": "Hash Table"
+        }, 
+        {
+            "location": "/search_hash_table/#hashing", 
+            "text": "Hashing is a technique to convert a range of key values into a range of indexes of an array. We're going to use modulo operator to get a range of key values. Consider an example of hash table of size 20, and the following items are to be stored. Item are in the (key,value) format.    (1,20)  (2,70)  (42,80)  (4,25)  (12,44)  (14,32)  (17,11)  (13,78)  (37,98)      Sr. No.  Key  Hash  Array Index      1  1  1 % 20 = 1  1    2  2  2 % 20 = 2  2    3  42  42 % 20 = 2  2    4  4  4 % 20 = 4  4    5  12  12 % 20 = 12  12    6  14  4 % 20 = 14  14    7  17  7 % 20 = 17  17    8  13  3 % 20 = 13  13    9  37  7 % 20 = 17  17", 
+            "title": "Hashing"
+        }, 
+        {
+            "location": "/search_hash_table/#linear-probing", 
+            "text": "As we can see, it may happen that the hashing technique is used to create an already used index of the array. In such a case, we can search the next empty location in the array by looking into the next cell until we find an empty cell. This technique is called linear probing.     Sr. No.  Key  Hash  Array Index  After Linear Probing, Array Index      1  1  1 % 20 = 1  1  1    2  2  2 % 20 = 2  2  2    3  42  42 % 20 = 2  2  3    4  4  4 % 20 = 4  4  4    5  12  12 % 20 = 12  12  12    6  14  14 % 20 = 14  14  14    7  17  17 % 20 = 17  17  17    8  13  13 % 20 = 13  13  13    9  37  37 % 20 = 17  17  18", 
+            "title": "Linear Probing"
+        }, 
+        {
+            "location": "/search_hash_table/#basic-operations", 
+            "text": "Following are the basic primary operations of a hash table.   Search  \u2212 Searches an element in a hash table.  Insert  \u2212 inserts an element in a hash table.  delete  \u2212 Deletes an element from a hash table.", 
+            "title": "Basic Operations"
+        }, 
+        {
+            "location": "/search_hash_table/#dataitem", 
+            "text": "Define a data item having some data and key, based on which the search is to be conducted in a hash table.  struct DataItem {\n   int data;   \n   int key;\n};", 
+            "title": "DataItem"
+        }, 
+        {
+            "location": "/search_hash_table/#hash-method", 
+            "text": "Define a hashing method to compute the hash code of the key of the data item.  int hashCode(int key){\n   return key % SIZE;\n}", 
+            "title": "Hash Method"
+        }, 
+        {
+            "location": "/search_hash_table/#search-operation", 
+            "text": "Whenever an element is to be searched, compute the hash code of the key passed and locate the element using that hash code as index in the array. Use linear probing to get the element ahead if the element is not found at the computed hash code.  Example  struct DataItem *search(int key) {\n   //get the hash \n   int hashIndex = hashCode(key);\n\n   //move in array until an empty \n   while(hashArray[hashIndex] != NULL) {\n\n      if(hashArray[hashIndex]- key == key)\n         return hashArray[hashIndex];\n\n      //go to next cell\n      ++hashIndex;\n\n      //wrap around the table\n      hashIndex %= SIZE;\n   }\n\n   return NULL;        \n}", 
+            "title": "Search Operation"
+        }, 
+        {
+            "location": "/search_hash_table/#insert-operation", 
+            "text": "Whenever an element is to be inserted, compute the hash code of the key passed and locate the index using that hash code as an index in the array. Use linear probing for empty location, if an element is found at the computed hash code.  Example  void insert(int key,int data) {\n   struct DataItem *item = (struct DataItem*) malloc(sizeof(struct DataItem));\n   item- data = data;  \n   item- key = key;     \n\n   //get the hash \n   int hashIndex = hashCode(key);\n\n   //move in array until an empty or deleted cell\n   while(hashArray[hashIndex] != NULL   hashArray[hashIndex]- key != -1) {\n      //go to next cell\n      ++hashIndex;\n\n      //wrap around the table\n      hashIndex %= SIZE;\n   }\n\n   hashArray[hashIndex] = item;        \n}", 
+            "title": "Insert Operation"
+        }, 
+        {
+            "location": "/search_hash_table/#delete-operation", 
+            "text": "Whenever an element is to be deleted, compute the hash code of the key passed and locate the index using that hash code as an index in the array. Use linear probing to get the element ahead if an element is not found at the computed hash code. When found, store a dummy item there to keep the performance of the hash table intact.  Example  struct DataItem* delete(struct DataItem* item) {\n   int key = item- key;\n\n   //get the hash \n   int hashIndex = hashCode(key);\n\n   //move in array until an empty \n   while(hashArray[hashIndex] !=NULL) {\n\n      if(hashArray[hashIndex]- key == key) {\n         struct DataItem* temp = hashArray[hashIndex]; \n\n         //assign a dummy item at deleted position\n         hashArray[hashIndex] = dummyItem; \n         return temp;\n      } \n\n      //go to next cell\n      ++hashIndex;\n\n      //wrap around the table\n      hashIndex %= SIZE;\n   }  \n\n   return NULL;        \n}", 
+            "title": "Delete Operation"
         }, 
         {
             "location": "/graph_data_structure/", 

@@ -3,6 +3,7 @@ site_author: "Brother Rain"
 google_analytics: ['UA-68978617-1', 'magizbox.com']
 
 pages:
+  - "Home": "index.md"
   - "Get Started":
     - "Introduction": "gs_introduction.md"
     - "Greedy Algorithms": "gs_greedy_algorithms.md"
@@ -13,7 +14,6 @@ pages:
     - "Arrays": "ds_array.md"
     - "Linked List": 'ds_linked_list.md'
     - "Stacks & Queues": 'ds_stack_queue.md'
-    - "Hash Tables": "ds_hash_table.md"
     - "Trees": 'ds_tree.md'
     - "Binary Search Trees": "ds_binary_search_tree.md"
     - "Heaps": "ds_heap.md"
@@ -25,7 +25,11 @@ pages:
     - "Merge Sort": "sort_merge.md"
     - "Shell Sort": "sort_shell.md"
     - "Quick Sort": "sort_quick.md"
-  - "Search": "index.md"
+  - "Search":
+    - "Linear Search": "search_linear.md"
+    - "Binary Search": "search_linear.md"
+    - "Interpolation Search": "search_interpolation.md"
+    - "Hash Tables": "search_hash_table.md"
   - "Graphs":
     - "Graph Data Structure": "graph_data_structure.md"
     - "DFS: Depth First Traversal": "graph_dfs.md"

@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
         
     <url>
      <loc>/gs_introduction/</loc>
@@ -51,12 +59,6 @@
         
     <url>
      <loc>/ds_stack_queue/</loc>
-     <lastmod>2017-07-27</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/ds_hash_table/</loc>
      <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -128,11 +130,31 @@
     
 
     
+        
     <url>
-     <loc>/</loc>
+     <loc>/search_linear/</loc>
      <lastmod>2017-07-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/search_linear/</loc>
+     <lastmod>2017-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/search_interpolation/</loc>
+     <lastmod>2017-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/search_hash_table/</loc>
+     <lastmod>2017-07-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     

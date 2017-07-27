@@ -8,7 +8,7 @@
         <meta name="author" content="Brother Rain">
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>BFS: Breadth First Traversal - D&A</title>
+        <title>Interpolation Search - D&A</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -151,7 +151,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -163,8 +163,8 @@
     <a href="../search_linear/">Binary Search</a>
 </li>
                             
-<li >
-    <a href="../search_interpolation/">Interpolation Search</a>
+<li class="active">
+    <a href="./">Interpolation Search</a>
 </li>
                             
 <li >
@@ -172,7 +172,7 @@
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Graphs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
@@ -184,8 +184,8 @@
     <a href="../graph_dfs/">DFS: Depth First Traversal</a>
 </li>
                             
-<li class="active">
-    <a href="./">BFS: Breadth First Traversal</a>
+<li >
+    <a href="../graph_bfs/">BFS: Breadth First Traversal</a>
 </li>
                         </ul>
                     </li>
@@ -262,12 +262,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../graph_dfs/">
+                        <a rel="next" href="../search_linear/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../string_string/">
+                        <a rel="prev" href="../search_hash_table/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -279,69 +279,87 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#breadth-first-traversal">Breadth First Traversal</a></li>
-        <li class="main "><a href="#algorithms">Algorithms</a></li>
+        <li class="main active"><a href="#interpolation-search">Interpolation Search</a></li>
+        <li class="main "><a href="#positioning-in-binary-search">Positioning in Binary Search</a></li>
+        <li class="main "><a href="#position-probing-in-interpolation-search">Position Probing in Interpolation Search</a></li>
+        <li class="main "><a href="#algorithm">Algorithm</a></li>
+        <li class="main "><a href="#pseudocode">Pseudocode</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="breadth-first-traversal">Breadth First Traversal</h1>
-<p>Breadth First Search (BFS) algorithm traverses a graph in a breadthward motion and uses a queue to remember to get the next vertex to start a search, when a dead end occurs in any iteration.</p>
-<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/breadth_first_traversal.jpg" /></p>
-<p>As in the example given above, BFS algorithm traverses from A to B to E to F first then to C and G lastly to D. It employs the following rules.</p>
+<h1 id="interpolation-search">Interpolation Search</h1>
+<p>Interpolation search is an improved variant of binary search. This search algorithm works on the probing position of the required value. For this algorithm to work properly, the data collection should be in a sorted form and equally distributed.</p>
+<p>Binary search has a huge advantage of time complexity over linear search. Linear search has worst-case complexity of Ο(n) whereas binary search has Ο(log n).</p>
+<p>There are cases where the location of target data may be known in advance. For example, in case of a telephone directory, if we want to search the telephone number of Morphius. Here, linear search and even binary search will seem slow as we can directly jump to memory space where the names start from 'M' are stored.</p>
+<h1 id="positioning-in-binary-search">Positioning in Binary Search</h1>
+<p>In binary search, if the desired data is not found then the rest of the list is divided in two parts, lower and higher. The search is carried out in either of them.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bst_step_one.jpg" />
+<img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bst_step_two.jpg" />
+<img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bst_step_three.jpg" />
+<img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bst_step_four.jpg" /></p>
+<p>Even when the data is sorted, binary search does not take advantage to probe the position of the desired data.</p>
+<h1 id="position-probing-in-interpolation-search">Position Probing in Interpolation Search</h1>
+<p>Interpolation search finds a particular item by computing the probe position. Initially, the probe position is the position of the middle most item of the collection.</p>
+<p><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/interpolation_step_one.jpg" />
+<img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/interpolation_step_two.jpg" /></p>
+<p>If a match occurs, then the index of the item is returned. To split the list into two parts, we use the following method −</p>
+<pre><code>mid = Lo + ((Hi - Lo) / (A[Hi] - A[Lo])) * (X - A[Lo])
+</code></pre>
+
+<p>where</p>
 <ul>
-<li><strong>Rule 1</strong> − Visit the adjacent unvisited vertex. Mark it as visited. Display it. Insert it * in a queue.</li>
-<li><strong>Rule 2</strong> − If no adjacent vertex is found, remove the first vertex from the queue.</li>
-<li><strong>Rule 3</strong> − Repeat Rule 1 and Rule 2 until the queue is empty.</li>
+<li>A    = list</li>
+<li>Lo   = Lowest index of the list</li>
+<li>Hi   = Highest index of the list</li>
+<li>A[n] = Value stored at index n in the list</li>
 </ul>
-<h1 id="algorithms">Algorithms</h1>
-<table>
-<thead>
-<tr>
-<th>Step</th>
-<th>Traversal</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_one.jpg" /></td>
-<td>Initialize the stack.</td>
-</tr>
-<tr>
-<td>2.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_two.jpg" /></td>
-<td>Mark S as visited and put it onto the stack. Explore any unvisited adjacent node from S. We have three nodes and we can pick any of them. For this example, we shall take the node in an alphabetical order.</td>
-</tr>
-<tr>
-<td>3.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_three.jpg" /></td>
-<td>Mark A as visited and put it onto the stack. Explore any unvisited adjacent node from A. Both Sand D are adjacent to A but we are concerned for unvisited nodes only.</td>
-</tr>
-<tr>
-<td>4.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_four.jpg" /></td>
-<td>Visit D and mark it as visited and put onto the stack. Here, we have B and C nodes, which are adjacent to D and both are unvisited. However, we shall again choose in an alphabetical order.</td>
-</tr>
-<tr>
-<td>5.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_five.jpg" /></td>
-<td>We choose B, mark it as visited and put onto the stack. Here Bdoes not have any unvisited adjacent node. So, we pop Bfrom the stack.</td>
-</tr>
-<tr>
-<td>6.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_six.jpg" /></td>
-<td>We check the stack top for return to the previous node and check if it has any unvisited nodes. Here, we find D to be on the top of the stack.</td>
-</tr>
-<tr>
-<td>7.</td>
-<td><img alt="" src="https://www.tutorialspoint.com/data_structures_algorithms/images/bfs_seven.jpg" /></td>
-<td>Only unvisited adjacent node is from D is C now. So we visit C, mark it as visited and put it onto the stack.</td>
-</tr>
-</tbody>
-</table>
-<p>At this stage, we are left with no unmarked (unvisited) nodes. But as per the algorithm we keep on dequeuing in order to get all unvisited nodes. When the queue gets emptied, the program is over.</p></div>
+<p>If the middle item is greater than the item, then the probe position is again calculated in the sub-array to the right of the middle item. Otherwise, the item is searched in the subarray to the left of the middle item. This process continues on the sub-array as well until the size of subarray reduces to zero.</p>
+<p>Runtime complexity of interpolation search algorithm is <script type="math/tex">Ο(log (log n))</script> as compared to <script type="math/tex">Ο(log n)</script> of BST in favorable situations.</p>
+<h1 id="algorithm">Algorithm</h1>
+<p>As it is an improvisation of the existing BST algorithm, we are mentioning the steps to search the 'target' data value index, using position probing −</p>
+<pre><code>Step 1 − Start searching data from middle of the list.
+Step 2 − If it is a match, return the index of the item, and exit.
+Step 3 − If it is not a match, probe position.
+Step 4 − Divide the list using probing formula and find the new midle.
+Step 5 − If data is greater than middle, search in higher sub-list.
+Step 6 − If data is smaller than middle, search in lower sub-list.
+Step 7 − Repeat until match.
+</code></pre>
+
+<h1 id="pseudocode">Pseudocode</h1>
+<pre><code>A → Array list
+N → Size of A
+X → Target Value
+
+Procedure Interpolation_Search()
+
+   Set Lo  →  0
+   Set Mid → -1
+   Set Hi  →  N-1
+
+   While X does not match
+
+      if Lo equals to Hi OR A[Lo] equals to A[Hi]
+         EXIT: Failure, Target not found
+      end if
+
+      Set Mid = Lo + ((Hi - Lo) / (A[Hi] - A[Lo])) * (X - A[Lo]) 
+
+      if A[Mid] = X
+         EXIT: Success, Target found at Mid
+      else 
+         if A[Mid] &lt; X
+            Set Lo to Mid+1
+         else if A[Mid] &gt; X
+            Set Hi to Mid-1
+         end if
+      end if
+
+   End While
+
+End Procedure
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
